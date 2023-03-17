@@ -6,7 +6,7 @@
 
 
 
-|<img height="30" src="../../assets/png/linux.png" />|Windows|
+|<img height="30" src="../../assets/png/linux.png" />|<img height="30" src="../../assets/png/windows.png" />|
 |--|--|
 |[Ubuntu](instalacion-ubuntu)|zip|
 
