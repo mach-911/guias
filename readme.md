@@ -5,8 +5,8 @@
 <!-- Databases -->
 <h1 align="center">BASES DE DATOS</h1>
 <p align="center">
-    <!-- Postgre -->
-    <a href="devs/database/postgre/readme.md"><kbd><img src="assets/png/postgresql.png" height="70"></kbd></a>
+    <!-- Postgres -->
+    <a href="./db/postgres/index.md"><kbd><img src="assets/png/postgresql.png" height="70"></kbd></a>
     <!-- MySQL -->
     <a href="devs/database/mysql/index.md"><kbd><img src="assets/png/mysql.png" height="70"></kbd></a>
     <!-- MS-SQL Server -->
