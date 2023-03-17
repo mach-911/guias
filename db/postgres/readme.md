@@ -32,4 +32,3 @@
 </table>
 
 
-[ubuntu]: instalacion-ubuntu
