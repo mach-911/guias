@@ -6,9 +6,9 @@
 <h1 align="center">BASES DE DATOS</h1>
 <p align="center">
     <!-- Postgres -->
-    <a href="./db/postgres/index.md"><kbd><img src="assets/png/postgresql.png" height="70"></kbd></a>
+    <a href="./db/postgres/"><kbd><img src="assets/png/postgresql.png" height="70"></kbd></a>
     <!-- MySQL -->
-    <a href="devs/database/mysql/index.md"><kbd><img src="assets/png/mysql.png" height="70"></kbd></a>
+    <a href="./db/mysql/"><kbd><img src="assets/png/mysql.png" height="70"></kbd></a>
     <!-- MS-SQL Server -->
     <a href="#mssql"><kbd><img src="assets/png/mssql-server.png" height="70"></kbd></a>
     <!-- SQLITE -->
