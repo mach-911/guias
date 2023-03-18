@@ -149,8 +149,8 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
 
 <table>
   <thead>
-    <th>Comando</th>
-    <th>Descripción</th>
+    <th align="left">Comando</th>
+    <th align="left">Descripción</th>
   </thead>
   <tr>
     <th>
