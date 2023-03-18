@@ -226,7 +226,7 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
     <tr>
       <th>
         <a href="#mc-echo">
-          <code>\code [text]</code>
+          <code>\echo [text]</code>
         </a>
       </th>
       <th>
@@ -235,15 +235,34 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
         </a>
       </th>
     </tr>
+    <tr>
+      <th>
+        <a href="#mc-timing">
+          <code>\timing</code>
+        </a>
+      </th>
+      <th>
+        <a href="#mc-timing">
+          Activa o Desactiva la visualización del tiempo en milisegundos que tarda cada instrucción SQL.
+        </a>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <a href="#mc-x">
+          <code>\x</code>
+        </a>
+      </th>
+      <th>
+        <a href="#mc-x">
+    Activa o Desactiva el formato de tabla expandido en el resultado de cada instrucción SQL o meta-comando.      
+        </a>
+      </th>
+    </tr>
   </tbody>
 </table>
 
 
-
-|[**`timing`**](#mc-timing)|[Activa o Desactiva la visualización del tiempo en milisegundos que tarda cada instrucción SQL.](#mc-timing)|
-
-
-|[**`\x`**](#mc-x)|[Activa o Desactiva el formato de tabla expandido en el resultado de cada instrucción SQL o metacomando.](#mc-x)|
 
 
 
