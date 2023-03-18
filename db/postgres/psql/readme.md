@@ -330,7 +330,7 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
       <th><a href="#mc-o"><code>\o - \out [filename]</code></a></th>
       <th>
         <a href="#mc-o">
-     Permite guardar el resultado de las futuras consultas en el archivo <code>filename</code>. El resultado incluye todas las tablas, respuestas de comandos y mensajes de tipo "notices" del servidor, pero no los mensajes de error.     
+     Permite guardar el resultado de las futuras consultas en el archivo <code>filename</code>. El resultado incluye todas las tablas, respuestas de comandos y mensajes de tipo "notices" del servidor, pero no los mensajes de error.   
         </a>
       </th>
     </tr>
@@ -408,7 +408,6 @@ Activa o Desactiva el formato de tabla expandido en el resultado de cada instruc
 
 [![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#metacommand)
 
----
 
 <a name="mc-html"></a>
 **\\H**
@@ -417,7 +416,6 @@ Activa o Desactiva el formato de tabla expandido en el resultado de cada instruc
 
 [![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#metacommand)
 
----
 
 <a name="mc-conninfo"></a>
 **\\conninfo**
@@ -425,6 +423,7 @@ Activa o Desactiva el formato de tabla expandido en el resultado de cada instruc
 ![timing png](https://raw.githubusercontent.com/EniDev911/assets/main/png/db/postgres/meta-comando-conninfo.png)
 
 [![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#metacommand)
+
 
 ---
 
@@ -434,7 +433,7 @@ Activa o Desactiva el formato de tabla expandido en el resultado de cada instruc
 
 Una característica clave de las **variables en psql** es que pueden sustituirlas ("interpolarlas") en sentencias SQL normales, así como en los argumentos de los **meta-comandos**. Además psql proporciona funciones para garantizar que los valores de las variables utilizados como identificadores y literales de SQL se cite correctamente. La sintaxis para interpolar un valor sin comillas es anteponer dos puntos (`:`) al nombre de la variable. Por ejemplo:  
 
-```psql
+```txt
 \set var 'usuarios'
 SELECT * FROM :var;
 ```
@@ -443,7 +442,7 @@ consultaría la tabla con el valor `usuarios` asignada a la variable. Considerar
 
 Cuando se va a utilizar un valor como identificador o literal de SQL, lo más seguro es disponer que se incluya entre comillas. Para citar el valor de una variable como literal SQL, escriba dos puntos (`:`) seguidos del nombre de la variable entre comillas simples.  Para citar el valor como un identificador SQL, escriba dos puntos seguidos del nombre de la variable entre comillas dobles. Estas construcciones tratan correctamente las comillas y otros caracteres especiales incrustados en el valor de la variable. El ejemplo anterior se escribiría de manera más segura de esta manera:
 
-```psql
+```txt
 \set var 'usuarios'
 SELECT * FROM :"var";
 ```
@@ -452,7 +451,7 @@ La interporlación de variables no se realizará dentro de literales e identific
 
 Un ejemplo de uso de este mecanismo es copiar el contenido de un archivo en una columna de tabla. Primero se carga el archivo en una variable y luego interpolamos el valor de la variable como una cadena entrecomillada:  
 
-```sql
+```txt
 \set content `cat my_file.txt`
 INSERT INTO my_table VALUES (:'content');
 ```
@@ -461,6 +460,6 @@ INSERT INTO my_table VALUES (:'content');
 ### <a href="personalizar-prompt"></a>
 
 
-```
+```txt
 \set PROMPT1 '%[%033[1;33;40m%]%n@%/%R%[%033[0m%]%# '
 ```
