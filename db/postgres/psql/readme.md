@@ -150,15 +150,14 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
 
 |Comando|Descripción|
 |-------|-----------|
-|[**`\a`**](#mc-a)|[Activa y Desactiva el formato alineado de la tabla.](#mc-a)|
+|[**`\a`**](#mc-a)|[Activa o Desactiva el formato alineado de la tabla.](#mc-a)|
 |[**`\c`** \[params\]](#mc-connect)|[Establece una nueva conexión a un servidor PostgreSQL.](#mc-connect)|
+|[**`\C`** \[title\]](#mc-title)|[Establece o Anula el título de las tablas que se imprimen en los resultados de una consulta.](#mc-title)|
+|[**`cd`** \[directory\]](#mc-cd)|[Cambia el directorio de trabajo actual a **directory**. Sin argumentos, cambia el directorio de inicio del usuario actual.](#mc-cd)|
+|[**`\conninfo`**](#mc-conninfo)|[Muestra información sobre la conexión de base de datos actual.](#mc-conninfo)|
+|[**`\copyright`**](#mc-copyright)|[Muestra información sobre los términos de licencia.](#mc-copyright)|
 
 
-
-|[**`\C`** \[title\]](#mc-title)|Establece \| Anula el título de las tablas que se imprimen en los resultados de una consulta.|
-|[**`cd`** \[directory\]](#mc-cd)|Cambia el directorio de trabajo actual a <b>directory</b>. Sin argumentos, cambia el directorio de inicio del usuario actual.|
-|[**`\conninfo`**](#mc-conninfo)|Muestra información sobre la conexión de base de datos actual.|
-|[**`\copyright`**](#mc-copyright)|Muestra información sobre la conexión de base de datos actual.|
 |[**`\echo`** \[text\]](#c-echo)|Imprime los argumentos evaluados en la salida estándar, separados por espacios y seguidos de una nueva línea, si se coloca entre (**\`**) se interpreta como un comando.|
 |[**`timing`**](#mc-timing)|Activa \| Desactiva la visualización del tiempo en milisegundos que tarda cada instrucción SQL.|
 |[**`\x`**](#mc-extends)|Activa \| Desactiva el formato de tabla expandido en el resultado de cada instrucción SQL o metacomando.|
