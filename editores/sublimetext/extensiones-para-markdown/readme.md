@@ -20,8 +20,9 @@
 
 - [Instalar MarkdownEditing](#instalar-markdownediting)
 - [Características de MarkdownEditing](#caracteristicas-markdownediting)
-    * [Atajos de teclado](#key-binding)
+- [Atajos de teclado](#shorcut)
 - [Instalar MarkdownPreview](#markdown-preview)
+- [Configurar un atajo para la previsualización](#configurar-keybinding)
 
 
 <a name="instalar-markdownediting"></a>
@@ -92,7 +93,8 @@ Para seleccionar un esquema de colores que este paquete incorpora, podemos cambi
 </p>
 
 
-### <a name="key-binding"></a>Atajos de teclado de MarkdownEditing &#9875;
+<a name="shorcut"></a>
+### Atajos de teclado de MarkdownEditing &#9875;
 
 |Combinación|Descripción|
 |:---------:|-----------|
@@ -105,7 +107,7 @@ Para seleccionar un esquema de colores que este paquete incorpora, podemos cambi
 |<kbd>Ctrl</kbd>+<kbd>d</kbd>|Selecciona la palabra en el cursor, luego presiona el asterísco(\*) se convierte en italic si le das dos veces se convierte en bold.|
 
 
-<a href="#top">![](https://img.shields.io/badge/Volver%20al%20contenido-%E2%86%A9-orange?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
+<a href="#top">![](https://img.shields.io/badge/Volver%20al%20contenido-%E2%86%A9-orange?style=for-the-badge)</a>
 
 ---
 
@@ -114,34 +116,43 @@ Para seleccionar un esquema de colores que este paquete incorpora, podemos cambi
 Ya tenemos instalada la extensión que nos provee la edición de archivos Markdown en SublimeText, esta extensión no tiene forma de ver nuestro archivo específico de Markdown en el navegador. Para ello debemos de instalar otro complemento que es fundamental para la previsualización en el navegador de nuestros archivos Markdown, el complemento lo buscamos con el nombre de **MarkdownPreview** y nos ayudará para obtener una vista previa en el navegador de nuestros archivos Markdown.
 
 
-1. Abrimos **package control** (<kbd>Crtl</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd>) luego escribimos **install** y seleccionamos la opción (**Install Package**)
+**1)** Abrimos **package control** (<kbd>Crtl</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd>) luego escribimos **install** y seleccionamos la opción ***Install Package***
 
-<p align="center">
-  <img src="assets/install_package.png" alt="install package" width="800">
-</p>
+![install-package](./assets/install_package.png)
 
 
-2. Escribir el nombre del paquete, en este caso tiene el nombre de (**MarkdownPreview**)<br><br>
+**2)** Escribir el nombre del paquete, en este caso tiene el nombre de ***MarkdownPreview***
 
-<p align="center">
-  <img src="assets/markdown_preview.png" alt="install package" width="800">
-</p>
 
-3. Renicia SublimeText.
+![markdown-preview](./assets/markdown_preview.png)
 
+
+**3)** Renicia ***SublimeText***.
+
+
+---
+
+<a name="configurar-keybinding"></a>
+### Configurar un atajo para la previsualización
 
 Para aprovechar su capacidad podemos configurar un atajo de teclado de la siguiente manera:
 
 Vamos a **Preferences** =\> **Key Bindings - User** y añadimos entre los corchetes lo siguiente.
 
 ```json
-{ "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} }
+{ 
+  "keys": ["alt+m"], 
+  "command": "markdown_preview", 
+  "args": {
+    "target": "browser", 
+    "parser":"markdown"
+  } 
+}
 ```
 
 >El atajo lo puedes cambiar remplazando el valor dentro de `["alt+m"]`
 
-Salvamos cambios con <kbd>CTRL</kbd> + <kbd>S</kbd>
+Guardamos cambios con <kbd>CTRL</kbd> + <kbd>S</kbd>
 
-<br>
 
-<a href="../../index.md">![](https://img.shields.io/badge/regresar%20contenido%20principal-%E2%86%A9-blue?style=for-the-badge&logo=files&logoColor=%23FAC173)</a>
+<a href="../">![](https://img.shields.io/badge/volver%20a%20contenido-%E2%86%A9-blue?style=for-the-badge&logo=files&logoColor=%23FAC173)</a>
