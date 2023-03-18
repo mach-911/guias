@@ -259,6 +259,30 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
         </a>
       </th>
     </tr>
+    <tr>
+      <th>
+        <a href=">#mc-help">
+          <code>\h - \help [command]</code>
+        </a>
+      </th>
+      <th>
+        <a href="#mc-help">
+    Brinda ayuda de sintaxis en el comando SQL especificado. Si <code>command</code> no se especifica <b>psql</b> enumerará todos los comandos para los que hay ayuda disponible. Si <code>command</code> es un asterisco (<code>*</code>), se muestra la ayuda de sintaxis en todos los comandos SQL.      
+        </a>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <a href="#mc-html">
+          <code>\H - \html</code>
+        </a>
+      </th>
+      <th>
+        <a href="#mc-html">
+  Activa el formato de salida de consulta HTML. Si el formato HTML ya está activado, se vuelve al formato de texto alineado predeterminado. Este comando es por compatibilidad y comodidad, pero tenemos <code>\pset</code> para configurar otras opciones de salida.        
+        </a>
+      </th>
+    </tr>
   </tbody>
 </table>
 
@@ -266,8 +290,6 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
 
 
 
-|[**`\h o \help`** \[command\]](#mc-help)|[Brinda ayuda de sintaxis en el comando SQL especificado. Si **`command`** no se especificam psql enumerará todos los comandos para los que hay ayuda disponible. Si **`command`** es un asterisco (`*`), se muestra la ayuda de sintaxis en todos los comandos SQL.](#mc-help)|
-|[**`\H - \html`**](#mc-html)|[Activa el formato de salida de consulta HTML. Si el formato HTML ya está activado, se vuelve al formato de texto alineado predeterminado. Este comando es por compatibilidad y comodidad, pero tenemos `\pset` para configurar otras opciones de salida.](#mc-html)|
 |[`\!` \[command\]](#mc-command)|[Permite ejecutar comandos de la **shell de Linux** o de **CMD de windows** desde la propia consola de psql.](#mc-command)|
 |[**`i o \include`** \[filename\]](#mc-include)|[Lee la entrada del archivo **filename** y la ejecuta.](#mc-include)|
 |[`\l[+]` \[pattern\]](#mc-l)|[Muestra un listado de las bases de datos que existen en la instancia del servidor PostgreSQL junto a sus nombres, propietarios, juego de caracteres y privilegios de acceso. Si se especifica un "**pattern**", solo se listan las bases de datos cuyo nombre coincidan con el patrón. Si se agrega el símbolo "+", también se muestran los tamaños de las bases de datos, los tablespace y las descripciones.](#mc-l)|
