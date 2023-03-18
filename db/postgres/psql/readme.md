@@ -14,7 +14,7 @@
 ## CONTENIDO
 
 - [Introducción](#intro)
-- [Opciones en línea de comandos](#opciones-en-linea)
+- [Opciones en línea de comandos](#opciones-en-linea-de-comandos)
 - [Establecer variables de entornos con valores de conexion](#variables-de-conexion)
 - [Establecer conexión en formato de URI](#formato-uri-conexion)
 - [Archivo de contraseñas **pgpass**](#archivo-pgpass)
@@ -28,27 +28,28 @@
 
 **Psql** es una aplicación cliente que viene incluido en el paquete de PostgreSQL regular y está basado en la terminal. Nos permite establecer una conexión a un servidor de PostgreSQL donde debemos proporcionar las opciones de conexión como **argumentos** correctamente a través de la línea de comandos, establecida la conexión se abre una sesión interactiva para realizar consultas [**`SQL`**](https://es.wikipedia.org/wiki/SQL) y enviarlas a nuestro servidor de PostgreSQL y ver los resultados. Además, psql proporciona una serie de [**`matacomandos`**](#metacommand) y varias funciones similares a las de un shell para facilitar la escritura de scripts y la automatización de una amplia variedad de tareas.
 
-[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#top)
 
 ---
 
 
-#### <a name="opciones-en-linea"></a>Opciones en línea de comandos
+<a name="opciones-en-linea-de-comandos"></a>
+### Opciones en línea de comandos
 
 Para conectarse al servidor, necesita saber el **nombre de la base de datos de destino**, **el nombre de host**, **nombre de usuaurio**, **puerto del servidor**, etc..., y con que **nombre de usuario** desea conectarse. Se puede informar a **psql** sobre esos parámetros a través de las **opciones de la línea de comandos** `-d`, `-h`, `-U`, `-p` respectivamente.
 
-Ej: (**host, usuario, puerto, etc**).  
+Ej: conectarse a postgres con el usuario ***postgres***, al host ***localhost***, y a la base de datos ***postgres***  
+
 ```cmd
-psql -h hostname -U username -d dbname
+psql -h localhost -U postgres -d postgres
 ```
 
-Si se encuentra un argumento que no pertenece a ninguna opción, se interpretará como el nombre de la base de datos (o el nombre de usuario, si el nombre de la base de datos ya está dado). **No todas estas opciones son obligatorias; hay valores predeterminados** útiles.
+Si se encuentra un argumento que no pertenece a ninguna opción, se interpretará como el nombre de la base de datos (o el nombre de usuario, si el nombre de la base de datos ya está dado). **No todas estas opciones son obligatorias; hay valores predeterminados** útiles. Por ejemplo:
 
-Si omite el nombre de host, psql se conectará a través de un socket de dominio Unix a un servidor a un host local, o a través de TCP/IP a **localhost**. 
+- Si omite el nombre de host, psql se conectará a través de un socket de dominio Unix a un servidor a un host local, o a través de TCP/IP a **localhost**. 
 
-El número de puerto predeterminado se determina en tiempo de compilación. Dado que el servidor de la base de datos utiliza el mismo valor predeterminado **5432**, no se tendrá que especificar el puerto en la mayoría de los casos. 
+- El número de puerto predeterminado se determina en tiempo de compilación. Dado que el servidor de la base de datos utiliza el mismo valor predeterminado **5432**, no se tendrá que especificar el puerto en la mayoría de los casos. 
 
-El nombre de usuario predeterminado es el nombre de usuario de su sistema operativo, al igual que el nombre de la base de datos predeterminada. 
+- El nombre de usuario predeterminado es el nombre de usuario de su sistema operativo, al igual que el nombre de la base de datos predeterminada. 
 
 <details>
   <summary>Clic ver demo 🖱️</summary>
@@ -57,12 +58,12 @@ El nombre de usuario predeterminado es el nombre de usuario de su sistema operat
 
 > NOTA: Tengamos en cuenta que no se puede simplemente conectarse a cualquier base de datos con cualquier nombre de usuario. El usuario que desea conectarse debe tener los permisos previamente creados por un usuario con rol de administrador o superusuario del sistema de base de datos.  
 
-[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#top)
+[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%23316192?style=for-the-badge)](#top)
 
 ---
 
 <a name="variables-de-conexion"></a>
-#### Estableciendo variables de entornos con valores de conexión
+### Estableciendo variables de entornos con valores de conexión
 
 Cuando los valores predeterminado no son del todo correctos, puede ahorrarse algo de escritura configurando las siguientes variables de entorno:  
 
@@ -81,7 +82,7 @@ setx PGPASSWORD postgre
 
 > NOTA: Considere usar mejor un **archivo pgpass**
 
-[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#top)
+[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%23316192?style=for-the-badge)](#top)
 
 ---
 

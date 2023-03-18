@@ -34,7 +34,7 @@ Selecciona alguna versión de acuerdo a la arquitectura y plataforma de tu compu
 <a name="extraer-archivos"></a> 
 ### Extraer contenido
 
-Extraemos los archivos en la siguiente ubicación &#x1f4c2; ➡ **C:\pgsql_14** (puedes elegir otro destino para descargar los archivos).
+Extraemos los archivos en la siguiente ubicación &#x1f4c2; ➡ **C:\pgsql** (puedes elegir otro destino para descargar los archivos).
 
 
 ![extraer zip](./assets/extract_zip_01.png)
@@ -73,7 +73,7 @@ Para iniciar una nueva configuración en un cluster de PostgreSQL y crear el **r
 Nos cambiamos al directorio de instalación y entramos a la carpeta **bin**:  
 
 ```cmd
-cd C:\pgsql_14\bin
+cd C:\pgsql\bin
 ``` 
 
 Y ejecutamos el siguiente comando:
