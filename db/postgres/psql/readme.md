@@ -338,8 +338,6 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
 </table>
 
 
----
-
 <a name="mc-a"></a>
 **Meta Comando para alineación**  
 
@@ -349,7 +347,6 @@ Si el formato de salida de la tabla no está alineado, se cambia a alineado. Est
 
 [![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge)](#meta-comandos)
 
----
 
 <a name="mc-connect"></a>
 **Meta Comando para cambiar de conexión**  
@@ -361,7 +358,6 @@ Establece una nueva conexión a un servidor de PostgreSQL. Los parámetros de co
 
 [![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge)](#meta-comandos)
 
----
 
 <a name="mc-title"></a>
 **Meta Comando para para establcer un título a las tablas**  
@@ -374,8 +370,6 @@ Establece o Anula el título de las tablas que se imprimen en los resultados de 
 [![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge)](#meta-comandos)
 
 
----
-
 <a name="mc-copyright"></a>
 **Meta Comando para para imprimir la Licencia**
 
@@ -385,7 +379,6 @@ Muestra los términos de copyright y distribución de PostgreSQL
 
 [![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge)](#meta-comandos)
 
----
 
 <a name="mc-timing"></a>
 **Meta Comando para medir el tiempo de las sentencias SQL**
@@ -396,7 +389,6 @@ Activa o Desactiva la visualización del tiempo en milisegundos que tarda cada i
 
 [![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge)](#meta-comandos)
 
----
 
 
 <a name="mc-x"></a>
@@ -408,7 +400,6 @@ Activa o Desactiva el formato de tabla expandido en el resultado de cada instruc
 
 [![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge)](#meta-comandos)
 
----
 
 <a name="echo"></a>
 **\\echo**  
@@ -452,7 +443,7 @@ consultaría la tabla con el valor `usuarios` asignada a la variable. Considerar
 
 Cuando se va a utilizar un valor como identificador o literal de SQL, lo más seguro es disponer que se incluya entre comillas. Para citar el valor de una variable como literal SQL, escriba dos puntos (`:`) seguidos del nombre de la variable entre comillas simples.  Para citar el valor como un identificador SQL, escriba dos puntos seguidos del nombre de la variable entre comillas dobles. Estas construcciones tratan correctamente las comillas y otros caracteres especiales incrustados en el valor de la variable. El ejemplo anterior se escribiría de manera más segura de esta manera:
 
-```sql
+```psql
 \set var 'usuarios'
 SELECT * FROM :"var";
 ```
