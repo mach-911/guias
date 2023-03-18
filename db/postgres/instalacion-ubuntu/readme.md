@@ -43,6 +43,8 @@ En el proceso de instalación Postgres creó una cuenta de usuario llamada **pos
 <a name="cambiar-a-postgres"></a>
 ### Cambiar a la cuenta de postgres
 
+En el siguiente comando vamos a ver dos formas de cambiarnos a la cuenta de *postgres*:
+
 
 ```bash
 # una forma
@@ -135,7 +137,8 @@ psql
 
 ---
 
-### <a name="cambiar-metodo-autenticacion"></a> Cambiar el método de autenticación
+<a name="cambiar-metodo-autenticacion"></a>
+### Cambiar el método de autenticación
 
 ![pg_hba.conf](assets/pg_hba.png)
 
