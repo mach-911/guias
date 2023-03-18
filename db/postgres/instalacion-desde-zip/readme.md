@@ -11,8 +11,8 @@
 1. [Extraer el contenido](#extraer-archivos)
 1. [Crear carpeta para las configuraciones](#crear-carpeta-data)
 1. [Configuración inicial](#configuracion-inicial)
-1. [Lanzar y detener el servidor](#run-stop-server)
-1. [Configurar PostgreSQL como un servicio](#set-as-service)
+1. [Lanzar y detener el servidor](#lanzar-detener-servidor)
+1. [Configurar PostgreSQL como un servicio](#registar-como-servicio)
 1. [Agregar al PATH](#set-as-environ-var)
 1. [Conectarse al servidor de PostgreSQL](#connect) 
 1. [Operaciones básicas en psql](#operaciones-psql) 
@@ -72,7 +72,7 @@ Para iniciar una nueva configuración en un cluster de PostgreSQL y crear el **r
 
 Nos cambiamos al directorio de instalación y entramos a la carpeta **bin**:  
 
-```bat
+```cmd
 cd C:\pgsql_14\bin
 ``` 
 
@@ -97,7 +97,7 @@ initdb.exe -D C:\pgsql_data -U postgres -W -E UTF8 -A scram-sha-256
 
 ---
 
-<a name="run-stop-server"></a>
+<a name="lanzar-detener-servidor"></a>
 ### Iniciar y detener el servidor de PostgreSQL
 
  
@@ -131,11 +131,11 @@ pg_ctl.exe -D C:\pgsql_data restart
 ```
 >Nota: cualquier acción con el servidor **es obligatorio indicar el directorio de datos**, al menos que se defina una variable de entorno **PGDATA** con el valor de la ubicación del cluster de datos.
 
-[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#top)
+[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge)](#top)
 
 ---
 
-<a name="set-as-service"></a>
+<a name="registar-como-servicio"></a>
 ### Registrar como servicio en windows
 
 Para ejecutar este comando debe abrir un CMD como **administrador**: 
@@ -143,7 +143,7 @@ Para ejecutar este comando debe abrir un CMD como **administrador**:
 pg_ctl.exe register -D C:\pgsql_data -N "postgres14"
 ```
 
-![registrar como servicio](https://raw.githubusercontent.com/EniDev911/assets/main/png/postgre/zip-install/register_as_service_01.png)
+![registrar como servicio](./assets/register_as_service_01.png)
 
 Para iniciar el servicio en un CMD como **administrador**:
 
@@ -151,7 +151,7 @@ Para iniciar el servicio en un CMD como **administrador**:
 sc start "postgres14"
 ```
 
-![Iniciar el servicio](https://raw.githubusercontent.com/EniDev911/assets/main/png/postgre/zip-install/start_service.png)
+![Iniciar el servicio](./assets/start_service.png)
 
 
 Para eliminar el servicio primero debemos detener el servicio **abrimos una sesión CMD como administrador** y ejecutamos el comando: 
@@ -171,7 +171,7 @@ pg_ctl.exe unregister -N postgre14
 ![Eliminar el servicio](https://raw.githubusercontent.com/EniDev911/assets/main/png/postgre/zip-install/delete_service.png)
 
 
-[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#top)
+[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge)](#top)
 
 ---
 
