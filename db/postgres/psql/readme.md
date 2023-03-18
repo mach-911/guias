@@ -152,7 +152,7 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
     <th align="left">Comando</th>
     <th align="left">Descripción</th>
   </thead>
-  <tr>
+  <tr align="left">
     <th>
       <a href="#mc-a">
       <code><b>\a</b></code>
@@ -207,6 +207,18 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
     <th>
       <a href="#mc-conninfo">
         Muestra información sobre la conexión de base de datos actual.
+      </a>
+    </th>
+  </tr>
+  <tr>
+    <th>
+      <a href="#mc-copyright">
+        <code>\copyright</code>
+      </a>      
+    </th>
+    <th>
+      <a href="#mc-copyright">
+        Muestra información sobre los términos de licencia.
       </a>
     </th>
   </tr>
