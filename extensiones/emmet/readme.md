@@ -1,7 +1,10 @@
 ## CONTENIDO
 
 - [Instalación](#instalacion)
-- [Fragmentos de Emmet](#fragementos-emmet)
+
+### Fragmentos de Emmet
+
+- [Controles de formulario](#formulario)
 
 <a name="instalacion"></a>
 ## Instalación
@@ -18,10 +21,9 @@ Escribir el nombre del paquete, en este caso tiene el nombre de ***Emmet***
 
 ---
 
-<a name="fragementos-emmet"></a>
-## Fragmentos de emmet
 
 Generar una etiqueta link para favicon:  
+
 
 **`link:favicon`**
 
@@ -33,20 +35,10 @@ Para generar una etiqueta `<p>` con un contenido de texto en su interior debemos
 
 **`p>{Click }+a{aquí}+{ para continuar}`**
 
-```text
+```html
 <p>Click <a href="">aquí</a> para continuar</p>
 ```
-Otro ejemplo con un control de tipo `<select>`: 
 
-- **`select>opt{Java}+opt{Python}+opt{C#}`**
-
-```html
-<select name="" id="">
-  <option value="">Java</option>
-  <option value="">Python</option>
-  <option value="">C#</option>
-</select>
-```
 
 Generar una lista desordenada `<ul>` con 3 etiquetas `<li>` en su interior:  
 
@@ -66,13 +58,32 @@ Generar una lista desordenada `<ul>` con 5 etiquetas `<li>` y a cada una de las 
 
 ```html
 <ul>
-	<li>item-1</li>
-	<li>item-2</li>
-	<li>item-3</li>
-	<li>item-4</li>
-	<li>item-5</li>
+  <li>item-1</li>
+  <li>item-2</li>
+  <li>item-3</li>
+  <li>item-4</li>
+  <li>item-5</li>
 </ul>
 ```
+
+<a name="formulario"></a>
+## Controles de formularios
+
+
+
+**`select>opt{HTML}+opt{CSS}+opt{JS}`**
+
+```html
+<select name="" id="">
+  <option value="">HTML</option>
+  <option value="">CSS</option>
+  <option value="">JS</option>
+</select>
+```
+
+
+
+
 
 Generar los 6 niveles de cabeceras de las etiquetas `<h>` añadiendole el atributo **`title`** con valor de **ejemplo** y un contenido en cada una de las etiquetas generadas agregandole al final de cada marcador de posición (`$`) la numeración ascendente.  
 
