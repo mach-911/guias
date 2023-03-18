@@ -147,6 +147,7 @@ En los sistemas Unix, los permisos en un archivo de contraseña deben prohibir c
 
 Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** sin comillas es un meta-comando de **psql** que es procesado por psql mismo. Estos comandos hacen que **psql** sea más útil para la administración o la creación de scripts.
 
+
 <table>
   <thead>
     <th align="left">Comando</th>
