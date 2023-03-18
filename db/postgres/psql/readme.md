@@ -152,82 +152,94 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
     <th align="left">Comando</th>
     <th align="left">Descripción</th>
   </thead>
-  <tr align="left">
-    <th>
-      <a href="#mc-a">
-      <code><b>\a</b></code>
-      </a>
-    </th>
-    <th>
-      <a href="#mc-a">Activa o Desactiva el formato alineado de la tabla.</a>
-    </th>
-  </tr>
-  <tr>
-    <th>
-      <a href="#mc-connect">
-        <code>\c [params]</code>
-      </a>      
-    </th>
-    <th>
-      <a href="#mc-connect">
-        Establece una nueva conexión a un servidor PostgreSQL.
-      </a>
-    </th>
-  </tr>
-  <tr>
-    <th>
-      <a href="#mc-title">
-        <code>\C [title]</code>
-      </a>
-    </th>
-    <th>
-      <a href="#mc-title">
-        Establece o Anula el título de las tablas que se imprimen en los resultados de una consulta.
-      </a>
-    </th>
-  </tr>
-  <tr>
-    <th>
-      <a href="#mc-cd">
-        <code>\cd [<b>directory</b>]</code>
-      </a>
-    </th>
-    <th>
-      <a href="#mc-cd">
-        Cambia el directorio de trabajo actual a <code><b>directory</b></code>. Sin argumentos, cambia el directorio de inicio del usuario actual.
-      </a>
-    </th>
-  </tr>
-  <tr>
-    <th>
-      <a href="#mc-conninfo">
-        <code>\conninfo</code>
-      </a>
-    </th>
-    <th>
-      <a href="#mc-conninfo">
-        Muestra información sobre la conexión de base de datos actual.
-      </a>
-    </th>
-  </tr>
-  <tr>
-    <th>
-      <a href="#mc-copyright">
-        <code>\copyright</code>
-      </a>      
-    </th>
-    <th>
-      <a href="#mc-copyright">
-        Muestra información sobre los términos de licencia.
-      </a>
-    </th>
-  </tr>
+  <tbody align="left">
+    <tr>
+      <th>
+        <a href="#mc-a">
+        <code><b>\a</b></code>
+        </a>
+      </th>
+      <th>
+        <a href="#mc-a">Activa o Desactiva el formato alineado de la tabla.</a>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <a href="#mc-connect">
+          <code>\c [params]</code>
+        </a>      
+      </th>
+      <th>
+        <a href="#mc-connect">
+          Establece una nueva conexión a un servidor PostgreSQL.
+        </a>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <a href="#mc-title">
+          <code>\C [title]</code>
+        </a>
+      </th>
+      <th>
+        <a href="#mc-title">
+          Establece o Anula el título de las tablas que se imprimen en los resultados de una consulta.
+        </a>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <a href="#mc-cd">
+          <code>\cd [<b>directory</b>]</code>
+        </a>
+      </th>
+      <th>
+        <a href="#mc-cd">
+          Cambia el directorio de trabajo actual a <code><b>directory</b></code>. Sin argumentos, cambia el directorio de inicio del usuario actual.
+        </a>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <a href="#mc-conninfo">
+          <code>\conninfo</code>
+        </a>
+      </th>
+      <th>
+        <a href="#mc-conninfo">
+          Muestra información sobre la conexión de base de datos actual.
+        </a>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <a href="#mc-copyright">
+          <code>\copyright</code>
+        </a>      
+      </th>
+      <th>
+        <a href="#mc-copyright">
+          Muestra información sobre los términos de licencia.
+        </a>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <a href="#mc-echo">
+          <code>\code [text]</code>
+        </a>
+      </th>
+      <th>
+        <a href="#mc-echo">
+        Imprime los argumentos evaluados en la salida estándar, separados por espacios y seguidos de una nueva línea, si se coloca entre (<code>`</code>) se interpreta como un comando.  
+        </a>
+      </th>
+    </tr>
+  </tbody>
 </table>
 
 
 
-|[**`\copyright`**](#mc-copyright)|[Muestra información sobre los términos de licencia.](#mc-copyright)|
-|[**`\echo`** \[text\]](#mc-echo)|[Imprime los argumentos evaluados en la salida estándar, separados por espacios y seguidos de una nueva línea, si se coloca entre (**\`**) se interpreta como un comando.](#mc-echo)|
 |[**`timing`**](#mc-timing)|[Activa o Desactiva la visualización del tiempo en milisegundos que tarda cada instrucción SQL.](#mc-timing)|
 
 
