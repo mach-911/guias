@@ -158,6 +158,8 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
 |[**`\copyright`**](#mc-copyright)|[Muestra información sobre los términos de licencia.](#mc-copyright)|
 |[**`\echo`** \[text\]](#mc-echo)|[Imprime los argumentos evaluados en la salida estándar, separados por espacios y seguidos de una nueva línea, si se coloca entre (**\`**) se interpreta como un comando.](#mc-echo)|
 |[**`timing`**](#mc-timing)|[Activa o Desactiva la visualización del tiempo en milisegundos que tarda cada instrucción SQL.](#mc-timing)|
+
+
 |[**`\x`**](#mc-x)|[Activa o Desactiva el formato de tabla expandido en el resultado de cada instrucción SQL o metacomando.](#mc-x)|
 
 
