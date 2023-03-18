@@ -267,16 +267,17 @@ Muestra los términos de copyright y distribución de PostgreSQL
 ---
 
 
+<a name="interpolar-sql"></a>
+### Interpolación SQL
 
-### <a name="interpolar-sql"></a>Interpolación SQL
+Una característica clave de las **variables en psql** es que pueden sustituirlas ("interpolarlas") en sentencias SQL normales, así como en los argumentos de los **meta-comandos**. Además psql proporciona funciones para garantizar que los valores de las variables utilizados como identificadores y literales de SQL se cite correctamente. La sintaxis para interpolar un valor sin comillas es anteponer dos puntos (`:`) al nombre de la variable. Por ejemplo:  
 
-Una característica clave de las **variables en psql** es que pueden sustituirlas ("interpolarlas") en sentencias SQL normales, así como en los argumentos de los **metacomandos**. Además psql proporciona funciones para garantizar que los valores de las variables utilizados como identificadores y literales de SQL se cite correctamente. La sintaxis para interpolar un valor sin comillas es anteponer dos puntos (`:`) al nombre de la variable. Por ejemplo:  
-
-```sql
+```psql
 \set var 'usuarios'
 SELECT * FROM :var;
 ```
-consultaría la table `usuarios`. Considerar que esto puede no ser seguro: el valor de la variable se copia literalmente, por lo que puede contener comillas no balanceadas o incluso comandos de barra invertida. Debemos asegurarnos de que el valor tenga sentido donde lo utilicemos.
+
+consultaría la tabla con el valor `usuarios` asignada a la variable. Considerar que esto puede no ser seguro: el valor de la variable se copia literalmente, por lo que puede contener comillas no balanceadas o incluso comandos de barra invertida. Debemos asegurarnos de que el valor tenga sentido donde lo utilicemos.
 
 Cuando se va a utilizar un valor como identificador o literal de SQL, lo más seguro es disponer que se incluya entre comillas. Para citar el valor de una variable como literal SQL, escriba dos puntos (`:`) seguidos del nombre de la variable entre comillas simples.  Para citar el valor como un identificador SQL, escriba dos puntos seguidos del nombre de la variable entre comillas dobles. Estas construcciones tratan correctamente las comillas y otros caracteres especiales incrustados en el valor de la variable. El ejemplo anterior se escribiría de manera más segura de esta manera:
 
