@@ -8,7 +8,7 @@
 
 |<img height="30" src="../../assets/png/linux.png" />|<img height="30" src="../../assets/png/windows.png" />|
 |--|--|
-|[Ubuntu](instalacion-ubuntu)|zip|
+|[Ubuntu](instalacion-ubuntu)|[Zip](instalacion-desde-zip)|
 
 
 
