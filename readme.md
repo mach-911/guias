@@ -39,7 +39,7 @@
     <!-- Java -->
     <a href="#java"><kbd><img src="assets/png/java.png" height="70"></kbd></a>
     <!-- Python -->
-    <a href="devs/programming/python_/index.md"><kbd><img src="assets/png/python.png" height="70"></kbd></a>
+    <a href="./python/"><kbd><img src="assets/png/python.png" height="70"></kbd></a>
   <!-- Linux -->
   <a href="#linux"><kbd><img src="assets/png/linux.png" height="70"></kbd></a>
 </p>
