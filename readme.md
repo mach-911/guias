@@ -24,7 +24,7 @@
     <!-- Git -->
     <a href="devs/tools/git/index.md"><kbd><img src="assets/png/git.png" height="70"></kbd></a>
     <!-- SublimeText -->
-    <a href="devs/ide_code_editor/sublimetext/index.md"><kbd><img src="assets/png/sublimetext.png" height="70"></kbd></a>
+    <a href="./editores/sublimetext/"><kbd><img src="assets/png/sublimetext.png" height="70"></kbd></a>
     <!-- Visual Studio Code -->
     <a href="#vs_code"><kbd><img src="assets/png/vs_code.png" height="70"></kbd></a>
     <!-- TERMINAL -->

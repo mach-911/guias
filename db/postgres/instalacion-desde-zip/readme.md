@@ -61,7 +61,7 @@ Debemos crear una carpeta donde se almacenarán las configuraciones de nuestro s
 
 > Tradicionalmente, los archivos de configuración y de datos usados por un clúster de base de datos se almacenan juntos dentro del directorio de datos del clúster (podemos utilizar el nombre de la variable de entorno  **PGDATA** para definir la ubicación del directorio de datos). La ubicación común en servidores en Linux es **/var/lib/pgsql/data**, los archivos de configuración `postgresql.conf`, `pg_hba.conf`, y `pg_ident.conf` del clúster se almacenan tradicionalmente en **PGDATA**, aunque es posible colocarlos en otro lugar.
 
-[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#top)
+[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge)](#top)
 
 ---
 
@@ -81,6 +81,7 @@ Y ejecutamos el siguiente comando:
 ```cmd
 initdb.exe -D C:\pgsql_data -U postgres -W -E UTF8 -A scram-sha-256
 ```
+
 **Opciones**:
 
 - **\-D**: especifique el directorio de almacenamiento del clúster de bases de datos **(C:\pgsql_data)**.
@@ -93,7 +94,7 @@ initdb.exe -D C:\pgsql_data -U postgres -W -E UTF8 -A scram-sha-256
 
 > Para ver más opciones de **initdb** en este [artículo de la documentación](https://www.postgresql.org/docs/current/app-initdb.html) 
 
-[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#top)
+[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge)](#top)
 
 ---
 
@@ -212,7 +213,7 @@ psql -U postgres
 Cuando se le solicite la contraseña, ingrese la contraseña que configuró durante la instalación. El prompt nos indica que estamos conetado con éxito y listo para realizar sentencias SQL.  
 
 
-[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#top)
+[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge)](#top)
 
 ---
 
@@ -230,6 +231,5 @@ Cuando se le solicite la contraseña, ingrese la contraseña que configuró dura
 - Para importar un archivo `.pgsql` o `.sql` existente al servidor de la base de datos, use el siguiente comando.  
 **`psql.exe -h <hostname> -U postgres < <path>\backup.sql`**
 
-[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#top)
-
+[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge)](#top)
 
