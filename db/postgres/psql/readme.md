@@ -150,10 +150,11 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
 
 |Comando|Descripción|
 |-------|-----------|
-|[**`\a`**](#c-a)|Activa y Desactiva el formato alineado de la tabla.|
+|[**`\a`**](#mc-a)|[Activa y Desactiva el formato alineado de la tabla.](#mc-a)|
+|[**`\c`** \[params\]](#mc-connect)|[Establece una nueva conexión a un servidor PostgreSQL.](#mc-connect)|
 
 
-|[**`\c`** \[params\]](#mc-connect)|Establece una nueva conexión a un servidor PostgreSQL.|
+
 |[**`\C`** \[title\]](#mc-title)|Establece \| Anula el título de las tablas que se imprimen en los resultados de una consulta.|
 |[**`cd`** \[directory\]](#mc-cd)|Cambia el directorio de trabajo actual a <b>directory</b>. Sin argumentos, cambia el directorio de inicio del usuario actual.|
 |[**`\conninfo`**](#mc-conninfo)|Muestra información sobre la conexión de base de datos actual.|
