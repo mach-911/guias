@@ -186,11 +186,23 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
       </a>
     </th>
   </tr>
+  <tr>
+    <th>
+      <a href="#mc-cd">
+        <code>\cd [<b>directory</b>]</code>
+      </a>
+    </th>
+    <th>
+      <a href="#mc-cd">
+        Cambia el directorio de trabajo actual a <code><b>directory</b></code>. Sin argumentos, cambia el directorio de inicio del usuario actual.
+      </a>
+    </th>
+  </tr>
 </table>
 
 
 
-|[**`cd`** \[directory\]](#mc-cd)|[Cambia el directorio de trabajo actual a **directory**. Sin argumentos, cambia el directorio de inicio del usuario actual.](#mc-cd)|
+|[**`cd`** \[directory\]](#mc-cd)|[](#mc-cd)|
 |[**`\conninfo`**](#mc-conninfo)|[Muestra información sobre la conexión de base de datos actual.](#mc-conninfo)|
 |[**`\copyright`**](#mc-copyright)|[Muestra información sobre los términos de licencia.](#mc-copyright)|
 |[**`\echo`** \[text\]](#mc-echo)|[Imprime los argumentos evaluados en la salida estándar, separados por espacios y seguidos de una nueva línea, si se coloca entre (**\`**) se interpreta como un comando.](#mc-echo)|
