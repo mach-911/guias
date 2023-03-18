@@ -340,7 +340,7 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
 ---
 
 <a name="mc-a"></a>
-**Meta Comando para alineación \\a**  
+**Meta Comando para alineación**  
 
 Si el formato de salida de la tabla no está alineado, se cambia a alineado. Este comando es mantenido por compatibilidad y comodidad, se puede utilizar **`\pset`** para una solución más general. Ej:
 
@@ -351,13 +351,8 @@ Si el formato de salida de la tabla no está alineado, se cambia a alineado. Est
 ---
 
 <a name="mc-connect"></a>
-**Meta Comando para  cambiar de conexión \\c**  
+**Meta Comando para cambiar de conexión**  
 
-**Sintaxis**:
-
-```txt
-\c [ -reuse-previous=on|off ] [ dbname [ username ] [ host ] [ port ] | conninfo ]
-```
 
 Establece una nueva conexión a un servidor de PostgreSQL. Los parámetros de conexión se pueden especificar usando la sintaxis posicional o usando una cadena de conexión.
 
@@ -368,43 +363,49 @@ Establece una nueva conexión a un servidor de PostgreSQL. Los parámetros de co
 ---
 
 <a name="mc-title"></a>
-**\\C**  
+**Meta Comando para para establcer un título a las tablas**  
 
-Establece | Anula el título de las tablas que se imprimen en los resultados de una consulta.
 
-![png mc-title](https://raw.githubusercontent.com/EniDev911/assets/main/png/db/postgres/meta-comando-title.png)
+Establece o Anula el título de las tablas que se imprimen en los resultados de una consulta.
 
-[![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#metacommand)
+![png mc-title](./assets/meta-comando-title.png)
+
+[![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge)](#meta-comandos)
+
 
 ---
 
 <a name="mc-copyright"></a>
-**\\copyright**
+**Meta Comando para para imprimir la Licencia**
 
 Muestra los términos de copyright y distribución de PostgreSQL  
 
 ![png mc-copyright](assets/copyright.png)
 
-[![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#metacommand)
+[![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge)](#meta-comandos)
 
 ---
 
 <a name="mc-timing"></a>
-**Timing**
+**Meta Comando para medir el tiempo de las sentencias SQL**
+
+Activa o Desactiva la visualización del tiempo en milisegundos que tarda cada instrucción SQL.
 
 ![timing png](https://raw.githubusercontent.com/EniDev911/assets/main/png/db/postgres/meta-comando-timing.png)
 
-[![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#metacommand)
+[![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge)](#meta-comandos)
 
 ---
 
-<a name="mc-extends"></a>
 
-**Extend**  
+<a name="mc-x"></a>
+**Meta Comando para cambiar la orientación de la salida**
+
+Activa o Desactiva el formato de tabla expandido en el resultado de cada instrucción SQL o meta-comando.
 
 ![gif xtend](assets/xtend.gif)
 
-[![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#metacommand)
+[![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge)](#meta-comandos)
 
 ---
 
