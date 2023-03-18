@@ -156,10 +156,11 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
 |[**`cd`** \[directory\]](#mc-cd)|[Cambia el directorio de trabajo actual a **directory**. Sin argumentos, cambia el directorio de inicio del usuario actual.](#mc-cd)|
 |[**`\conninfo`**](#mc-conninfo)|[Muestra información sobre la conexión de base de datos actual.](#mc-conninfo)|
 |[**`\copyright`**](#mc-copyright)|[Muestra información sobre los términos de licencia.](#mc-copyright)|
+|[**`\echo`** \[text\]](#mc-echo)|[Imprime los argumentos evaluados en la salida estándar, separados por espacios y seguidos de una nueva línea, si se coloca entre (**\`**) se interpreta como un comando.](#mc-echo)|
+|[**`timing`**](#mc-timing)|[Activa o Desactiva la visualización del tiempo en milisegundos que tarda cada instrucción SQL.](#mc-timing)|
 
 
-|[**`\echo`** \[text\]](#c-echo)|Imprime los argumentos evaluados en la salida estándar, separados por espacios y seguidos de una nueva línea, si se coloca entre (**\`**) se interpreta como un comando.|
-|[**`timing`**](#mc-timing)|Activa \| Desactiva la visualización del tiempo en milisegundos que tarda cada instrucción SQL.|
+
 |[**`\x`**](#mc-extends)|Activa \| Desactiva el formato de tabla expandido en el resultado de cada instrucción SQL o metacomando.|
 |[**`\h o \help`** \[command\]](#c-help)|Brinda ayuda de sintaxis en el comando SQL especificado. Si **command** no se especificam psql enumerará todos los comandos para los que hay ayuda disponible. Si **command** es un asterisco (`*`), se muestra la ayuda de sintaxis en todos los comandos SQL.|
 |[**`\H - \html`**](#mc-html)|Activa el formato de salida de consulta HTML. Si el formato HTML ya está activado, se vuelve al formato de texto alineado predeterminado. Este comando es por compatibilidad y comodidad, pero tenemos `\pset` para configurar otras opciones de salida.|
