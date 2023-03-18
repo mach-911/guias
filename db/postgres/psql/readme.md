@@ -147,10 +147,28 @@ En los sistemas Unix, los permisos en un archivo de contraseña deben prohibir c
 
 Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** sin comillas es un meta-comando de **psql** que es procesado por psql mismo. Estos comandos hacen que **psql** sea más útil para la administración o la creación de scripts.
 
+<table border="1">
+  <thead>
+    <th>Comando</th>
+    <th>Descripción</th>
+  </thead>
+  <tr>
+    <th>
+      <a href="#mc-a">
+      <code><b>\a</b></code>
+      </a>
+    </th>
+    <th>
+      <a href="#mc-a">Activa o Desactiva el formato alineado de la tabla.</a>
+    </th>
+  </tr>
+</table>
+
+
 
 |Comando|Descripción|
 |-------|-----------|
-|[**`\a`**](#mc-a)|[Activa o Desactiva el formato alineado de la tabla.](#mc-a)|
+|[**`\a`**](#mc-a)|[](#mc-a)|
 |[**`\c`** \[params\]](#mc-connect)|[Establece una nueva conexión a un servidor PostgreSQL.](#mc-connect)|
 |[**`\C`** \[title\]](#mc-title)|[Establece o Anula el título de las tablas que se imprimen en los resultados de una consulta.](#mc-title)|
 |[**`cd`** \[directory\]](#mc-cd)|[Cambia el directorio de trabajo actual a **directory**. Sin argumentos, cambia el directorio de inicio del usuario actual.](#mc-cd)|
