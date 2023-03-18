@@ -11,9 +11,17 @@
 
 <summary>GUÍAS Y PAPERS 📑</summary>
 
-|<img height="30" src="../../assets/png/python.png" />|[**dotenv:** cargar variables de entorno con dotenv](./dotenv)|
-|--|--|
-|||
+
+<table>
+	<tr>
+		<th><img height="30" src="../assets/png/python.png" /></th>
+		<th>
+			<a href="./dotenv"><b>dotenv:</b> cargar variables de entorno de un archivo <b>.env</b>
+			</a>
+		</th>
+	</tr>	
+</table>
+
 
 <ul>
 	<li><a href="papers/build-in-functions/index.md"><b>python:</b> funciones incorporadas</a></li>
