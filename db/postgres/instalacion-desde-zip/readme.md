@@ -10,7 +10,7 @@
 1. [Descargar el zip](#descargar-zip)
 1. [Extraer el contenido](#extraer-archivos)
 1. [Crear carpeta para las configuraciones](#crear-carpeta-data)
-1. [Configuración inicial](#initdb)
+1. [Configuración inicial](#configuracion-inicial)
 1. [Lanzar y detener el servidor](#run-stop-server)
 1. [Configurar PostgreSQL como un servicio](#set-as-service)
 1. [Agregar al PATH](#set-as-environ-var)
@@ -103,15 +103,20 @@ initdb.exe -D C:\pgsql_data -U postgres -W -E UTF8 -A scram-sha-256
  
 Para ver el estado del servidor y ver si se encuentra en ejecución o no:
 
-```bash
+```cmd
 pg_ctl.exe -D C:\pgsql_data -l logfile status
-# Otra opción es
+```
+
+Otra opción es usar:
+
+```cmd
 pg_isready.exe
 ```
+
 Para iniciar el servidor:
 
 ```cmd
-pg_ctl.exe -D C:\pgsql_data -l C:\pgsql_data\ start
+pg_ctl.exe -D C:\pgsql_data -l logfile start
 ```
 
 Para detener el servidor:
