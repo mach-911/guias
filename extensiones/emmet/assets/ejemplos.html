@@ -1,10 +1,31 @@
-
-
 <h2>Formularios</h2>
 
+<form method="get" id="form">
+	<input type="text" name="name" placeholder="nombre">
+	<input type="text" name="lastname" placeholder="apellido">
+	<input type="text" name="age" placeholder="edad"><br>
+	<input type="submit" value="enviar">
+</form>
+
 <select name="langs" id="">
-	<option value="html">HTML</option>
-	<option value="css">CSS</option>
-	<option value="js">JS</option>
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="js">JS</option>
 </select>
 
+<script>
+	const form = document.getElementById("form");
+
+	form.onsubmit = (e) => {
+		e.preventDefault();
+		const user = {
+			name : form.name.value,
+			last : form.lastname.value,
+			age: form.age.value	
+		}
+		console.log(form.name.value);
+		console.log(form.lastname.value);
+		console.log(form.age.value);
+		alert("Hola" + " " + user.name + user.last)
+	}
+</script>

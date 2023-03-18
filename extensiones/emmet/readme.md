@@ -96,6 +96,36 @@ Generar entradas de diferentes tipos:
 <input type="password" name="" id="">
 ```
 
+**tipo números**
+
+- **`input:number`**
+
+```html
+<input type="number" name="" id="">
+```
+**tipo de rango**
+
+- **`input:range`**
+
+```html
+<input type="range" name="" id="">
+```
+
+**email**
+
+- **`input:email`**
+
+```html
+<input type="email" name="" id="">
+```
+**de teléfono**
+  
+- **`input:tel`**
+
+```html
+<input type="tel" name="" id="">
+```
+
 Generar un control de selección única con opciones:
 
 **`select>opt{HTML}+opt{CSS}+opt{JS}`**
@@ -133,35 +163,7 @@ Generar los 6 niveles de cabeceras de las etiquetas `<h>` añadiendole el atribu
 
 
 
-**tipo números**
 
-- **`input:number`**
-
-```html
-<input type="number" name="" id="">
-```
-**tipo de rango**
-
-- **`input:range`**
-
-```html
-<input type="range" name="" id="">
-```
-
-**email**
-
-- **`input:email`**
-
-```html
-<input type="email" name="" id="">
-```
-**de teléfono**
-	
-- **`input:tel`**
-
-```html
-<input type="tel" name="" id="">
-```
 
 **de imagen**
 
