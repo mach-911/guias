@@ -32,20 +32,20 @@ Recien instalado, SublimeText no ofrece ningún soporte específico de Markdown,
 Para agregar estas características debemos instalar algunos complementos *plugins* y configurar algunas preferencias siguiendo estos pasos:  
 
 
-**.1** Abrimos **package control** (<kbd>Crtl</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd>) luego escribimos **install** y seleccionamos la opción ***Install Package***
+**1)** Abrimos **package control** (<kbd>Crtl</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd>) luego escribimos **install** y seleccionamos la opción ***Install Package***
 
 ![install-package](./assets/install_package.png)
 
 
-**.2** Escribir el nombre del paquete, en este caso tiene el nombre de ***MarkdownEditing***
+**2)** Escribir el nombre del paquete, en este caso tiene el nombre de ***MarkdownEditing***
 
 ![install-package](./assets/markdown_editing.png)
 
 
-**.3** Reinicia ***SublimeText***
+**3)** Reinicia ***SublimeText***
 
 
->**Nota:** Posiblemente al instalarlo te encuentres con una ventana emergente de error como la siguiente:
+>**Nota:** Posiblemente al instalarlo te encuentres con una ventana emergente de error como la siguiente:  
 ![Error](assets/error.png)  
 Esto se debe que cuando se descarga la extensión te cargará automaticamente el archivo README.MD del mismo paquete instalado, por lo que de manera inmediata te arrojará este error, por otro lado, para poder evitar este mensaje de error es muy sencillo, vamos a buscar en la barra del menú debemos abrir **Preferences** =\> **Settings**, y quitamos Markdown de la lista en **"ignored_packages"** en las Preferencias del usuario:
 
