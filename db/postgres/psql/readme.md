@@ -157,49 +157,45 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
 |[**`\conninfo`**](#mc-conninfo)|[Muestra información sobre la conexión de base de datos actual.](#mc-conninfo)|
 |[**`\copyright`**](#mc-copyright)|[Muestra información sobre los términos de licencia.](#mc-copyright)|
 |[**`\echo`** \[text\]](#mc-echo)|[Imprime los argumentos evaluados en la salida estándar, separados por espacios y seguidos de una nueva línea, si se coloca entre (**\`**) se interpreta como un comando.](#mc-echo)|
-
-
-
-
-
-
 |[**`timing`**](#mc-timing)|[Activa o Desactiva la visualización del tiempo en milisegundos que tarda cada instrucción SQL.](#mc-timing)|
 |[**`\x`**](#mc-x)|[Activa o Desactiva el formato de tabla expandido en el resultado de cada instrucción SQL o metacomando.](#mc-x)|
-
-
 |[**`\h o \help`** \[command\]](#mc-help)|[Brinda ayuda de sintaxis en el comando SQL especificado. Si **`command`** no se especificam psql enumerará todos los comandos para los que hay ayuda disponible. Si **`command`** es un asterisco (`*`), se muestra la ayuda de sintaxis en todos los comandos SQL.](#mc-help)|
 |[**`\H - \html`**](#mc-html)|[Activa el formato de salida de consulta HTML. Si el formato HTML ya está activado, se vuelve al formato de texto alineado predeterminado. Este comando es por compatibilidad y comodidad, pero tenemos `\pset` para configurar otras opciones de salida.](#mc-html)|
+|[`\!` \[command\]](#mc-command)|[Permite ejecutar comandos de la **shell de Linux** o de **CMD de windows** desde la propia consola de psql.](#mc-command)|
+|[**`i o \include`** \[filename\]](#mc-include)|[Lee la entrada del archivo **filename** y la ejecuta.](#mc-include)|
+|[`\l[+]` \[pattern\]](#mc-l)|[Muestra un listado de las bases de datos que existen en la instancia del servidor PostgreSQL junto a sus nombres, propietarios, juego de caracteres y privilegios de acceso. Si se especifica un "**pattern**", solo se listan las bases de datos cuyo nombre coincidan con el patrón. Si se agrega el símbolo "+", también se muestran los tamaños de las bases de datos, los tablespace y las descripciones.](#mc-l)|
+|[`\s` \[filename\]](#mc-s)|[Imprime por consola o en un archivo "**filename**" si se especifica, un historial de los comandos utilizados.](#mc-s)|
+|[**`\o - \out`** \[filename\]](#c-out)|[Permite guardar el resultado de las futuras consultas en el archivo "**filename**". El resultado incluye todas las tablas, respuestas de comandos y mensajes de tipo "notices" del servidor, pero no los mensajes de error.](#c-out)|
 
-
-
-|[`\!` \[command\]](#c-command)|Permite ejecutar comandos de la shell de Linux o de CMD de windows desde la propia consola de psql.|
-|[**`i`** o **`\include`** \[filename\]](#c-include)|Lee la entrada del archivo **filename** y la ejecuta.|
-|[`\l[+]` \[pattern\]](#c-l)|Muestra un listado de las bases de datos que existen en la instancia del servidor PostgreSQL junto a sus nombres, propietarios, juego de caracteres y privilegios de acceso. Si se especifica un "**pattern**", solo se listan las bases de datos cuyo nombre coincidan con el patrón. Si se agrega el símbolo "+", también se muestran los tamaños de las bases de datos, los tablespace y las descripciones.|
-|[`\s` \[filename\]](#c-s)|Imprime por consola o en un archivo "**filename**" si se especifica, un historial de los comandos utilizados.|
-|[**`\o`** o **`\out`** \[filename\]](#c-out)|Permite guardar el resultado de las futuras consultas en el archivo "**filename**". El resultado incluye todas las tablas, respuestas de comandos y mensajes de tipo "notices" del servidor, pero no los mensajes de error.|
 
 ---
 
-<a name="c-a"></a>
+<a name="mc-a"></a>
 
-**\\a**  
+**Meta Comando para alineación \\a**  
 
-Si el formato de salida de la tabla no está alineado, se cambia a alineado. Este comando es mantenido por compatibilidad y comodidad, se puede utilizar **`\pset`** para una solución más general.
+Si el formato de salida de la tabla no está alineado, se cambia a alineado. Este comando es mantenido por compatibilidad y comodidad, se puede utilizar **`\pset`** para una solución más general. Ej:
 
 ![aligned](assets/aligned.gif)
 
-[![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#metacommand)
+[![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge)](#meta-comandos)
 
 ---
 
 <a name="mc-connect"></a>
-**\c \| \connect [ -reuse-previous=on|off ] [ dbname [ username ] [ host ] [ port ] | conninfo ]**  
+**Meta Comando para  cambiar de conexión \\c**  
+
+**Sintaxis**:
+
+```txt
+\c [ -reuse-previous=on|off ] [ dbname [ username ] [ host ] [ port ] | conninfo ]
+```
 
 Establece una nueva conexión a un servidor de PostgreSQL. Los parámetros de conexión se pueden especificar usando la sintaxis posicional o usando una cadena de conexión.
 
 ![connect png](https://raw.githubusercontent.com/EniDev911/assets/main/png/db/postgres/meta-comando-connect.png)
 
-[![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#metacommand)
+[![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge)](#meta-comandos)
 
 ---
 
