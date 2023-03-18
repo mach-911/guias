@@ -13,7 +13,7 @@
 1. [Configuración inicial](#configuracion-inicial)
 1. [Lanzar y detener el servidor](#lanzar-detener-servidor)
 1. [Configurar PostgreSQL como un servicio](#registar-como-servicio)
-1. [Agregar al PATH](#set-as-environ-var)
+1. [Agregar al PATH](#agregar-al-path)
 1. [Conectarse al servidor de PostgreSQL](#connect) 
 1. [Operaciones básicas en psql](#operaciones-psql) 
  
@@ -139,6 +139,7 @@ pg_ctl.exe -D C:\pgsql_data restart
 ### Registrar como servicio en windows
 
 Para ejecutar este comando debe abrir un CMD como **administrador**: 
+
 ```cmd
 pg_ctl.exe register -D C:\pgsql_data -N "postgres14"
 ```
@@ -154,7 +155,7 @@ sc start "postgres14"
 ![Iniciar el servicio](./assets/start_service.png)
 
 
-Para eliminar el servicio primero debemos detener el servicio **abrimos una sesión CMD como administrador** y ejecutamos el comando: 
+Para eliminar el servicio primero debemos detener el servicio **abrimos una sesión CMD como administrador** y ejecutamos el siguiente comando para detener el servicio: 
 
 ```cmd
 sc stop postgres14
@@ -164,18 +165,23 @@ Ahora ya podemos eliminar el servicio con el siguiente comando:
 
 ```cmd
 sc delete postgres14
-# o también
+```
+
+Otra forma también es con la herramienta **pg_ctl**, pero debemos ubicarnos en la carpeta, en mi caso **(C:\pgsql\bin)**:
+
+```cmd
 pg_ctl.exe unregister -N postgre14
 ```
 
-![Eliminar el servicio](https://raw.githubusercontent.com/EniDev911/assets/main/png/postgre/zip-install/delete_service.png)
+![Eliminar el servicio](./assets/delete_service.png)
 
 
 [![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge)](#top)
 
 ---
 
-### <a name="set-as-environ-var"></a> Agregar al Path
+<a name="agregar-al-path"></a>
+### Agregar al Path
     
 Para ejecutar después el programa cliente psql desde cualquier ubicación, agregamos esa ubicación a la variable de entorno **PATH**.
 
@@ -187,8 +193,8 @@ También puede a través de un CMD normal (para que sea disponible para nivel de
 setx PATH "%path%;"C:\pgsql_14\bin\
 ```
 
-    
-[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#top)
+
+[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge)](#top)
 
 ---
 
