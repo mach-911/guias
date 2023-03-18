@@ -18,7 +18,7 @@
 - [Establecer variables de entornos con valores de conexion](#variables-de-conexion)
 - [Establecer conexión en formato de URI](#formato-uri-conexion)
 - [Archivo de contraseñas **pgpass**](#archivo-pgpass)
-- [Meta comandos](#metacommand)
+- [Meta comandos](#meta-comandos)
 - [Interpolación SQL](#interpolar-sql)
 - [Opciones para el prompt](#optionsprompt)
 
@@ -86,7 +86,9 @@ setx PGPASSWORD postgre
 
 ---
 
-#### <a name="formato-uri-conexion"></a> Conexión en formato de URI
+
+<a name="formato-uri-conexion"></a>
+### Conexión en formato de URI
 
 Una forma alternativa de especificar los parámetros de conexión es una cadena o un URI tipo `conninfo`, que se usa en lugar del nombre de una base de datos. Este mecanismo le da un control muy amplio sobre la conexión.
 
@@ -101,13 +103,15 @@ psql postgresql://hostname:5432/mydb?user=username
   <img src="assets/connect_uri_cmd.gif">
 </details><br>
 
-[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#top)
+[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%23316192?style=for-the-badge)](#top)
 
 ---
 
-#### <a name="archivo-pgpass"></a>Archivo de contraseñas
 
-El archivo `.pgpass` se debe almacenar en el directorio de inicio de un usuario puede contener contraseñas que se utilizarán si la conexión requiere una contraseña (y si no se ha especificado ninguna contraseña). En Windows, el archivo se nombra en el directorio de datos `%APPDATA%\postgresql\pgpass.conf` (donde **`%APPDATA%`** se refiere al subdirectorio de Datos de la aplicación en el perfil del usuario). Como alternativa, el archivo de contraseñas que se utilizará se puede especificar mediante el parámetro de conexión passfile o la variable de entorno PGPASSFILE.
+<a name="archivo-pgpass"></a>
+### Archivo de contraseñas
+
+El archivo `.pgpass` se debe almacenar en el directorio de inicio de un usuario puede contener contraseñas que se utilizarán si la conexión requiere una contraseña (y si no se ha especificado ninguna contraseña). En Windows, el archivo se nombra en el directorio de datos `%APPDATA%\postgresql\pgpass.conf` (donde **`%APPDATA%`** se refiere al subdirectorio de Datos de la aplicación en el perfil del usuario). Como alternativa, el archivo de contraseñas que se utilizará se puede especificar mediante el parámetro de conexión passfile o la variable de entorno **PGPASSFILE**.
 
 Este archivo debe contener líneas en el siguiente formato:
 
@@ -138,13 +142,17 @@ En los sistemas Unix, los permisos en un archivo de contraseña deben prohibir c
 
 ---
 
-### <a name="metacommand"></a>Meta-commands
+<a name="meta-comandos"></a>
+### Meta Comandos
 
-Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** sin comillas es un metacomando de **psql** que es procesado por psql mismo. Estos comandos hacen que **psql** sea más útil para la administración o la creación de scripts.
+Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** sin comillas es un meta-comando de **psql** que es procesado por psql mismo. Estos comandos hacen que **psql** sea más útil para la administración o la creación de scripts.
+
 
 |Comando|Descripción|
 |-------|-----------|
-|[**`\a`**](#c-a)|Activa \| Desactiva el formato alineado de la tabla.|
+|[**`\a`**](#c-a)|Activa y Desactiva el formato alineado de la tabla.|
+
+
 |[**`\c`** \[params\]](#mc-connect)|Establece una nueva conexión a un servidor PostgreSQL.|
 |[**`\C`** \[title\]](#mc-title)|Establece \| Anula el título de las tablas que se imprimen en los resultados de una consulta.|
 |[**`cd`** \[directory\]](#mc-cd)|Cambia el directorio de trabajo actual a <b>directory</b>. Sin argumentos, cambia el directorio de inicio del usuario actual.|
