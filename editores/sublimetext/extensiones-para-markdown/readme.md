@@ -4,8 +4,8 @@
 
 ## EXTENSIONES PARA MARKDOWN
 
-![markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
-![sublimetext](https://img.shields.io/badge/sublime_text-%23575757.svg?style=for-the-badge&logo=sublime-text&logoColor=important)
+![markdown](https://img.shields.io/badge/markdown-%23000000.svg?logo=markdown&logoColor=white)
+![sublimetext](https://img.shields.io/badge/sublime_text-%23575757.svg?logo=sublime-text&logoColor=important)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png" width="30">
@@ -18,59 +18,61 @@
 
 ## CONTENIDO
 
-- [Instalar MarkdownEditing](#install-me)
-- [Características de MarkdownEditing](#features-me)
+- [Instalar MarkdownEditing](#instalar-markdownediting)
+- [Características de MarkdownEditing](#caracteristicas-markdownediting)
     * [Atajos de teclado](#key-binding)
 - [Instalar MarkdownPreview](#markdown-preview)
 
----
 
-### <a name="install-me"></a>Instalar MarkdownEditing &#9875;
+<a name="instalar-markdownediting"></a>
+### Instalar MarkdownEditing
 
 Recien instalado, SublimeText no ofrece ningún soporte específico de Markdown, **sin resaltado de sintaxis y formato especial en cursiva o negrita, atajos de teclado** además **sin vista previa de salida HTML**.
 
 Para agregar estas características debemos instalar algunos complementos *plugins* y configurar algunas preferencias siguiendo estos pasos:  
 
 
-1. Abrimos **package control** (<kbd>Crtl</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd>) luego escribimos **install** y seleccionamos la opción (**Install Package**)
+**.1** Abrimos **package control** (<kbd>Crtl</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd>) luego escribimos **install** y seleccionamos la opción ***Install Package***
 
-<p align="center">
-  <img src="assets/install_package.png" alt="install package" width="800">
-</p>
+![install-package](./assets/install_package.png)
 
-2. Escribir el nombre del paquete, en este caso tiene el nombre de (**MarkdownEditing**)
 
-<p align="center">
-  <img src="assets/markdown_editing.png" alt="install extension" width="800">
-</p>
+**.2** Escribir el nombre del paquete, en este caso tiene el nombre de ***MarkdownEditing***
 
-3. Reinicia SublimeText
+![install-package](./assets/markdown_editing.png)
+
+
+**.3** Reinicia ***SublimeText***
 
 
 >**Nota:** Posiblemente al instalarlo te encuentres con una ventana emergente de error como la siguiente:
 ![Error](assets/error.png)  
 Esto se debe que cuando se descarga la extensión te cargará automaticamente el archivo README.MD del mismo paquete instalado, por lo que de manera inmediata te arrojará este error, por otro lado, para poder evitar este mensaje de error es muy sencillo, vamos a buscar en la barra del menú debemos abrir **Preferences** =\> **Settings**, y quitamos Markdown de la lista en **"ignored_packages"** en las Preferencias del usuario:
-```JSON
-// Preferences.sublime-settings -- User
-{
 
+
+Editamos `Preferences.sublime-settings -- User`:
+
+```js
+{
 "ignored_packages":
   [
-  // borramos Markdown de esta lista 
-    "Markdown",
+    "Markdown", // 👈 sacar de esta lista 
     "Vintage",
-  ],
+  ]
  }
 ```
-Simplemente elimine el valor "Markdown" de la lista, reinicie SublimeText  
 
-Despues de reiniciar SublimeText, todas las funciones del paquete **MarkdownEditing** se aplicarán solo a los archivos con extensión **`.md y .markdown`**.  
 
-<a href="#top">![](https://img.shields.io/badge/Volver%20al%20contenido-%E2%86%A9-orange?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
+Despues de reiniciar ***Sublimetext***, todas las funciones del paquete ***MarkdownEditing*** se aplicarán solo a los archivos con extensión **`.md y .markdown`**.
+
+
+<a href="#top">![](https://img.shields.io/badge/Volver%20al%20contenido-%E2%86%A9-orange?style=for-the-badge)</a>
 
 ---
 
-### <a name="features-me"></a>Características de MarkdownEditing &#9875;
+
+<a name="caracteristicas-markdownediting"></a>
+### Características de MarkdownEditing
 
 El paquete contiene algunos esquemas de colores para los archivos Markdown en el editor y proporciona **formato en línea de Markdown**. Eso significa negritas, editor de título, cursivas para palabras envueltas en los simbolos (\*\*). Los textos con las reglas marcadas para las citas de bloque y el código fuente también se sombrearán de manera diferente. Manejará inteligentemente listas de viñetas y listas numeradas con solo presionar la tecla <kbd>Enter</kbd>, lo que puede ahorrarle mucho tiempo al escribir asi como incluirá los **cierres automáticamente de comillas dobles** **`"`**, **paréntesis** **`( )`**, **guiones bajos** **`_`**, astericos **`*`**, etc.  
 
