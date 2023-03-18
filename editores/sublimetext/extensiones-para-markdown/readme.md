@@ -74,7 +74,7 @@ Despues de reiniciar ***Sublimetext***, todas las funciones del paquete ***Markd
 <a name="caracteristicas-markdownediting"></a>
 ### Características de MarkdownEditing
 
-El paquete contiene algunos esquemas de colores para los archivos Markdown en el editor y proporciona **formato en línea de Markdown**. Eso significa negritas, editor de título, cursivas para palabras envueltas en los simbolos (\*\*). Los textos con las reglas marcadas para las citas de bloque y el código fuente también se sombrearán de manera diferente. Manejará inteligentemente listas de viñetas y listas numeradas con solo presionar la tecla <kbd>Enter</kbd>, lo que puede ahorrarle mucho tiempo al escribir asi como incluirá los **cierres automáticamente de comillas dobles** **`"`**, **paréntesis** **`( )`**, **guiones bajos** **`_`**, astericos **`*`**, etc.  
+El paquete contiene algunos esquemas de colores para los archivos Markdown en el editor y proporciona **formato en línea de Markdown**. Eso significa negritas, editor de título, cursivas para palabras envueltas en los simbolos de asteriscos `<**>`. Los textos con las reglas marcadas para las citas de bloque y el código fuente también se sombrearán de manera diferente. Manejará inteligentemente listas de viñetas y listas numeradas con solo presionar la tecla <kbd>Enter</kbd>, lo que puede ahorrarle mucho tiempo al escribir asi como incluirá los **cierres automáticamente de comillas dobles** **`<">`**, **paréntesis** **`<( )>`**, **guiones bajos** **`<_>`**, astericos **`<*>`**, etc.  
 
 Para seleccionar un esquema de colores que este paquete incorpora, podemos cambiarlo seleccionando otro esquema desde el  menú **Preferences** =\> **Packages Settings** =\> **Markdown Editing** =\> **Change color scheme...**
 
