@@ -4,7 +4,7 @@
 
 ### Fragmentos de Emmet
 
-- [Controles de formulario](#formulario)
+- [Formularios](#formulario)
 
 <a name="instalacion"></a>
 ## Instalación
@@ -67,9 +67,36 @@ Generar una lista desordenada `<ul>` con 5 etiquetas `<li>` y a cada una de las 
 ```
 
 <a name="formulario"></a>
-## Controles de formularios
+## formularios
 
+Generar un formulario ya sea con el método 'get' o 'post':  
 
+- **`form:get`** || **`form:post`**
+
+```html
+<form action="" method="get"></form>
+<form action="" method="post"></form>
+```
+
+Generar entradas de diferentes tipos:  
+
+**tipo texto**
+
+`inp` || `input:t` || `input:text`
+
+```html
+<input type="text" name="" id="">
+```
+
+**tipo contraseña**  
+
+- `input:p` || `input:password`
+
+```html
+<input type="password" name="" id="">
+```
+
+Generar un control de selección única con opciones:
 
 **`select>opt{HTML}+opt{CSS}+opt{JS}`**
 
@@ -80,6 +107,7 @@ Generar una lista desordenada `<ul>` con 5 etiquetas `<li>` y a cada una de las 
   <option value="">JS</option>
 </select>
 ```
+
 
 
 
@@ -98,34 +126,12 @@ Generar los 6 niveles de cabeceras de las etiquetas `<h>` añadiendole el atribu
 <h5 title="Cabecera5">Esto es un H5</h5>
 <h6 title="Cabecera6">Esto es un H6</h6>
 ```
-#### <a name="form"></a>Formularios
 
 
-Generar un formulario ya sea con el método 'get' o 'post'  
 
-- **`form:get`** || **`form:post`**
 
-```html
-<form action="" method="get"></form>
-<form action="" method="post"></form>
-```
 
-Generar entradas de diferentes tipos:  
-**tipo texto**
 
-- `inp` || `input:t` || `input:text`
-
-```html
-<input type="text" name="" id="">
-```
-
-**tipo contraseña**  
-
-- `input:p` || `input:password`
-
-```html
-<input type="password" name="" id="">
-```
 
 **tipo números**
 
