@@ -157,9 +157,9 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
 |[**`\conninfo`**](#mc-conninfo)|[Muestra información sobre la conexión de base de datos actual.](#mc-conninfo)|
 |[**`\copyright`**](#mc-copyright)|[Muestra información sobre los términos de licencia.](#mc-copyright)|
 |[**`\echo`** \[text\]](#mc-echo)|[Imprime los argumentos evaluados en la salida estándar, separados por espacios y seguidos de una nueva línea, si se coloca entre (**\`**) se interpreta como un comando.](#mc-echo)|
-
-
 |[**`timing`**](#mc-timing)|[Activa o Desactiva la visualización del tiempo en milisegundos que tarda cada instrucción SQL.](#mc-timing)|
+
+
 |[**`\x`**](#mc-x)|[Activa o Desactiva el formato de tabla expandido en el resultado de cada instrucción SQL o metacomando.](#mc-x)|
 |[**`\h o \help`** \[command\]](#mc-help)|[Brinda ayuda de sintaxis en el comando SQL especificado. Si **`command`** no se especificam psql enumerará todos los comandos para los que hay ayuda disponible. Si **`command`** es un asterisco (`*`), se muestra la ayuda de sintaxis en todos los comandos SQL.](#mc-help)|
 |[**`\H - \html`**](#mc-html)|[Activa el formato de salida de consulta HTML. Si el formato HTML ya está activado, se vuelve al formato de texto alineado predeterminado. Este comando es por compatibilidad y comodidad, pero tenemos `\pset` para configurar otras opciones de salida.](#mc-html)|
