@@ -6,3 +6,11 @@ El clásico primer ejemplo cuando se comienza a programar, es crear un programa 
 console.log("Hola Mundo");
 console.log(2+2);
 ```
+
+Tipos de mensaje que podemos imitir por consola: 
+
+
+|Función|Descripción|
+|-------|-----------|
+|`console.log()`|Muestra la información proporcionada en la consola.|
+|`console.info()`|Equivalente al anterior. Se utiliza para mensajes de información.|
