@@ -14,3 +14,6 @@ Tipos de mensaje que podemos imitir por consola:
 |-------|-----------|
 |`console.log()`|Muestra la información proporcionada en la consola.|
 |`console.info()`|Equivalente al anterior. Se utiliza para mensajes de información.|
+|`console.warn()`|Muestra información de advertencia. Aparece en amarillo.|
+|`console.error()`|Muestra la información de error. Aparece en rojo.|
+|`console.clear()`|Limpia la consola. Equivalente a pulsar <kbd>CTRL</kbd> + <kbd>L</kbd> o escribir `clear()`.|
