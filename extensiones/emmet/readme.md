@@ -28,7 +28,7 @@ Generar una etiqueta link para favicon:
 **`link:favicon`**
 
 ```html
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 ```
 
 Para generar una etiqueta `<p>` con un contenido de texto en su interior debemos usar las llaves `{}` y luego con el símbolo u operador `+` podemos generar otras etiquetas a partir del mismo texto:  
@@ -71,7 +71,7 @@ Generar una lista desordenada `<ul>` con 5 etiquetas `<li>` y a cada una de las 
 
 Generar un formulario ya sea con el método 'get' o 'post':  
 
-- **`form:get`** || **`form:post`**
+**`form:get`** || **`form:post`**
 
 ```html
 <form action="" method="get"></form>
@@ -90,7 +90,7 @@ Generar entradas de diferentes tipos:
 
 **tipo contraseña**  
 
-- `input:p` || `input:password`
+`input:p` || `input:password`
 
 ```html
 <input type="password" name="" id="">
@@ -98,7 +98,7 @@ Generar entradas de diferentes tipos:
 
 **tipo números**
 
-- **`input:number`**
+**`input:number`**
 
 ```html
 <input type="number" name="" id="">
