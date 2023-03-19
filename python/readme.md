@@ -27,6 +27,13 @@
 			</a>
 		</th>
 	</tr>
+	<tr>
+		<th><img height="30" src="../assets/png/python.png" /></th>
+		<th>
+			<a href="./crud"><b>sqlite3:</b> operaciones CRUD
+			</a>
+		</th>
+	</tr>
 </table>
 
 
@@ -38,7 +45,6 @@
 	<li><a href="papers/dotenv/readme.md"><b>python:</b> cargar variables de entorno con dotenv</a></li>
 
 </ul>
-</details>
 
 <details>
 		<summary>TKINTER</summary>

@@ -111,35 +111,10 @@ Con el objeto cursor ahora podemos llamar al método **`.execute()`** para ejecu
 
 Usando el cursor, vamos a crear una tabla de clientes. Tendrá los siguientes campos (columnas):  
 
-```mermaid
-erDiagram
-    USER ||--o{ FAVORITE: tiene
-        USER ||--o{ POST: publica
-    USER {
-                int id PK
-        string firstname
-                string lastname
-        string email
-        string password
-                picture string
-    }
-        
-    FAVORITE {
-        int id_user FK
-        int id_post FK
-    }
-    POST {
-                int id PK
-        string title
-        string content
-        date create_at
-                date update_at
-                number id_user FK
-    }
-```
+![schema_customers](./assets/schema.png)
 
-El comando **SQL** que queremos ejecutar entrará en el método **execute()** del objeto cursor. Utilizando comillas triples para envolver el comando SQL.  
-Los "[docstring](https://peps.python.org/pep-0257/)". El beneficio de usar docstring es que nos permite escribir valores de cadena en varias líneas.  
+
+El comando **SQL** que queremos ejecutar entrará en el método **execute()** del objeto cursor. Utilizando comillas triples para envolver el comando SQL. Utilizaremos los "[docstring](https://peps.python.org/pep-0257/)" para escribir valores de cadena en varias líneas.  
 
 ```py
 ## sqlite_demo.py
@@ -150,25 +125,28 @@ connection = sqlite3.connect('customer.db')
 cursor = connection.cursor()
 
 cursor.execute("""
-    CREATE TABLE customers(
-        first_name text,
-        last_name text,
-        age integer,
-        city text, 
-        country text)
+    CREATE TABLE IF NOT EXISTS customers(
+        first_name VARCHAR(50) NOT NULL,
+        last_name VARCHAR(50) NOT NULL,
+        phone VARCHAR(12) NOT NULL,
+        email VARCHAR(50) NOT NULL,
+        address VARCHAR(100),
+        city VARCHAR(50))
     """)
 
 connection.commit()
 connection.close()
 ```
 
-Ejecutamos nuestro script 'sqlite_demo.py'. Si no obtenemos ningún error, eso significa que hemos creado la tabla de clientes correctamente.  
+Ahora si ejecutamos nuestro script **'sqlite_demo.py'**
 
-Si vuelve a ejecutar el mismo código, obtendrá un error similar al siguiente resultado. Eso significa que ya ha creado la tabla de la base de datos.  
+```bash
+python sqlite_demo.py
+```
 
-<p align="center">
-    <img src="img/01.png">
-</p>
+Si no obtenemos ningún error, eso significa que hemos creado la tabla de clientes correctamente.  
+
+Si vuelve a ejecutar el mismo código, obtendríamos un error de que ya existe la tabla en la base de datos. Es por ello que le agregamos la cláusula `IF NOT EXISTS`.  
 
 
 <a name="insertar-en-tabla"></a>
