@@ -338,8 +338,9 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
 </table>
 
 
+
 <a name="mc-a"></a>
-#### Meta Comando para alineación
+<b>Meta Comando para alineación</b>
 
 Si el formato de salida de la tabla no está alineado, se cambia a alineado. Este comando es mantenido por compatibilidad y comodidad, se puede utilizar **`\pset`** para una solución más general. Ej:
 
@@ -349,7 +350,7 @@ Si el formato de salida de la tabla no está alineado, se cambia a alineado. Est
 
 
 <a name="mc-connect"></a>
-**Meta Comando para cambiar de conexión**  
+Meta Comando para cambiar de conexión**  
 
 
 Establece una nueva conexión a un servidor de PostgreSQL. Los parámetros de conexión se pueden especificar usando la sintaxis posicional o usando una cadena de conexión.
