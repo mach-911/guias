@@ -159,12 +159,6 @@ Generar los 6 niveles de cabeceras de las etiquetas `<h>` añadiendole el atribu
 
 
 
-
-
-
-
-
-
 **de imagen**
 
 - **`input:i`** || **`input:image`**

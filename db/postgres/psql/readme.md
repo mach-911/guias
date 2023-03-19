@@ -157,7 +157,7 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
     <tr>
       <th>
         <a href="#mc-a">
-        <code><b>\a</b></code>
+        <code>\a</code>
         </a>
       </th>
       <th>
@@ -339,6 +339,7 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
 
 
 <a name="mc-a"></a>
+
 **Meta Comando para alineación**  
 
 Si el formato de salida de la tabla no está alineado, se cambia a alineado. Este comando es mantenido por compatibilidad y comodidad, se puede utilizar **`\pset`** para una solución más general. Ej:
