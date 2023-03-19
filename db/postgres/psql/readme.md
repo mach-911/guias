@@ -145,7 +145,7 @@ En los sistemas Unix, los permisos en un archivo de contraseña deben prohibir c
 <a name="meta-comandos"></a>
 ### Meta Comandos
 
-Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** sin comillas es un meta-comando de **psql** que es procesado por psql mismo. Estos comandos hacen que **psql** sea más útil para la administración o la creación de scripts.
+Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** sin comillas es un meta-comando de **psql** que es procesado por psql mismo. Estos comandos hacen que **psql** sea más útil para la administración o la creación de scripts.  
 
 
 <table>
@@ -293,6 +293,44 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
       <th>
         <a href="#mc-command">
           Permite ejecutar comandos de la <b>shell de Linux</b> o de <b>CMD de windows</b> desde la propia consola de psql.
+        </a>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <a href="#mc-include">
+          <code>\i - \include</code>
+        </a>
+      </th>
+      <th>
+        <a href="#mc-include">
+   Lee la entrada del archivo <code>filename</code> y la ejecuta.       
+        </a>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <a href="#mc-l">
+          <code>\l[+]</code>
+        </a>
+      </th>
+      <th>
+        <a href="#mc-l">
+          Muestra un listado de las bases de datos que existen en la instancia del servidor PostgreSQL junto a sus nombres, propietarios, juego de caracteres y privilegios de acceso. Si se especifica <code>pattern</b>, solo se listan las bases de datos cuyo nombre coincidan con el patrón. Si se agrega el símbolo "+", también se muestran los tamaños de las bases de datos, los tablespace y las descripciones.
+        </a>
+      </th>
+    </tr>
+    <tr>
+      <th><a href="#mc-s"><code>\s [filename]</code></a></th>
+      <th><a href="#mc-s">
+        Imprime por consola o en un archivo <code>filename</code> si se especifica, un historial de los comandos utilizados.
+      </a></th>
+    </tr>
+    <tr>
+      <th><a href="#mc-o"><code>\o - \out [filename]</code></a></th>
+      <th>
+        <a href="#mc-o">
+     Permite guardar el resultado de las futuras consultas en el archivo <code>filename</code>. El resultado incluye todas las tablas, respuestas de comandos y mensajes de tipo "notices" del servidor, pero no los mensajes de error.   
         </a>
       </th>
     </tr>
