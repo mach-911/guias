@@ -402,15 +402,15 @@ Activa o Desactiva el formato de tabla expandido en el resultado de cada instruc
 
 
 <a name="echo"></a>
-**\\echo**  
+**Comando Echo para imprimir**
 
 ![echo gif](assets/echo.gif)
 
-[![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#metacommand)
+[![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge)](#metacommand)
 
 
 <a name="mc-html"></a>
-**\\H**
+**Meta comando para cambiar la salia a HTML**
 
 ![html gif](https://raw.githubusercontent.com/EniDev911/assets/main/gif/postgre/meta-command/HTML.gif)
 
@@ -426,7 +426,6 @@ Activa o Desactiva el formato de tabla expandido en el resultado de cada instruc
 
 
 ---
-
 
 <a name="interpolar-sql"></a>
 ### Interpolación SQL
