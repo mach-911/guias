@@ -15,7 +15,7 @@
 - [Crear una clase para Clientes](#crear-clase)
 - [Trabajando con SQLite](#trabajando-con-sqlite)
 - [Insertando datos en la tabla](#insert-table)
-- [Consultar datos en la tabla](#select-table)
+- [Consultar datos en la tabla](#obtener-los-registros)
 - [Utilizando la clase Cliente creada](#using-customer-class)
 - [Crear prototipo de las funciones CRUD](#crud-operations)
 
@@ -65,7 +65,7 @@ class Customer:
 <a name="trabajando-con-sqlite"></a>
 ### Trabajando con SQLite
 
-Creamos un archivo **sqlite_demo.py** para ir viendo las operaciones del **CRUD** con Python con SQLite . Toda la funcionalidad relacionada con la base de datos va aquí. En primer lugar, tenemos que importar la biblioteca estándar SQLite3 a nuestro código para que podamos trabajar con las operaciones de la base de datos.
+Creamos un archivo **crud.py** para ir viendo las operaciones del **CRUD** con Python con SQLite . Toda la funcionalidad relacionada con la base de datos va aquí. En primer lugar, tenemos que importar la biblioteca estándar SQLite3 a nuestro código para que podamos trabajar con las operaciones de la base de datos.
 
 <a href="crear-una-conexion"></a>
 ### Crear una nueva conexión
@@ -103,6 +103,7 @@ import sqlite3
 connection = sqlite3.connect('customer.db')
 cursor = connection.cursor()
 ```
+
 Con el objeto cursor ahora podemos llamar al método **`.execute()`** para ejecutar comandos SQL.
 
 
@@ -138,10 +139,10 @@ connection.commit()
 connection.close()
 ```
 
-Ahora si ejecutamos nuestro script **'sqlite_demo.py'**
+Ahora si ejecutamos nuestro script **'crud.py'**
 
 ```bash
-python sqlite_demo.py
+python crud.py
 ```
 
 Si no obtenemos ningún error, eso significa que hemos creado la tabla de clientes correctamente.  
@@ -157,7 +158,7 @@ Ahora que ya hemos creado la tabla de la base de datos, agreguemos datos a la ta
 
 
 ```py
-## sqlite_demo.py
+## crud.py
 import sqlite3
 
 connection = sqlite3.connect('customer.db')
@@ -183,25 +184,22 @@ cursor.execute("""
 
 connection.commit()
 connection.close()
-
 ```
 
 Ahora si ejecutamos nuevamente nuestro script y no obtenemos ningún error, eso significa que hemos creado la tabla de clientes correctamente y además hemos insertado un nuevo registro. Para verlo podemos abrir el archivo con un programa como [DbBrowser](https://sqlitebrowser.org/):  
 
 [![Abrir db in DBbrowser](./assets/open_db_in_dbbrowser.png)](./assets/open_db_in_dbbrowser.png)
 
-Después de crear la tabla de la base de datos, asegúrese de comentar esa parte si agregó la consulta de inserción en el mismo archivo de Python. 
-
-Para ver que los datos de nuestros clientes se insertan correctamente en la tabla. Para eso, tenemos que escribir una consulta SQL "SELECT" a la tabla "customer".  
+Después de revisar la base de datos, asegúrese de comentar las líneas de código del **`INSERT INTO`**, de lo contrario cada vez que ejecutemos el script se llevará a cabo la inserción de la misma información. 
 
 
-<a name="select-table"></a
-### >Consultar la tabla de la base de datos
+<a name="obtener-los-registros"></a>
+### Consultar la tabla desde Python
 
-Después de insertar los datos, podemos consultar la tabla. En el método **execute()** ponemos lla sentencia "SELECT".  
+Ahora podemos consultar la tabla sin ningún programa externo. En el método **execute()** usaremos el comando "**SELECT**":  
 
 ```py
-## sqlite_demo.py
+## crud.py
 import sqlite3
 
 connection = sqlite3.connect('customer.db')
@@ -209,16 +207,27 @@ connection = sqlite3.connect('customer.db')
 cursor = connection.cursor()
 
 cursor.execute("""
-    CREATE TABLE customer(
-        first_name text,
-        last_name text,
-        age integer,
-        city text, 
-        country text)
+    CREATE TABLE IF NOT EXISTS customers(
+        first_name VARCHAR(50) NOT NULL,
+        last_name VARCHAR(50) NOT NULL,
+        phone VARCHAR(12) NOT NULL,
+        email VARCHAR(50) NOT NULL,
+        address VARCHAR(100),
+        city VARCHAR(50))
     """)
-#cursor.execute("INSER INTO customer VALUES('marco', 'contreras', 30, 'coquimbo', 'Chile')")
+
+
+"""
+cursor.execute("""
+    INSERT INTO customers (first_name, last_name, phone, email, address, city) 
+    VALUES
+    ('marco', 'contreras', '+56984687949', 'marco_contreras@gmail.com', 'av. los mojo-jojos', 'townsville')
+    """)
+"""
+
 cursor.execute("SELECT * FROM customer")
 print(cursor.fetchone())
+
 connection.commit()
 connection.close()
 ```
