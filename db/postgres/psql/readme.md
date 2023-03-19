@@ -303,21 +303,18 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
         </a>
       </th>
       <th>
-        <a href="#mc-include">
-   Lee la entrada del archivo <code>filename</code> y la ejecuta.       
-        </a>
+        <a href="#mc-include">Lee la entrada del archivo <code>filename</code> y la ejecuta.</a>
       </th>
     </tr>
     <tr>
       <th>
         <a href="#mc-l">
-          <code>\l[+]</code>
+          <code>\l - \l+</code>
         </a>
       </th>
       <th>
         <a href="#mc-l">
-          Muestra un listado de las bases de datos que existen en la instancia del servidor PostgreSQL junto a sus nombres, propietarios, juego de caracteres y privilegios de acceso. Si se especifica <code>pattern</b>, solo se listan las bases de datos cuyo nombre coincidan con el patrón. Si se agrega el símbolo "+", también se muestran los tamaños de las bases de datos, los tablespace y las descripciones.
-        </a>
+          Muestra un listado de las bases de datos que existen en la instancia del servidor PostgreSQL junto a sus nombres, propietarios, juego de caracteres y privilegios de acceso. Si se especifica <code>pattern</b>, solo se listan las bases de datos cuyo nombre coincidan con el patrón. Si se agrega el símbolo "+", también se muestran los tamaños de las bases de datos, los tablespace y las descripciones.</a>
       </th>
     </tr>
     <tr>
