@@ -309,24 +309,20 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
     <tr>
       <th>
         <a href="#mc-l">
-          <code>\l - \l+</code>
+          <code>\l - \l+ [pattern]</code>
         </a>
       </th>
       <th>
-        <a href="#mc-l">
-          Muestra un listado de las bases de datos que existen en la instancia del servidor PostgreSQL junto a sus nombres, propietarios, juego de caracteres y privilegios de acceso. Si se especifica <code>pattern</b>, solo se listan las bases de datos cuyo nombre coincidan con el patrón. Si se agrega el símbolo "+", también se muestran los tamaños de las bases de datos, los tablespace y las descripciones.</a>
+        <a href="#mc-l">Muestra un listado de las bases de datos que existen en la instancia del servidor PostgreSQL junto a sus nombres, propietarios, juego de caracteres y privilegios de acceso. Si se especifica <code>pattern</code>, solo se listan las bases de datos cuyo nombre coincidan con el patrón. Si se agrega el símbolo "+", también se muestran los tamaños de las bases de datos, los tablespace y las descripciones.</a>
       </th>
     </tr>
     <tr>
       <th><a href="#mc-s"><code>\s [filename]</code></a></th>
-      <th><a href="#mc-s">
-        Imprime por consola o en un archivo <code>filename</code> si se especifica, un historial de los comandos utilizados.
-      </a></th>
+      <th><a href="#mc-s">Imprime por consola o en un archivo <code>filename</code> si se especifica, un historial de los comandos utilizados.</a></th>
     </tr>
     <tr>
       <th><a href="#mc-o"><code>\o - \out [filename]</code></a></th>
-      <th><a href="#mc-o">
-     Permite guardar el resultado de las futuras consultas en el archivo <code>filename</code>. El resultado incluye todas las tablas, respuestas de comandos y mensajes de tipo "notices" del servidor, pero no los mensajes de error.</a></th>
+      <th><a href="#mc-o">Permite guardar el resultado de las futuras consultas en el archivo <code>filename</code>. El resultado incluye todas las tablas, respuestas de comandos y mensajes de tipo "notices" del servidor, pero no los mensajes de error.</a></th>
    </tr>
   </tbody>
 </table>
