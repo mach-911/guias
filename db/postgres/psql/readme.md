@@ -328,12 +328,9 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
     </tr>
     <tr>
       <th><a href="#mc-o"><code>\o - \out [filename]</code></a></th>
-      <th>
-        <a href="#mc-o">
-     Permite guardar el resultado de las futuras consultas en el archivo <code>filename</code>. El resultado incluye todas las tablas, respuestas de comandos y mensajes de tipo "notices" del servidor, pero no los mensajes de error.   
-        </a>
-      </th>
-    </tr>
+      <th><a href="#mc-o">
+     Permite guardar el resultado de las futuras consultas en el archivo <code>filename</code>. El resultado incluye todas las tablas, respuestas de comandos y mensajes de tipo "notices" del servidor, pero no los mensajes de error.</a></th>
+   </tr>
   </tbody>
 </table>
 
@@ -361,7 +358,7 @@ Establece una nueva conexión a un servidor de PostgreSQL. Los parámetros de co
 
 
 <a name="mc-title"></a>
-**Meta Comando para para establecer un título a las tablas**  
+<b> Meta Comando para para establecer un título a las tablas</b>
 
 
 Establece o Anula el título de las tablas que se imprimen en los resultados de una consulta.
