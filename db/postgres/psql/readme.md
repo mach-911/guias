@@ -334,7 +334,7 @@ Cualquier cosa que ingrese en psql que comience con una barra invertida **`\`** 
 
 Si el formato de salida de la tabla no está alineado, se cambia a alineado. Este comando es mantenido por compatibilidad y comodidad, se puede utilizar **`\pset`** para una solución más general. Ej:
 
-![aligned](assets/aligned.gif)
+[![aligned](assets/aligned.gif)](assets/aligned.gif)
 
 [![](https://img.shields.io/badge/regresar%20a%20tabla-%E2%86%A9-%232BAAEC?style=for-the-badge)](#meta-comandos)
 

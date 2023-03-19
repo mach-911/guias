@@ -24,3 +24,19 @@ En algunas ocasiones, nos puede resultar muy interesante utilizar **fragmentos**
 - Si necesitamos hacer cambios consecutivos, no afecta el **reflow** (*repintado de la página*). 
 
 
+Asi como el método `document.createDocumentFragment()` devuelve un fragmento de tipo **`Object`** que podremos utilizar para almacenar en su interior un pequeño **DOM temporal**, que luego añadiremos al **DOM principal**.
+
+
+```js
+const fragment = document.createDocumentFragment();
+
+for (let i = 0; i < 3000; i++) {
+  const div = document.createElement("div");
+  div.textContent = `Item número ${i}`;
+  fragment.appendChild(div);
+}
+
+document.body.appendChild(fragment);
+```
+
+Como se puede ver, utilizamos el fragmento `fragment` generado como ubicación temportal donde hacer todos los cambios del **DOM**
