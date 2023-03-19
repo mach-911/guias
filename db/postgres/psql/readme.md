@@ -350,7 +350,7 @@ Si el formato de salida de la tabla no está alineado, se cambia a alineado. Est
 
 
 <a name="mc-connect"></a>
-Meta Comando para cambiar de conexión**  
+<b>Meta Comando para cambiar de conexión</b>
 
 
 Establece una nueva conexión a un servidor de PostgreSQL. Los parámetros de conexión se pueden especificar usando la sintaxis posicional o usando una cadena de conexión.
@@ -361,7 +361,7 @@ Establece una nueva conexión a un servidor de PostgreSQL. Los parámetros de co
 
 
 <a name="mc-title"></a>
-**Meta Comando para para establcer un título a las tablas**  
+**Meta Comando para para establecer un título a las tablas**  
 
 
 Establece o Anula el título de las tablas que se imprimen en los resultados de una consulta.
