@@ -165,19 +165,32 @@ connection = sqlite3.connect('customer.db')
 cursor = connection.cursor()
 
 cursor.execute("""
-    CREATE TABLE IF NOT EXISTS customer(
-        first_name text,
-        last_name text,
-        age integer,
-        city text, 
-        country text)
+    CREATE TABLE IF NOT EXISTS customers(
+        first_name VARCHAR(50) NOT NULL,
+        last_name VARCHAR(50) NOT NULL,
+        phone VARCHAR(12) NOT NULL,
+        email VARCHAR(50) NOT NULL,
+        address VARCHAR(100),
+        city VARCHAR(50))
     """)
-cursor.execute("INSER INTO customer VALUES('marco', 'contreras', 30, 'coquimbo', 'Chile')")
+
+cursor.execute("""
+    INSERT INTO customers (first_name, last_name, phone, email, address, city) 
+    VALUES
+    ('marco', 'contreras', '+56984687949', 'marco_contreras@gmail.com', 'av. los mojo-jojos', 'townsville')
+    """)
+
+
 connection.commit()
 connection.close()
 
 ```
-Después de crear la tabla de la base de datos, asegúrese de comentar esa parte si agregó la consulta de inserción en el mismo archivo de Python. De lo contrario, obtendrá un error,o añadirle a la instrucción SQL la cláusula "**`IF NOT EXISTS`**". 
+
+Ahora si ejecutamos nuevamente nuestro script y no obtenemos ningún error, eso significa que hemos creado la tabla de clientes correctamente y además hemos insertado un nuevo registro. Para verlo podemos abrir el archivo con un programa como [DbBrowser](https://sqlitebrowser.org/):  
+
+[![Abrir db in DBbrowser](./assets/open_db_in_dbbrowser.png)](./assets/open_db_in_dbbrowser.png)
+
+Después de crear la tabla de la base de datos, asegúrese de comentar esa parte si agregó la consulta de inserción en el mismo archivo de Python. 
 
 Para ver que los datos de nuestros clientes se insertan correctamente en la tabla. Para eso, tenemos que escribir una consulta SQL "SELECT" a la tabla "customer".  
 
