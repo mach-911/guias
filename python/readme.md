@@ -7,9 +7,9 @@
 		<ul>
 			<li><a href="papers/data-types/strings/readme.md"><b>Strings</b></a></li>
 		</ul></details>
-<details>
 
-<summary>GUÍAS Y PAPERS 📑</summary>
+
+<h3>GUÍAS 📑</h3>
 
 
 <table>
@@ -19,7 +19,14 @@
 			<a href="./dotenv"><b>dotenv:</b> cargar variables de entorno de un archivo <b>.env</b>
 			</a>
 		</th>
-	</tr>	
+	</tr>
+	<tr>
+		<th><img height="30" src="../assets/png/python.png" /></th>
+		<th>
+			<a href="./build-in-functions"><b>build-in-functions:</b> funciones incorporadas en el intérprete de python
+			</a>
+		</th>
+	</tr>
 </table>
 
 
