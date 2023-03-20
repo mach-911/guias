@@ -1237,7 +1237,7 @@ Ejemplo:
 				</pre>
 			</td>
 			<td>
-				<img src="./assets/checkbox.png"/>
+				<img src="./assets/checkbox.png" alt="checkbox" style="background: #fff">
 			</td>
 		</tr>
 	</tbody>
