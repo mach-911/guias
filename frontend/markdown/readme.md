@@ -1720,7 +1720,8 @@ Esta es la lista completa de emojis y emoticonos disponibles en Markdown junto c
 | :part_alternation_mark: `:part_alternation_mark:` | :trident: `:trident:` |
 | :black_square: `:black_square:` | :white_square: `:white_square:` |
 | :white_check_mark: `:white_check_mark:` | :black_square_button: `:black_square_button:` |
-| :white_square_button: `:white_square_button:` | :black_circle: `:black_circle:` | :white_circle: `:white_circle:` | :red_circle: `:red_circle:` |
+| :white_square_button: `:white_square_button:` | :black_circle: `:black_circle:` |
+| :white_circle: `:white_circle:` | :red_circle: `:red_circle:` |
 | :large_blue_circle: `:large_blue_circle:` | :large_blue_diamond: `:large_blue_diamond:` |
 | :large_orange_diamond: `:large_orange_diamond:` | :small_blue_diamond: `:small_blue_diamond:` |
 | :small_orange_diamond: `:small_orange_diamond:` | :small_red_triangle: `:small_red_triangle:` |
