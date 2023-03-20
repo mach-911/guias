@@ -662,8 +662,7 @@ Se pueden crear listas de definiciones, que están compuestas del **término** y
 			</td>
 			<td>
 				<p>Una definición puede contar de varios párrafos.</p>
-				<p><b>Primer término</b><br>&nbsp;&nbsp;&nbsp;&nbsp;Primera definición<br>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;Segundo parráfo de la primera definición</p>
+				<p><b>Primer término</b><br>&nbsp;&nbsp;&nbsp;&nbsp;Primera definición<br>&nbsp;&nbsp;&nbsp;&nbsp;Segundo parráfo de la primera definición</p>
 			</td>
 		</tr>
 	</tbody>
