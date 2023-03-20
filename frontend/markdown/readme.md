@@ -698,7 +698,7 @@ La manera de enlazar imágenes es básicamente la misma de crear enlaces, con un
 				<pre>![Con titulo](pictures/logo.png "logo")</pre>
 			</td>
 			<td>
-				<img width="140" src="../../assets/png/logo_sin_bg.png" alt="logo" title="logo">
+				<img width="80" src="../../assets/png/logo_sin_bg.png" alt="logo" title="logo">
 			</td>
 		</tr>
 		<tr>
@@ -706,7 +706,7 @@ La manera de enlazar imágenes es básicamente la misma de crear enlaces, con un
 				<pre>![Sin tituo](pictures/logo.png)</pre>
 			</td>
 			<td>
-				<img width="140" src="../../assets/png/logo_sin_bg.png" alt="logo">
+				<img width="80" src="../../assets/png/logo_sin_bg.png" alt="logo">
 			</td>
 		</tr>
 		<tr>
@@ -714,8 +714,8 @@ La manera de enlazar imágenes es básicamente la misma de crear enlaces, con un
 				<pre>![Imagen 1][1]  ![Imagen 2][2]<br><br>[1]: pictures/logo.png<br>[2]: pictures/logo_bg.png "logo"</pre>
 			</td>
 			<td>
-				<img width="140" src="../../assets/png/logo_sin_bg.png" alt="logo">
-				<img width="140" src="../../assets/png/logo_con_bg.png" alt="logo">
+				<img width="80" src="../../assets/png/logo_sin_bg.png" alt="logo">
+				<img width="80" src="../../assets/png/logo_con_bg.png" alt="logo">
 			</td>
 		</tr>
 	</tbody>
