@@ -996,7 +996,7 @@ Para crear líneas horizontales se debe crear una línea rodeaba de líneas en b
 				<pre>***</pre>
 			</td>
 			<td>
-				<img height="10" src="../../../assets/png/web/html/hr/01.png"/>
+				<img height="10" src="./assets/hr.png"/>
 			</td>
 		</tr>
 		<tr>
@@ -1004,7 +1004,7 @@ Para crear líneas horizontales se debe crear una línea rodeaba de líneas en b
 				<pre>- - -</pre>
 			</td>
 			<td>
-				<img height="10" src="../../../assets/png/web/html/hr/01.png"/>
+				<img height="10" src="./assets/hr.png"/>
 			</td>
 		</tr>
 		<tr>
@@ -1012,7 +1012,7 @@ Para crear líneas horizontales se debe crear una línea rodeaba de líneas en b
 				<pre>___</pre>
 			</td>
 			<td>
-				<img height="10" src="../../../assets/png/web/html/hr/01.png"/>
+				<img height="10" src="./assets/hr.png"/>
 			</td>
 		</tr>
 	</tbody>
@@ -1055,7 +1055,8 @@ Para crear líneas horizontales se debe crear una línea rodeaba de líneas en b
 
 ---
 
-## <a name="pie-pagina"></a>Notas a pie de página
+<a name="pie-pagina"></a>
+## Notas a pie de página
 
 Las notas de páginas se crean de una manera muy sencilla en Markdown. Cada nota de pie página se compone de dos elementos: 
 
