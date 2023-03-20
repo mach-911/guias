@@ -313,7 +313,9 @@ Existe una manera adicional de crear enlaces automáticos para direcciones URL, 
 			<td><pre class="no_mrkdwn">&#60;http://google.com&#62;</pre></td>
 			<td><a href="http://google.com">http://google.com</a></td>
 		</tr>
+	</tbody>
 </table>
+
 
 >**Consideración**: Markdown no tiene la opción de publicar links que se abran en una nueva pestaña del navegador como en HTML con el atributo `target='_blank'`.
 
