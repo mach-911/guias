@@ -652,7 +652,7 @@ Se pueden crear listas de definiciones, que están compuestas del **término** y
 			</td>
 			<td>
 				<p>Se pueden aplicar más de un término a una definición</p>
-				<p><b>Primer término</b><br><b>Segundo término</b><br>&nbsp;&nbsp;&nbsp;&nbsp;Primera definición
+				<p><b>Primer término</b><br><b>Segundo término</b><br>&nbsp;&nbsp;&nbsp;&nbsp;Primera definición</p>
 				<p><b>Tercer término</b><br>&nbsp;&nbsp;&nbsp;&nbsp;Segunda definición</p>
 			</td>
 		</tr>
