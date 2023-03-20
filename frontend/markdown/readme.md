@@ -1237,7 +1237,7 @@ Ejemplo:
 				</pre>
 			</td>
 			<td>
-				<img src="../../../assets/png/web/html/checkbox/01.png"/>
+				<img src="./assets/checkbox.png"/>
 			</td>
 		</tr>
 	</tbody>
