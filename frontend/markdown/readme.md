@@ -1143,11 +1143,12 @@ Cada marcador de nota debe tener un nombre distinto. Ese nombre se utiliza para 
 	</tbody>
 </table>
 
-<a href="#top">![](https://img.shields.io/badge/regresar%20contenido%20principal-%E2%86%A9-blue?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
+<a href="#top">![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-black?style=for-the-badge)</a>
 
 ---
 
-## <a name="abreviatura"></a>Abreviaturas
+<a name="abreviatura"></a>
+## Abreviaturas
 
 Para crear abreviaturas HTML lo único necesario es crear una lista de ellas (normalmente al final del texto) y en cualquier lugar del texto que aparezca la abreviatura se aplicará automáticamente. Las listas de abreviaturas se crean como las listas de enlaces, pero precedidas por un asterisco.
 
@@ -1176,11 +1177,12 @@ Para crear abreviaturas HTML lo único necesario es crear una lista de ellas (no
 
 Las abreviaturas son sensibles a mayúsculas, por lo que hay que tenerlo en cuenta. Se pueden crear abreviaturas de más de una palabra.
 
-<a href="#top">![](https://img.shields.io/badge/regresar%20contenido%20principal-%E2%86%A9-blue?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
+<a href="#top">![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-black?style=for-the-badge)</a>
 
 ---
 
-## <a name="identificadores"></a>Identificadores de Cabecera
+<a name="identificadores"></a>
+## Identificadores de Cabecera
 
 Los identificadores de cabecera nos permiten establecer un identificador a las cabeceras para luego poder enlazarlas en cualquier otro lugar del texto.
 
@@ -1210,11 +1212,12 @@ Los identificadores de cabecera nos permiten establecer un identificador a las c
 
 En Markdown todas las cabeceras llevan por defecto asociado un Id que depende del texto de la misma, aunque siempre prevalece la que nosotros establezcamos.
 
-<a href="#top">![](https://img.shields.io/badge/regresar%20contenido%20principal-%E2%86%A9-blue?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
+<a href="#top">![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-black?style=for-the-badge)</a>
 
 ---
 
-## <a name="casillas-verificacion"></a>Casillas de verificación
+<a name="casillas-verificacion"></a>
+## Casillas de verificación
 
 Puede crear una lista de casillas de verificación usando la siguiente sintaxis.
 
@@ -1240,11 +1243,12 @@ Ejemplo:
 	</tbody>
 </table>
 
-<a href="#top">![](https://img.shields.io/badge/regresar%20contenido%20principal-%E2%86%A9-blue?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
+<a href="#top">![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-black?style=for-the-badge)</a>
 
 ---
 
-## <a name="emoji"></a>Emojis
+<a name="emoji"></a>
+## Emojis
 
 Esta es la lista completa de emojis y emoticonos disponibles en Markdown junto con sus respectivos **shorcodes**. Ten en cuenta que los shortcodes pueden variar entre diferentes aplicaciones. Por ello a continuación de deja el sabor a github o si esta visualizando este documento en formato pdf puede verse distinto.
 
