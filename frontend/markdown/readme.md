@@ -521,11 +521,12 @@ Para crear bloques de cita, se emplea el carácter mayor que `>` antes del bloqu
 	</tbody>
 </table>
 
-<a href="#top">![](https://img.shields.io/badge/regresar%20contenido%20principal-%E2%86%A9-blue?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
+<a href="#top">![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-black?style=for-the-badge)</a>
 
 ---
 
-## <a name="listas"></a>Listas
+<a name="listas"></a>
+## Listas
 
 Markdown permite crear dos tipos de listas, ordenadas y desordenadas, es decir numeradas o listas de puntos. Para distinguir los tipos y como se crean, nada mejor que verlo con ejemplos:  
 
@@ -604,12 +605,12 @@ Markdown permite crear dos tipos de listas, ordenadas y desordenadas, es decir n
 	</tbody>
 </table>
 
-<a href="#top">![](https://img.shields.io/badge/regresar%20contenido%20principal-%E2%86%A9-blue?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
+<a href="#top">![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-black?style=for-the-badge)</a>
 
 ---
 
-
-## <a name="lista-definiciones"></a>Listas de definiciones
+<a name="lista-definiciones"></a>
+## Listas de definiciones
 
 Se pueden crear listas de definiciones, que están compuestas del **término** y la **lista de definiciones** del mismo, como si fuera un diccionario. Su creación es muy simple:  
 
@@ -668,13 +669,15 @@ Se pueden crear listas de definiciones, que están compuestas del **término** y
 	</tbody>
 </table>
 
+
 >**Consideración**: En la primera línea escribimos el término y en la siguiente dejamos un espacio en blanco e ingresamos el carácter **`:`** y la definición de cuyo término precedido de un espacio en blanco.
 
-<a href="#top">![](https://img.shields.io/badge/regresar%20contenido%20principal-%E2%86%A9-blue?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
+<a href="#top">![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-black?style=for-the-badge)</a>
 
 ---
 
-## <a name="imagenes"></a> 	Imágenes
+<a name="imagenes"></a>
+## Imágenes
 
 La manera de enlazar imágenes es básicamente la misma de crear enlaces, con una única diferencia de que se añade el carácter de exclamación **`!`** al principio de la pareja de corchetes que definen el nombre del enlace.  
 
