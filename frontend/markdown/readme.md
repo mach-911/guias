@@ -268,9 +268,32 @@ Ejemplo enlaces por referencia:
 
 Podemos embeber una imagén dentro un enlace de la siguiente manera:  
 
-|Tecleas|Resultado|
-|:------|---------|
-|`[![Guithub](https://<url_imagen>.png)](https://github.com)`|[![Github](../../../assets/ico/sm/github.ico)](https://github.com/EniDev911)|
+<table>
+	<colgroup>
+		<col span="1" style="width:40%;">
+		<col span="1" style="width:60%">
+	</colgroup>
+	<thead>
+		<tr>
+			<th>Tecleas</th>
+			<th>Resultado</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<pre class="no_mrkdwn">[![Guithub](https://&lt;url_imagen&gt;.png)](https://github.com)</pre>
+			</td>
+			<td>
+				<a href="https://github.com">
+					<img src="./assets/github.png" alt="github logo" height="40">
+				</a>
+			</td>
+		</tr> 	
+	</tbody>
+</table>
+
+
 
 Existe una manera adicional de crear enlaces automáticos para direcciones URL, simplemente encerrarla entre los caracteres '`<`' y '`>`':
 
