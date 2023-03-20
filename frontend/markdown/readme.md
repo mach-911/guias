@@ -1688,7 +1688,8 @@ int main()
 }
 ```
 
-- `cpp` - C++
+**`cpp`** - C++  
+
 ```cpp
 #include <iostream.h>
 using namespace std;
@@ -1699,7 +1700,8 @@ int main() {
 }
 ```
 
-- `csharp`- C#
+**`csharp`** - C#  
+
 ```csharp
 using System;
 
@@ -1712,7 +1714,8 @@ class MainClass
 }
 ```
 
-- `css` - Cascade Style Sheet (CSS)
+**`css`** - Cascade Style Sheet (CSS)  
+
 ```css
 body {
     font: 75% georgia, sans-serif;
