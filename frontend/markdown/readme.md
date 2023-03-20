@@ -1,11 +1,8 @@
-## EXTENSIONES PARA MARKDOWN
-
-![markdown](https://img.shields.io/badge/markdown-%23000000.svg?logo=markdown&logoColor=white)
-![sublimetext](https://img.shields.io/badge/sublime_text-%23575757.svg?logo=sublime-text&logoColor=important)
+[comment]: <> (Author: Marco Contreras Herrera)
+[comment]: <> (Email: marco.contreras.h90@gmail.com)
 
 
 <h2 align="center">
-<img height="50" src="../../../assets/png/logo_sin_bg.png" align="left">
 <img height="50" src="https://img.shields.io/badge/markdown-%23000000.svg?logo=markdown&logoColor=white"><br><br>
 Guía de referencia con la sintaxis y extras
 </h2> 
@@ -64,18 +61,18 @@ Markdown es un lenguaje de marcado ligero parecido al que se emplea en muchas wi
 - &nbsp;&nbsp; 🤘 &nbsp;&nbsp; **Es bastante más legible y fácil de mantener**
 - &nbsp;&nbsp; 🚀 &nbsp;&nbsp; **Escribir para web es más rápido y cómodo**
 - &nbsp;&nbsp; 🔎 &nbsp;&nbsp; **Es más difícil de cometer errores se sintaxis**
-- &nbsp;&nbsp; :pencil: &nbsp;&nbsp; **Es perfecto para usarlo con editores de texto minimalistas**
-- &nbsp;&nbsp; :point_right: &nbsp;&nbsp; **Permite que te concentres en generar contenido en lugar del formato**
-- &nbsp;&nbsp; :floppy_disk: &nbsp;&nbsp; **Portabilidad, se puede convertir en varios formatos**
-- &nbsp;&nbsp; :eyes: &nbsp;&nbsp; **Lo que ves es lo que quieres decir**
+- &nbsp;&nbsp; 📝 &nbsp;&nbsp; **Es perfecto para usarlo con editores de texto minimalistas**
+- &nbsp;&nbsp; 👉 &nbsp;&nbsp; **Permite que te concentres en generar contenido en lugar del formato**
+- &nbsp;&nbsp; 💾 &nbsp;&nbsp; **Portabilidad, se puede convertir en varios formatos**
+- &nbsp;&nbsp; 👀 &nbsp;&nbsp; **Lo que ves es lo que quieres decir**
 
 
-<a href="#top">![](https://img.shields.io/badge/regresar%20contenido%20principal-%E2%86%A9-blue?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
+<a href="#top">![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-black?style=for-the-badge)</a>
 
 ---
 
-
-## <a name='cabeceras'></a>Cabeceras
+<a name='cabeceras'></a>
+## Cabeceras
 
 Los encabezados en markdown se producen colocando un número determinado de almohadillas `#` antes del texto correspondiente al nivel de encabezamiento deseado (HTML ofrece hasta seis niveles). Los encabezamientos posibles se pueden ver en la siguiente tabla:  
 
@@ -199,11 +196,12 @@ Para los encabezamientos de los dos primeros niveles existe también otra manera
 
 Es decir para los encabezamientos principales se subraya el texto con el signo igual '`=`'. Para los encabezamientos de segundo nivel se utilizan guiones '`-`' para subrayar. Es indiferente el número de signos iguales o guiones que se empleen, con uno es suficiente.
 
-<a href="#top">![](https://img.shields.io/badge/regresar%20contenido%20principal-%E2%86%A9-blue?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
+<a href="#top">![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-black?style=for-the-badge)</a>
 
 ---
 
-## <a name="enlaces"></a>Enlaces
+<a name="enlaces"></a>
+## Enlaces
 
 Markdown admite dos maneras de crear enlaces en **línea** y por **referencia**.
 
@@ -296,8 +294,7 @@ Existe una manera adicional de crear enlaces automáticos para direcciones URL, 
 
 >**Consideración**: Markdown no tiene la opción de publicar links que se abran en una nueva pestaña del navegador como en HTML con el atributo `target='_blank'`.
 
-
-<a href="#top">![](https://img.shields.io/badge/regresar%20contenido%20principal-%E2%86%A9-blue?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
+<a href="#top">![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-black?style=for-the-badge)</a>
 
 ---
 
