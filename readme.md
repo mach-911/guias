@@ -58,7 +58,7 @@
     <!-- React -->
     <a href="devs/web/react/readme.md"><kbd><img src="assets/png/react.png" height="70"></kbd></a>
     <!-- Markdown -->
-    <a href="devs/markdown_/index.md"><kbd>
+    <a href="./frontend/markdown/"><kbd>
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="./assets/png/markdown-dark.png" height="70">
       <source media="(prefers-color-scheme: light)" srcset="./assets/png/markdown.png" height="70">
