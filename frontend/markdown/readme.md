@@ -970,11 +970,12 @@ Para lograr esto debemos encerrar el código entre dos acentos graves (\`). Por 
 	</tbody>
 </table>
 
-<a href="#top">![](https://img.shields.io/badge/regresar%20contenido%20principal-%E2%86%A9-blue?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
+<a href="#top">![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-black?style=for-the-badge)</a>
 
 ---
 
-## <a name="lineas"></a>Líneas Horizontales
+<a name="lineas"></a>
+## Líneas Horizontales
 
 Para crear líneas horizontales se debe crear una línea rodeaba de líneas en blanco y compuesta por 3 o más símbolos, que pueden ser guiones, asteriscos o guiones bajos. Pueden crearse espacios entre caracteres si así se desea por estética.
 
@@ -1017,11 +1018,12 @@ Para crear líneas horizontales se debe crear una línea rodeaba de líneas en b
 	</tbody>
 </table>
 
-<a href="#top">![](https://img.shields.io/badge/regresar%20contenido%20principal-%E2%86%A9-blue?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
+<a href="#top">![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-black?style=for-the-badge)</a>
 
 ---
 
-## <a name="escapar-caracteres"></a>Escapar caracteres
+<a name="escapar-caracteres"></a>
+## Escapar caracteres
 
 ¿Que ocurre cuando queremos mostrar un carácter que markdown emplea para el marcado? Es posible que dependiendo de donde y como se emplee esté símbolo, sea interpretado por markdown y alterará el formato del texto. En este caso lo que se necesita es **escapar el carácter** con el símbolo backslash **`\`**. En esta tabla se muestran los símbolos que pueden ser escapados por markdown.  
 
@@ -1049,7 +1051,7 @@ Para crear líneas horizontales se debe crear una línea rodeaba de líneas en b
 	</tbody>
 </table>
 
-<a href="#top">![](https://img.shields.io/badge/regresar%20contenido%20principal-%E2%86%A9-blue?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
+<a href="#top">![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-black?style=for-the-badge)</a>
 
 ---
 
