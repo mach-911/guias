@@ -1,3 +1,9 @@
+## EXTENSIONES PARA MARKDOWN
+
+![markdown](https://img.shields.io/badge/markdown-%23000000.svg?logo=markdown&logoColor=white)
+![sublimetext](https://img.shields.io/badge/sublime_text-%23575757.svg?logo=sublime-text&logoColor=important)
+
+
 <h2 align="center">
 <img height="50" src="../../../assets/png/logo_sin_bg.png" align="left">
 <img height="50" src="https://img.shields.io/badge/markdown-%23000000.svg?logo=markdown&logoColor=white"><br><br>
@@ -48,16 +54,16 @@ A continuación sigue una lista detallada de todas las características que se p
 
 Markdown es un lenguaje de marcado ligero parecido al que se emplea en muchas wikis y basado originalmente en convenciones existentes en el marcado de los correos electrónicos. Emplea texto plano, procurando que sea legible pero consiguiendo que se convierta en XHTML correctamente formateado. Fue creado por [**John Gruber**](https://en.wikipedia.org/wiki/John_Gruber) en el año 2004, siendo a día de hoy uno de los lenguajes de marcado más famosos. Su popularidad se debe a que es sencillo, ligero y fácil de aprender.
 
-<p align="center">
-<img src="../../../assets/png/authors/john_gruber.png" width="290" height="300">
+<p align="left">
+<img src="./assets/jhon_gruber_author.jpg" width="290" height="300">
 </p>
 
 ## <a name="ventajas"></a>Ventajas de usar Markdown
 
-- &nbsp;&nbsp; :raised_hands: &nbsp;&nbsp; **Es sencillo de aprender**
-- &nbsp;&nbsp; :metal: &nbsp;&nbsp; **Es bastante más legible y fácil de mantener**
-- &nbsp;&nbsp; :rocket:  &nbsp;&nbsp; **Escribir para web es más rápido y cómodo**
-- &nbsp;&nbsp; :mag_right: &nbsp;&nbsp; **Es más difícil de cometer errores se sintaxis**
+- &nbsp;&nbsp; 🙌 &nbsp;&nbsp; **Es sencillo de aprender**
+- &nbsp;&nbsp; 🤘 &nbsp;&nbsp; **Es bastante más legible y fácil de mantener**
+- &nbsp;&nbsp; 🚀 &nbsp;&nbsp; **Escribir para web es más rápido y cómodo**
+- &nbsp;&nbsp; 🔎 &nbsp;&nbsp; **Es más difícil de cometer errores se sintaxis**
 - &nbsp;&nbsp; :pencil: &nbsp;&nbsp; **Es perfecto para usarlo con editores de texto minimalistas**
 - &nbsp;&nbsp; :point_right: &nbsp;&nbsp; **Permite que te concentres en generar contenido en lugar del formato**
 - &nbsp;&nbsp; :floppy_disk: &nbsp;&nbsp; **Portabilidad, se puede convertir en varios formatos**
