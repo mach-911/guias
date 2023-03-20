@@ -1747,13 +1747,13 @@ A continuación te dejo un ejemplo de como podemos usar emojis dentro de una tab
 				</pre>
 			</td>
 			<td>
-				<img src="../../../assets/png/web/html/emojis/02.png">
+				<img src="./assets/emoji-tabla.png">
 			</td>
 		</tr>
 	</tbody>
 </table>
 
-<a href="#top">![](https://img.shields.io/badge/regresar%20contenido%20principal-%E2%86%A9-blue?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
+<a href="#top">![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-black?style=for-the-badge)</a>
 
 ---
 
@@ -2026,13 +2026,15 @@ object HelloWorld extends Application{
 Transcript show: '¡Hola, Mundo!'
 ```
 
-- `sql` - SQL
+**`sql`** - SQL  
+
 ```sql
 SELECT *
 FROM Personas
 ```
 
-- `sqlite3` - sqlite3
+**`sqlite3`** - sqlite3  
+
 ```sqlite3
 sqlite> CREATE TABLE tbl2 (
    ...>   f1 varchar(30) primary key,
@@ -2043,12 +2045,14 @@ sqlite>
 ```
 
 
-- `text` - Texto simple monoespaciado
+**`text`** - Texto simple monoespaciado  
+
 ```text
 Hola mundo
 ```
 
-- `vala` - Vala
+**`vala`** - Vala  
+
 ```vala
 class Demo.HelloWorld : Glib.Object {
 	public static int main(string[] args) {
@@ -2058,14 +2062,16 @@ class Demo.HelloWorld : Glib.Object {
 }
 ```
 
-- `vbnet` - Visual Basic .NET
+**`vbnet`** - Visual Basic .NET  
+
 ```vbnet
 Private Sub Form_load()
 	Msgbox "¡Hola, Mundo!"
 End Sub
 ```
 
-- `vim` - Vim Script
+**`vim`** - Vim Script   
+
 ```vim
 function! ToggleSyntax()
 	if exists("g:syntax_on")
@@ -2078,7 +2084,7 @@ endfunction
 nmap <silent> ;s  :call ToggleSyntax()<CR>
 ```
 
-<a href="#top">![](https://img.shields.io/badge/regresar%20contenido%20principal-%E2%86%A9-blue?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
+<a href="#top">![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-black?style=for-the-badge)</a>
 
 
 <h3 align="center">FIN</h3>
@@ -2087,9 +2093,9 @@ nmap <silent> ;s  :call ToggleSyntax()<CR>
 
 
 <p align="center">
-Si tienes alguna sugerencia escribeme:<br>
-<a href="mailto:enidev911@gmai.com?subject=hello marco" target="_blank"><img src="../../../assets/ico/sm/gmail_logo.ico" alt="" width="50"></a><br><br>
+Sugerencia escribeme:<br>
+<a href="mailto:enidev911@gmai.com?subject=Sugerencia para la guía de Markdown" target="_blank"><img src="../../assets/png/gmail_logo.png" alt="" width="50"></a><br><br>
 <a href="https://www.buymeacoffee.com/9111592">
-<img src="../../../assets/png/buymeacoffee.png" width="195"><br>
-<img src="../../../assets/png/practice.png"/></a> 
+<img src="../../assets/png/buymeacoffee.png" width="195">
+</a> 
 </p>
