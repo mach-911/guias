@@ -323,8 +323,8 @@ Existe una manera adicional de crear enlaces automáticos para direcciones URL, 
 
 ---
 
-
-## <a name="parrafos"></a>Párrafos
+<a name="parrafos"></a>
+## Párrafos
 
 Para crear párrafos se deja una línea en blanco. De este mondo:  
 
@@ -378,11 +378,12 @@ Para crear un salto de línea dentro de un parráfo, simplemente se dejan dos es
 	</tbody>
 </table>
 
-<a href="#top">![](https://img.shields.io/badge/regresar%20contenido%20principal-%E2%86%A9-blue?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
+<a href="#top">![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-black?style=for-the-badge)</a>
 
 ---
 
-## <a name="formato"></a>Formato
+<a name="formato"></a>
+## Formato
 
 El formato básico del texto, es decir negritas y cursivas, tachado, markdown no tiene para subrayar texto. Se pueden realizar de varias maneras: 
 
@@ -460,18 +461,19 @@ El formato básico del texto, es decir negritas y cursivas, tachado, markdown no
 
 Se pueden emplear indistintamente tanto el asterisco `*` como el guión bajo `_` siempre y cuando no se mezclen y lo que determina el formato es el número de ellos antes y después del bloque de texto a formatear. Uno es cursiva, dos es negrita, y tres ambas, así de sencillo.
 
-<a href="#top">![](https://img.shields.io/badge/regresar%20contenido%20principal-%E2%86%A9-blue?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
+<a href="#top">![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-black?style=for-the-badge)</a>
 
 ---
 
-## <a name="citas"></a>Citas
+<a name="citas"></a>
+## Citas
 
 Para crear bloques de cita, se emplea el carácter mayor que `>` antes del bloque de texto. En la siguiente tabla se pueden ver las opciones para crearlos:  
 
 <table>
 	<colgroup>
-		<col span="1" style="width:40%;">
-		<col span="1" style="width:60%">
+		<col span="1" style="width:30%;">
+		<col span="1" style="width:70%">
 	</colgroup>
 	<thead>
 		<tr>
