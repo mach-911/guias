@@ -1643,7 +1643,9 @@ Lo podemos ver mejor con un ejemplo:
 
 A continuación muestro una relación de los lexers más comunes empleados para el resaltado de código fuente.  
 
-- `apache` - configuración Apache
+
+**`apache`** - configuración Apache  
+
 ```apache
 <VirtualHost *:80>
 DocumentRoot /www/example1
@@ -1654,23 +1656,29 @@ ServerName www.example1.com
 </VirtualHost>
 ```
 
-- `bash` y `console` - Bash y Shell
+
+**`bash`** y **`console`** - Bash y Shell  
+
 ```bash
 #!/bin/bash
 echo "Hola mundo"
 ```
 
-- `bat` - Archivos Batch DOS/Windows
+- **`bat`** - Archivos Batch DOS/Windows  
+
 ```bat
-@echo ¡Hola, Mundo!
+@echo "Hola mundo"
 ```
 
-- `boo` - Boo
+
+**`boo`** - Boo  
+
 ```boo
 print "Hello, world"
 ```
 
-- `c` - C
+**`c`** - C  
+
 ```c
 #include <stdio.h>
 int main()
