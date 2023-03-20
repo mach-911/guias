@@ -698,7 +698,7 @@ La manera de enlazar imágenes es básicamente la misma de crear enlaces, con un
 				<pre>![Con titulo](pictures/logo.png "logo")</pre>
 			</td>
 			<td>
-				<img width="140" src="../../../assets/png/logo_sin_bg.png" alt="logo" title="logo">
+				<img width="140" src="../../assets/png/logo_sin_bg.png" alt="logo" title="logo">
 			</td>
 		</tr>
 		<tr>
@@ -706,7 +706,7 @@ La manera de enlazar imágenes es básicamente la misma de crear enlaces, con un
 				<pre>![Sin tituo](pictures/logo.png)</pre>
 			</td>
 			<td>
-				<img width="140" src="../../../assets/png/logo_sin_bg.png" alt="logo">
+				<img width="140" src="../../assets/png/logo_sin_bg.png" alt="logo">
 			</td>
 		</tr>
 		<tr>
@@ -714,18 +714,19 @@ La manera de enlazar imágenes es básicamente la misma de crear enlaces, con un
 				<pre>![Imagen 1][1]  ![Imagen 2][2]<br><br>[1]: pictures/logo.png<br>[2]: pictures/logo_bg.png "logo"</pre>
 			</td>
 			<td>
-				<img width="140" src="../../../assets/png/logo_sin_bg.png" alt="logo">
-				<img width="140" src="../../../assets/png/logo_con_bg.png" alt="logo">
+				<img width="140" src="../../assets/png/logo_sin_bg.png" alt="logo">
+				<img width="140" src="../../assets/png/logo_con_bg.png" alt="logo">
 			</td>
 		</tr>
 	</tbody>
 </table>
 
-<a href="#top">![](https://img.shields.io/badge/regresar%20contenido%20principal-%E2%86%A9-blue?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
+<a href="#top">![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-black?style=for-the-badge)</a>
 
 ---
 
-## <a name="tablas"></a>Tablas
+<a name="tablas"></a>
+## Tablas
 
 Crear tablas es sumamente sencillo, simplemente debemos indicar cuales son los elementos de la cabecera y separar los campos con el símbolo.  
 
@@ -870,12 +871,13 @@ Se puede especificar la alineación de cada columna mediante la adición de dos 
 	</tbody>
 </table>	
 
+<a href="#top">![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-black?style=for-the-badge)</a>
 
-<a href="#top">![](https://img.shields.io/badge/regresar%20contenido%20principal-%E2%86%A9-blue?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)</a>
 
 ---
 
-## <a name="codigo"></a>Código
+<a name="codigo"></a>
+## Código
 
 Se pueden crear bloques de código para albergar extractos de código fuente de un lenguaje de programación o para reproducir literalmente cualquier tipo de texto que sea interpretado por markdown. Lo único necesario es que cada línea de este bloque empiece por al menos 4 espacios o 1 tabulado.  
 
