@@ -56,7 +56,7 @@
     <!-- Sass -->
     <a href="#sass"><kbd><img src="assets/png/sass.png" height="70"></kbd></a>
     <!-- React -->
-    <a href="devs/web/react/readme.md"><kbd><img src="assets/png/react.png" height="70"></kbd></a>
+    <a href="./frontend/react/"><kbd><img src="assets/png/react.png" height="70"></kbd></a>
     <!-- Markdown -->
     <a href="./frontend/markdown/"><kbd>
     <picture>
