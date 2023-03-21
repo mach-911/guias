@@ -15,7 +15,7 @@ npm install react-router-dom
 <a name="configurar-rutas"></a>
 ## Configurar rutas
 
-El enrutador o '**Router**' es un componente de nivel superior que hace que todos los demas componentes de navegación y *hooks* funcionen. React Router tiene **`BrowserRouter`** y **`HashRouter`** para aplicaciones web. En una aplicación se usa comúnmente **`<BrowserRouter>`** y este componente envuelve uno o elementos **`<Routes>`**.  
+El enrutador o '**Router**' es un componente de nivel superior que hace que todos los demas componentes de navegación y *hooks* funcionen. React Router tiene **`BrowserRouter`** y **`HashRouter`** para aplicaciones web. En una aplicación se usa comúnmente **`<BrowserRouter>`** y este componente envuelve uno o más elementos **`<Routes>`**.  
 
 **`<Routes>`** comprueba todos sus hijos (*`children`*) que son elementos **`<Route>`** para encontrar la mejor coincidencia y representar esa parte de la interfaz.  
 
@@ -23,7 +23,7 @@ El enrutador o '**Router**' es un componente de nivel superior que hace que todo
 
 Para ver como funciona, preparamos unas páginas de ejemplo:  
 
-```js
+```jsx
 // src/Pages.jsx
 import {loremIpsum} from 'lorem-ipsum' // => npm i lorem-ipsum
 
@@ -47,7 +47,7 @@ En el bloque anterior creamos una función que genera una página con título do
 Ahora podemos importar y crear dos rutas para representar cada página:  
 
 
-```js
+```jsx
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import {PageOne, PageTwo} from "./Pages";
 
