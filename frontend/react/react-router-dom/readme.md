@@ -76,6 +76,7 @@ Como vemos la aplicación funciona para las rutas **one** y **two**. Sin embargo
 Las dos rutas de ejemplo anterior funcionan como se esperaba. Sin embargo no es conveniente escribir la URL en la barra de direcciones, sería mejor que nuestra aplicación sea capaz de navegar haciendo clic en los enlaces, que en React Router los podemos usar como un elemento **`<Link>`**.  
 
 ```jsx
+// src/MainPage.jsx
 import {Link} from "react-router-dom";
 
 export const MainPage = () => (
@@ -91,5 +92,33 @@ export const MainPage = () => (
   </nav>
 );
 ```
+
+```jsx
+// src/App.jsx
+import {MainPage} from "./MainPage";
+
+function App() {
+  <BrowserRouter>
+    <Routes>
+      <Route index element={<MainPage/>} />
+      <Route path="/one" element={<PageOne/>} />
+      <Route path="/two" element={<PageTwo/>} />
+    </Routes>
+  </BrowserRouter>
+}
+```
+
+Ahora tenemos una nevegación muy básica con dos enlaces que nos llevará a las rutas definidas. Sin embargo dentro de **`PageOne`** y **`PageTwo`**, no podemos usar los enlaces para navegar ya que no aparecen como se muestra a continuación:  
+
+![React router gif](./assets/02.gif)
+
+
+
+
+
+
+
+
+
 
 
