@@ -1,4 +1,7 @@
-# CONTENIDO
+# React Router :rocket:
+
+
+## CONTENIDO
 
 - [Instalación](#instalacion)
 - [Configurar rutas](#configurar-rutas)
@@ -113,7 +116,7 @@ Ahora tenemos una nevegación muy básica con dos enlaces que nos llevará a las
 ![React router gif](./assets/02.gif)
 
 
-
+Para resolver este problema, crearemos un componente `<Outlet>`
 
 
 
