@@ -53,13 +53,13 @@ import {PageOne, PageTwo} from "./Pages";
 
 function App() {
   return (
-  	<BrowserRouter>
+    <BrowserRouter>
   	  <Routes>
   	    <Route path="/one" element={<PageOne/>} />
   	    <Route path="/two" element={<PageTwo/>} />
   	  </Routes>
     </BrowserRouter>
-	)
+  )
 }
 ```
 
@@ -71,6 +71,25 @@ Como vemos la aplicación funciona para las rutas **one** y **two**. Sin embargo
 
 > ***Nota:*** Dado que react Router v6 es lo suficientemente inteligente como para elgir la coincidencia más específica, el orden de la ruta no importa
 
+## Configurar navegación de rutas
 
+Las dos rutas de ejemplo anterior funcionan como se esperaba. Sin embargo no es conveniente escribir la URL en la barra de direcciones, sería mejor que nuestra aplicación sea capaz de navegar haciendo clic en los enlaces, que en React Router los podemos usar como un elemento **`<Link>`**.  
+
+```jsx
+import {Link} from "react-router-dom";
+
+export const MainPage = () => (
+  <nav>
+    <ul>
+      <li>
+        <Link to="/one">Página uno</Link>
+      </li>
+      <li>
+        <Link to="/two">Página dos</Link>
+      </li>
+    </ul>
+  </nav>
+);
+```
 
 
