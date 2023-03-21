@@ -32,8 +32,8 @@ const getPage = (index) => {
   	<>
   	  <h1>Página actual</h1>
   	    <section>
-  	      <h3>Contenido de la página: {index} </h3>
-  	      {loremIpsum({count: 10})}
+  	      <h3>Contenido de la página: {index}</h3>
+  	      <p>{loremIpsum({count: 10})}</p>
   	    </section>
   	</>
   )
@@ -51,7 +51,7 @@ Ahora podemos importar y crear dos rutas para representar cada página:
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import {PageOne, PageTwo} from "./Pages";
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
   	  <Routes>
@@ -97,7 +97,7 @@ export const MainPage = () => (
 // src/App.jsx
 import {MainPage} from "./MainPage";
 
-function App() {
+export default function App() {
   <BrowserRouter>
     <Routes>
       <Route index element={<MainPage/>} />
@@ -111,7 +111,6 @@ function App() {
 Ahora tenemos una nevegación muy básica con dos enlaces que nos llevará a las rutas definidas. Sin embargo dentro de **`PageOne`** y **`PageTwo`**, no podemos usar los enlaces para navegar ya que no aparecen como se muestra a continuación:  
 
 ![React router gif](./assets/02.gif)
-
 
 
 
