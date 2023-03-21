@@ -2016,12 +2016,14 @@ object HelloWorld extends Application{
 }
 ```
 
-- `scheme` - Scheme
+**`scheme`** - Scheme  
+
 ```scheme
 (display "¡Hola Mundo!")
 ```
 
-- `smalltalk` - Smalltalk
+**`smalltalk`** - Smalltalk  
+
 ```smalltalk
 Transcript show: '¡Hola, Mundo!'
 ```
