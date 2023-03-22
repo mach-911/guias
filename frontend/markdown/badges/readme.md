@@ -12,21 +12,19 @@ Para agregar a profile y proyectos.
 - [Badges](#badges)
 
 
-<details>
-	<summary>Lista de badges</summary>
+# Lista de badges
 
-     - [Inteligencia Artificial y Bots](#artificial-intelligence-and-bots)
-     - [Bases de datos](#databases)
-     - [Navegadores](#browsers)
-     - [Control de versiones](#control-version)
-     - [Frameworks, Platformas y  Librerías](#frameworks-platforms-libraries)
-     - [IDEs/Editors](#ide-editor)
-     - [Lenguajes](#languages)
-     - [Sistemas operativos](#operating-system)
-     - [Social](#social)
-     - [Otros](#others)
-     
-</details>
+- [Inteligencia Artificial y Bots](#artificial-intelligence-and-bots)
+- [Bases de datos](#databases)
+- [Navegadores](#browsers)
+- [Control de versiones](#control-version)
+- [Frameworks, Platformas y  Librerías](#frameworks-platforms-libraries)
+- [IDEs/Editors](#ide-editor)
+- [Lenguajes](#languages)
+- [Sistemas operativos](#operating-system)
+- [Social](#social)
+- [Otros](#others)
+
 
 
 # Uso
@@ -1646,6 +1644,18 @@ https://shields.io/badge/style-flat-green?logo=appveyor&style=flat
 				</code>
 			</td>
 		</tr>
+		<!-- JWT - JsonWebToken -->
+		<tr>
+			<td align="center">JWT</td>
+			<td align="center">
+				<img src="https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens" height="25">
+			</td>
+			<td align="left">
+				<code>
+					![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+				</code>
+			</td>
+		</tr>		
 		<!-- Less -->
 		<tr>
 			<td align="center">Less</td>
