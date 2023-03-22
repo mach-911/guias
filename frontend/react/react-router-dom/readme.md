@@ -6,6 +6,8 @@
 - [Instalación](#instalacion)
 - [Configurar rutas](#configurar-rutas)
 - [Usar el hook useRoutes](#usar-hook-useroutes)
+- [Usar el hook useParams](#usar-hook-useparams)
+- [Usar el hook useNavigate](#usar-hook-usenavigate)
 
 
 
@@ -262,7 +264,7 @@ function App(){
   const location = useLocation();
 
   useEffect(() => {
-    console.log("Estás en:", location);
+    console.log("Estás en:", location.pathname);
   }, [location]);
   
   const routes = useRoutes([
@@ -301,6 +303,7 @@ export default function AppWrapper() {
 Ahora modificamos los enlaces en *`src/MainPage.jsx`*:  
 
 ```jsx
+// src/MainPage.jsx
 import {Link, Outline} from "react-router-dom";
 
 export const MainPage = () => {
@@ -355,12 +358,45 @@ export const PageTwo = () => BuildPage(2);
 
 ```
 
+Dado que de debe usar un *hook* en un componente de React, es por ello que cambiamos la función de **getPage** a **BuildPage**. Si abrimos la consola del navegador, veremos mensajes como: `Estás en la ruta: /two/1`
 
 
+<a name="usar-hook-usenavigate"></a>
+## Uso del hook useNavigate
+
+Este *hook* nos devuelve una función que se puede usar para navegar programaticamente. Remplacemos los enlaces **`<Link>`** por **`<button>`** en *`src/MainPage`*:  
 
 
+```jsx
+// src/MainPage.jsx
+import { useNavigate, Link, Outlet } from "react-router-dom";
 
+export const MainPage = () => {
+  const navigate = useNavigate();
 
-
-
-
+  return (
+    <>
+      <nav>
+        <ul>
+          <li>
+            <button onClick={() => navigate("one", { replace: false })}>
+              Página uno
+            </button>{" "}
+            <Link to="/one/1">P1</Link>&nbsp;
+            <Link to="/one/2">P2</Link>
+          </li>
+          <li>
+            <button onClick={() => navigate("two", { replace: false })}>
+              Página dos
+            </button>{" "}
+            <Link to="/two/1">P1</Link>&nbsp;
+            <Link to="/two/2">P2</Link>
+          </li>
+        </ul>
+      </nav>
+      <hr />
+      <Outlet />
+    </>
+  );
+};
+```
