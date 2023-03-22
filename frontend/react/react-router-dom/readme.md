@@ -116,7 +116,50 @@ Ahora tenemos una nevegación muy básica con dos enlaces que nos llevará a las
 ![React router gif](./assets/02.gif)
 
 
-Para resolver este problema, crearemos un componente `<Outlet>`
+Para resolver este problema, crearemos un componente **`<Outlet>`** en **<MainPage>**. El componente **`<Outlet/>`** representa la siguiente coincidencia : ("**one**" para PageOne y "**two**" para PageTwo) en la ruta.  
+
+```jsx
+// src/MainPage.jsx
+import {Link} from "react-router-dom";
+
+export const MainPage = () => (
+  <>
+    <nav>
+      <ul>
+        <li>
+          <Link to="/one">Página uno</Link>
+        </li>
+        <li>
+          <Link to="/two">Página dos</Link>
+        </li>
+      </ul>
+    </nav>
+    <hr/>
+    <Outlet />
+  </>
+);
+```
+
+**`<Outlet>`** muestra rutas anidadas, donde cada ruta puede tener rutas secundarias para ocupar parte de la URL. Las rutas anidadas suelen utilizar enlaces relaticos.  
+
+```jsx
+// src/App.jsx
+import {MainPage} from "./MainPage";
+
+export default function App() {
+  <BrowserRouter>
+    <Routes>
+      <Route index element={<MainPage/>}>
+        <Route index element={<PageOne/>} />
+        <Route path="/one" element={<PageOne/>} />
+        <Route path="/two" element={<PageTwo/>} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
+}
+
+```
+
 
 
 
