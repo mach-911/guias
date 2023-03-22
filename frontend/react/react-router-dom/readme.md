@@ -5,6 +5,7 @@
 
 - [Instalación](#instalacion)
 - [Configurar rutas](#configurar-rutas)
+- [Usar el hook useRoutes](#usar-hook-useroutes)
 
 
 
@@ -74,6 +75,9 @@ Como vemos la aplicación funciona para las rutas **one** y **two**. Sin embargo
 
 > ***Nota:*** Dado que react Router v6 es lo suficientemente inteligente como para elgir la coincidencia más específica, el orden de la ruta no importa
 
+---
+
+<a href="configurar-navegacion"></a>
 ## Configurar navegación de rutas
 
 Las dos rutas de ejemplo anterior funcionan como se esperaba. Sin embargo no es conveniente escribir la URL en la barra de direcciones, sería mejor que nuestra aplicación sea capaz de navegar haciendo clic en los enlaces, que en React Router los podemos usar como un elemento **`<Link>`**.  
@@ -116,7 +120,7 @@ Ahora tenemos una nevegación muy básica con dos enlaces que nos llevará a las
 ![React router gif](./assets/02.gif)
 
 
-Para resolver este problema, crearemos un componente **`<Outlet>`** en **<MainPage>**. El componente **`<Outlet/>`** representa la siguiente coincidencia : ("**one**" para PageOne y "**two**" para PageTwo) en la ruta.  
+Para resolver este problema, crearemos un componente **`<Outlet>`** en **`<MainPage>`**. El componente **`<Outlet/>`** representa la siguiente coincidencia : ("**one**" para PageOne y "**two**" para PageTwo) en la ruta.  
 
 ```jsx
 // src/MainPage.jsx
@@ -140,7 +144,7 @@ export const MainPage = () => (
 );
 ```
 
-**`<Outlet>`** muestra rutas anidadas, donde cada ruta puede tener rutas secundarias para ocupar parte de la URL. Las rutas anidadas suelen utilizar enlaces relaticos.  
+**`<Outlet>`** muestra rutas anidadas, donde cada ruta puede tener rutas secundarias para ocupar parte de la URL. Las rutas anidadas suelen utilizar enlaces relativos.  
 
 ```jsx
 // src/App.jsx
@@ -157,8 +161,53 @@ export default function App() {
     </Routes>
   </BrowserRouter>
 }
-
 ```
+
+---
+
+<a name="usar-hook-useroutes"></a>
+## Usar el hook useRoutes
+
+Otra forma, en lugar de **`<Routes>`**, también podemos usar el *hook* **`useRoutes`** que nos proporciona React Router.  
+
+Podemos rescribir las rutas anidadas en *`src/App.jsx`* de la siguiente forma:  
+
+```jsx
+import {BrowserRouter, useRoutes} from "react-router-dom";
+import {MainPage} from "./MainPage";
+import {PageOne, PageTwo} from "./Pages";
+
+function App() {
+  const routes = useRoutes([
+    { 
+      path: "/",
+      element: <MainPage/>,
+      children: [
+        {index, element: <PageOne/>},
+        {path:"*", element: <PageOne/>},
+        {path:"two", element: <PageTwo/>}
+      ]
+    }  
+  ]);
+  return routes;
+}
+
+export default function AppWrapper() {
+  return (
+    <BrowserRouter>
+      <App/>
+    </BrowserRouter>
+  )	
+}
+```
+
+---
+
+## Usar el hook useLocation
+
+
+
+
 
 
 
