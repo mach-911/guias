@@ -10,8 +10,11 @@ Para agregar a profile y proyectos.
 - [Uso](#uso)
 - [Tips](#tips)
 - [Badges](#badges)
-  - <details> <summary>Lista de badges</summary>
- 
+
+
+<details>
+	<summary>Lista de badges</summary>
+
      - [Inteligencia Artificial y Bots](#artificial-intelligence-and-bots)
      - [Bases de datos](#databases)
      - [Navegadores](#browsers)
@@ -22,7 +25,8 @@ Para agregar a profile y proyectos.
      - [Sistemas operativos](#operating-system)
      - [Social](#social)
      - [Otros](#others)
-   </details>
+     
+</details>
 
 
 # Uso
