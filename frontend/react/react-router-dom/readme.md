@@ -203,9 +203,157 @@ export default function AppWrapper() {
 
 ---
 
+<a name="usar-hook-uselocation"></a>
 ## Usar el hook useLocation
 
 
+El *location* es un objeto que representa la ubicación de la URL, se basa en el objeto del navegador **`useLocation`** usa `window.location` por abajo:  
+
+
+```jsx
+import {useEffect} from "react";
+import {BrowserRouter, useLocation, useRoutes} from "react-router-dom";
+import {MainPage} from "./MainPage";
+import {PageOne, PageTwo} from "./Pages";
+
+function App() {
+  const location = useLocation();
+  useEffect(() => {
+    console.log("Estas en", location);
+  },[location]);
+
+  const routes = useRoutes([
+    { 
+      path: "/",
+      element: <MainPage/>,
+      children: [
+        {index, element: <PageOne/>},
+        {path:"*", element: <PageOne/>},
+        {path:"two", element: <PageTwo/>}
+      ]
+    }  
+  ]);
+  return routes;
+}
+
+export default function AppWrapper() {
+  return (
+    <BrowserRouter>
+      <App/>
+    </BrowserRouter>
+  )	
+}
+```
+
+---
+
+<a name="usar-hook-useparams"></a>
+## Usar el hook useParams
+
+Para hacer un ejemplo más interesante, podemos anidar más rutas. En **`MainPage`** además de los enlaces para **`PageOne`** y **`PageTwo`**, agregamos enlaces más detallados como **`P1`** para el **párrafo 1** y **`P2`** **párrafo 2**:  
+
+```jsx
+// src/App.jsx
+import {BrowserRouter, useRoutes, useParams} from "react-router-dom";
+import {MainPage} from "./MainPage";
+import {PageOne, PageTwo} from "./Pages";
+
+function App(){
+  const location = useLocation();
+
+  useEffect(() => {
+    console.log("Estás en:", location);
+  }, [location]);
+  
+  const routes = useRoutes([
+    {
+      path: "/",
+      element: <MainPage />,
+      children: [
+        { index: true, element: <PageOne /> },
+        { path: "*", element: <PageOne /> },
+        {
+          path: "one",
+          element: <PageOne />,
+          children: [{ path: ":id", element: <PageOne /> }],
+        },
+        {
+          path: "two",
+          element: <PageTwo />,
+          children: [{ path: ":id", element: <PageTwo /> }],
+        },
+      ],
+    },
+  ]);
+  return routes;
+}
+
+
+export default function AppWrapper() {
+  return (
+    <BrowserRouter>
+      <App/>
+    </BrowserRouter>
+  )	
+}
+```
+
+Ahora modificamos los enlaces en *`src/MainPage.jsx`*:  
+
+```jsx
+import {Link, Outline} from "react-router-dom";
+
+export const MainPage = () => {
+  return (
+  <>
+    <nav>
+      <ul>
+        <li>
+          <Link to="/one">Página uno</Link>&nbsp;
+          <Link to="/one/1">P1</Link>&nbsp;
+          <Link to="/one/2">P2</Link>
+        </li>
+        <li>
+          <Link to="/two">Página dos</Link>&nbsp;
+          <Link to="/two/1">P1</Link>&nbsp;
+          <Link to="/two/2">P2</Link>
+        </li>
+      </ul>
+    </nav>
+    <hr/>
+    <Outlet />
+  </>
+  )
+}
+```
+
+El *hook* **`useParams`** devuelve un objeto de pares **clave/valor** de los parámetros dinámicos de la URL actual. Aquí en *`src/Pages`* podemos modificar lo siguiente:  
+
+
+```jsx
+// src/Pages
+import { loremIpsum } from "lorem-ipsum"; // => npm i lorem-ipsum
+import { useParams } from "react-router";
+
+const BuildPage = (index) => {
+  const { id } = useParams();
+
+  return (
+    <>
+      <h2>Página {index}</h2>
+      <section>
+        <h3>Contenido de la página: {index}</h3>
+        {id && <h4>Párrafo {id}</h4>}
+        <p>{loremIpsum({ count: 5 })}</p>
+      </section>
+    </>
+  );
+};
+
+export const PageOne = () => BuildPage(1);
+export const PageTwo = () => BuildPage(2);
+
+```
 
 
 
