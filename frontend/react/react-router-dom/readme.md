@@ -1,6 +1,6 @@
 # React Router :rocket:
 
-
+<a name="top"></a>
 ## CONTENIDO
 
 - [Instalación](#instalacion)
@@ -203,6 +203,8 @@ export default function AppWrapper() {
 }
 ```
 
+[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge)](#top)
+
 ---
 
 <a name="usar-hook-uselocation"></a>
@@ -246,6 +248,8 @@ export default function AppWrapper() {
   )	
 }
 ```
+
+[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge)](#top)
 
 ---
 
@@ -360,6 +364,9 @@ export const PageTwo = () => BuildPage(2);
 
 Dado que de debe usar un *hook* en un componente de React, es por ello que cambiamos la función de **getPage** a **BuildPage**. Si abrimos la consola del navegador, veremos mensajes como: `Estás en la ruta: /two/1`
 
+[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge)](#top)
+
+---
 
 <a name="usar-hook-usenavigate"></a>
 ## Uso del hook useNavigate
@@ -400,3 +407,5 @@ export const MainPage = () => {
   );
 };
 ```
+
+[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge)](#top)
