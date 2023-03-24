@@ -1,6 +1,7 @@
 [comment]: <> (Author: Marco Contreras Herrera)
 [comment]: <> (Email: enidev911@gmail.com)
 
+
 ![banner](assets/banner.png)
 
 # MySQL :rocket:
@@ -30,7 +31,7 @@ Comienza la decarga
 Extraemos el contenido en el directorio deseado
 ![extraer contenido](assets/03.png)
 
-[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#top)
+[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%23000?style=for-the-badge)](#top)
 
 ---
 
