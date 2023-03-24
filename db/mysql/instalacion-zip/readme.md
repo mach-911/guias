@@ -11,6 +11,7 @@
 
 1. [Descarga y extrae los archivos.](#descarga)
 1. [Archivos de opciones](#archivo-de-opciones)
+1. [Crear y editar archivo de opciones](#crear-editar-archivo-de-opciones)
 1. [Inicializar servidor](#inicializar-servidor)
 1. [Primera conexión](#first_connect)
 1. [Establecer contraseña](#change_password)
@@ -57,7 +58,9 @@ El archivo dentro tiene una sección o directiva exclusiva para el servidor **`[
 - **`datadir`**: la ubicación del directorio de datos.  
 (Este se crea por defecto dentro del directorio base de instalación cuando inicializamos por primera vez el servidor, por ende, es importante crear un archivo de opciones previamente para establecer donde queremos que se cree este directorio de datos).  
 
-**Crear y editar un nuevo archivo de opciones**
+<a name="crear-editar-archivo-de-opciones"></a>
+## Crear y editar un nuevo archivo de opciones
+****
 
 Un archivo de opciones puede crearse y modificarse con cualquier editor de texto, como el bloc de notas lo importante es guardar el archivo como my.ini en el directorio raíz Ej: **C:\\MySQL8**.  
 
