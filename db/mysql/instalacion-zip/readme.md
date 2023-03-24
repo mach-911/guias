@@ -52,9 +52,9 @@ Esto es especialmente necesario en las siguiente circuntancias:
 Los parámetros declarados dentro del archivo de opciones son leidos como la configuración para iniciar el servidor de base de datos MySQL.  
 El archivo dentro tiene una sección o directiva exclusiva para el servidor **`[mysqld]`** donde se puede definir la siguiente información: 
 
-- **basedir**: el directorio base de instalación.  
+- **`basedir`**: el directorio base de instalación.  
 (En el ejemplo de esta guía el directorio base es **C:\\MySQL8**)  
-- **datadir**: la ubicación del directorio de datos.  
+- **`datadir`**: la ubicación del directorio de datos.  
 (Este se crea por defecto dentro del directorio base de instalación cuando inicializamos por primera vez el servidor, por ende, es importante crear un archivo de opciones previamente para establecer donde queremos que se cree este directorio de datos).  
 
 **Crear y editar un nuevo archivo de opciones**
@@ -67,12 +67,11 @@ En la raíz de donde se descomprimieron los archivos, creamos un nuevo archivo d
 ![crear archivo de opciones](assets/05.png)
 
 
-**Aquí está las opciones que tengo definidas en el archivo:**
+A continuación están las opciones más recomendadas para definirlas en base a sus necesidades:
 
-```mysql.ini
+```ini
 [client]
 port=3306
-socket=/temp/mysql.shock
 
 [mysqld]
 basedir=C:/MySQL8
@@ -85,7 +84,7 @@ max_allowed_packet=8M
 quick
 ```
 
-Aunque MySQL ya viene con valores predeterminado en la configuración inicial, nos bastaría con solo indicar los parámetros **basedir** y **datadir**.  
+Aunque MySQL ya viene con valores predeterminado en la configuración inicial, nos bastaría con solo indicar los parámetros **`basedir`** y **`datadir`** y siempre puede ver más opciones en su <a href="https://dev.mysql.com/doc/refman/8.0/en/option-files.html" target="_blank">sitio web oficial</a>.  
 
 Los nombres de las rutas de acceso de Windows se especifican en los archivos de opciones mediante barras diagonales (hacia adelante) en lugar de barras diagonales inversas. Si usa barras invertidas, duplíquelas Ej:
 
