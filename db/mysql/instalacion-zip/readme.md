@@ -11,7 +11,7 @@
 
 1. [Descarga y extrae los archivos.](#descarga)
 1. [Archivos de opciones](#archivo-de-opciones)
-1. [Inicializar servidor](#init)
+1. [Inicializar servidor](#inicializar-servidor)
 1. [Primera conexión](#first_connect)
 1. [Establecer contraseña](#change_password)
 1. [Configurar MySQL como un servicio](#install_as_service)
@@ -69,7 +69,7 @@ En la raíz de donde se descomprimieron los archivos, creamos un nuevo archivo d
 
 A continuación están las opciones más recomendadas para definirlas en base a sus necesidades:
 
-```ini
+```txt
 [client]
 port=3306
 
@@ -88,18 +88,20 @@ Aunque MySQL ya viene con valores predeterminado en la configuración inicial, n
 
 Los nombres de las rutas de acceso de Windows se especifican en los archivos de opciones mediante barras diagonales (hacia adelante) en lugar de barras diagonales inversas. Si usa barras invertidas, duplíquelas Ej:
 
-```mysql
+```txt
 [mysqld]
 basedir=C:\\MySQL8
 datadir=C:\\data
 ```
+
 >nota: Si la carpeta que hemos definidos para los datos no existe, la creará por nosotros, pero si debe existir el destino de ruta que hemos indicado.
 
-[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#top)
+[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%23000?style=for-the-badge)](#top)
 
 ---
 
-### <a name="init"></a>&#9875; INICIALIZAR EL SERVIDOR
+<a name="inicializar-servidor"></a>
+## INICIALIZAR EL SERVIDOR
 
 Como hemos apreciado el paquete ZIP no incluye un directorio **data**. Para inicializar una instalación de MySQL, en caso de que no hayamos creando el archivo de opciones, se creara un directorio **data** dentro del directorio de instalación y dentro de ese directorio se crearan las bases de datos del sistema llenando las tablas del sistema MySQL. 
 
