@@ -19,7 +19,7 @@
 </p>
 
 <!-- Tools development -->
-<h2 align="center">KIT DE DESARROLLO</h2>
+<h1 align="center">KIT DE DESARROLLO</h1>
 <p align="center">
     <!-- Git -->
     <a href="devs/tools/git/index.md"><kbd><img src="assets/png/git.png" height="70"></kbd></a>
