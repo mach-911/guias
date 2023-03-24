@@ -6,7 +6,8 @@
 
 |<img height="30" src="../../assets/png/linux.png" />|<img height="30" src="../../assets/png/windows.png" />|
 |--|--|
-|[Ubuntu](instalacion-ubuntu)|[Zip](instalacion-desde-zip)|
+|[Ubuntu](instalacion-ubuntu)|[Desde un archivo zip](instalacion-desde-zip)|
+||[Desde el instalador](./instalacion-windows)|
 
 
 ### GUÍAS Y PAPERS 📑
