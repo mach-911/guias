@@ -21,9 +21,9 @@
 <br>
 
 <a name="descarga"></a>
-## DESCARGAR ARCHIVO ZIP &#x25b6; [aquí](https://dev.mysql.com/downloads/file/?id=509736)
+## DESCARGAR ARCHIVO ZIP
 
-Ya esta seleccionado el archivo, solo damos clic en donde está señalado en la siguiente ilustración y comenzará la descarga.
+Ingresa 👉 [aquí](https://dev.mysql.com/downloads/file/?id=509736) para ir a la página de descarga, ya esta seleccionado el archivo, solo damos clic en donde está señalado en la siguiente ilustración y comenzará la descarga.
 
 ![página de descarga](assets/01.png)
 Comienza la decarga
@@ -44,8 +44,8 @@ Si es necesario especificarle opciones al servidor durante su inicio, esto tambi
 Esto es especialmente necesario en las siguiente circuntancias:
 
 1. El directorio de instalación o de datos son diferentes de los usados por defecto, Por ejemplo:  
-    - C:\Program Files\MySQL\MySQL Server 8.x  
-    - C:\Program Files\MySQL\MySQL Server 8.x\data
+    - `📁 C:\Program Files\MySQL\MySQL Server 8.x`
+    - `📁 C:\Program Files\MySQL\MySQL Server 8.x\data`
 
 1. Es necesario afinar la configuración del servidor.  
 
