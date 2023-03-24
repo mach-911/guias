@@ -9,13 +9,6 @@
 
 1. [Descargar instalador](#descargar)
 1. [Ejecutar el instalador](#ejecutar-instalador)
-1. [Crear carpeta para las configuraciones](#crear-carpeta-data)
-1. [Configuración inicial](#configuracion-inicial)
-1. [Lanzar y detener el servidor](#lanzar-detener-servidor)
-1. [Configurar PostgreSQL como un servicio](#registar-como-servicio)
-1. [Agregar al PATH](#agregar-al-path)
-1. [Conectarse al servidor de PostgreSQL](#connect) 
-1. [Operaciones básicas en psql](#operaciones-psql) 
  
 ---
 
@@ -71,3 +64,18 @@ Vamos a la ubicación de las descargas &#x1f4c2; ➡ **C:\Users\<su-usuario\>\Do
     <img src="./assets/postgres-instalador-pantalla6.png" alt="pantalla 6">
 </p>
 
+<p align="center">
+    <img src="./assets/postgres-instalador-pantalla7.png" alt="pantalla 7">
+</p>
+
+<p align="center">
+    <img src="./assets/postgres-instalador-pantalla8.png" alt="pantalla 8">
+</p>
+
+<p align="center">
+    <img src="./assets/postgres-instalador-pantalla9.png" alt="pantalla 9">
+</p>
+
+<p align="center">
+    <img src="./assets/postgres-instalador-pantalla10.png" alt="pantalla 10">
+</p>
