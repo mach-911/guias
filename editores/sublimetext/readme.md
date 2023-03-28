@@ -6,4 +6,5 @@
 ### Extensiones
 
 - [Extensiones para edición de markdown](./extensiones-para-markdown/)
+- [Terminus: configurar terminales integradas con Terminus](./terminus/)
 - [Emmet](../../extensiones/emmet)
