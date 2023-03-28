@@ -26,7 +26,7 @@
 
 Configurar **Git-bash** para plataforma windows en Terminus:
 
-```json
+```js
 "shell_configs":
    [
       {
@@ -36,7 +36,7 @@ Configurar **Git-bash** para plataforma windows en Terminus:
           "enable": true,
           "default": false,
           "platforms": ["windows"]
-        },
+      }
    ]
 ```
 
@@ -61,7 +61,7 @@ Alternar el panel de Terminus:
 Configurar **Git-bash** para plataforma windows en Terminus:
 
 
-```json
+```js
 {
   //for git bash
   "keys": ["alt+j"],
@@ -71,13 +71,13 @@ Configurar **Git-bash** para plataforma windows en Terminus:
       "cwd": "${file_path:${folder}}",
       "panel_name": "Terminus"
     }
-},
+}
 ```
 
 Configurar **CMD** para plataforma windows en Terminus:
 
 
-```json
+```js
 {
   //for CMD
   "keys": ["alt+c"],
