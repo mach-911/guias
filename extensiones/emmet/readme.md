@@ -30,13 +30,28 @@ Escribir el nombre del paquete, en este caso tiene el nombre de ***Emmet***:
 ## Fragementos link
 
 
-<h3><code>link:favicon</code> </h3>
+### Para favicon
 
-Generar una etiqueta link para favicon:  
+Generar una etiqueta link para favicon:  **`link:favicon`**
 
 ```html
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 ```
+
+### Para css
+
+Generar una etiqueta link para vincular hoja de estilos:  **`link:css`**
+
+```html
+<link rel="stylesheet" href="style.css">
+```
+
+Generar una etiqueta para vincular hoja de estilos para impresión: **`link:print`**  
+
+```html
+<link rel="stylesheet" href="print.css" media="print">
+```
+
 
 Para generar una etiqueta `<p>` con un contenido de texto en su interior debemos usar las llaves `{}` y luego con el símbolo u operador `+` podemos generar otras etiquetas a partir del mismo texto:  
 
