@@ -4,6 +4,7 @@
 
 ### Fragmentos de Emmet
 
+- [Etiquetas link](#emmet-link)
 - [Formularios](#formulario)
 
 <a name="instalacion"></a>
@@ -17,15 +18,21 @@
 
 Abrimos **package control** (<kbd>Crtl</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd>) luego escribimos **install** y seleccionamos la opción ***Install Package***.
 
-Escribir el nombre del paquete, en este caso tiene el nombre de ***Emmet***
+Escribir el nombre del paquete, en este caso tiene el nombre de ***Emmet***:  
+
+<p align="center">
+  <img src="./assets/install-package-emmet.png">
+</p>
 
 ---
 
+<a name="emmet-link"></a>
+## Fragementos link
+
+
+<h3><code>link:favicon</code> </h3>
 
 Generar una etiqueta link para favicon:  
-
-
-**`link:favicon`**
 
 ```html
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
