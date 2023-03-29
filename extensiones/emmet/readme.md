@@ -5,6 +5,7 @@
 ### Fragmentos de Emmet
 
 - [Etiquetas link](#emmet-link)
+- [PCS - (Parent-Child-Sibling)](#emmet-pcs)
 - [Formularios](#formulario)
 
 <a name="instalacion"></a>
@@ -53,12 +54,42 @@ Generar una etiqueta para vincular hoja de estilos para impresión: **`link:prin
 ```
 
 
-Para generar una etiqueta `<p>` con un contenido de texto en su interior debemos usar las llaves `{}` y luego con el símbolo u operador `+` podemos generar otras etiquetas a partir del mismo texto:  
+<a name="emmet-pcs"></a>
+## Fragementos PCS
 
-**`p>{Click }+a{aquí}+{ para continuar}`**
+### Para elementos hijos : Child >
+
+Generar una etiqueta `<nav>` con hijos y nietos en su interior: **`nav>ul>li`**
 
 ```html
-<p>Click <a href="">aquí</a> para continuar</p>
+<nav>
+  <ul>
+    <li></li>
+  </ul>
+</nav>
+```
+
+### Para elementos hermanos : Sibling +
+
+
+Generar una 3 etiquetas diferentes en relación de hermanas entre si : **`div+p+blockquote`**  
+
+```html
+<div></div>
+<p></p>
+<blockquote></blockquote>
+```
+
+### Subir un nivel ^
+
+Generar etiquetas anidadas y subir un nivel : **`main>article^footer`**  
+
+
+```html
+<main>
+  <article></article>
+</main>
+<footer></footer>
 ```
 
 
@@ -280,3 +311,13 @@ Generar los 6 niveles de cabeceras de las etiquetas `<h>` añadiendole el atribu
 ```
 
 >Esto no es una guía completa de emmet, solo algunos ejemplos practicos que comprenden los métodos de uso. Para ver una guía más en detalle de todo lo que ofrece emmet puedes ir a su [documentación oficial.](https://docs.emmet.io/) 
+
+## Otros ejemplos
+
+Para generar una etiqueta `<p>` con un contenido de texto en su interior debemos usar las llaves `{}` y luego con el símbolo u operador `+` podemos generar otras etiquetas a partir del mismo texto:  
+
+**`p>{Click }+a{aquí}+{ para continuar}`**
+
+```html
+<p>Click <a href="">aquí</a> para continuar</p>
+```
