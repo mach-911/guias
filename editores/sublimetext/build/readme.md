@@ -31,10 +31,10 @@ Todos los sistemas de compilación pueden usar las siguientes **claves** de nive
 - **cmd:** `array`  
 Matriz que contiene el comando a ejecutar y sus argumentos deseados. Si no especifica una ruta absoluta, el programa externo **debe estar configurado como variable de entorno en el PATH del usuario o en la de su sistema**.
 
-- **file_regex:** `string`  
+- **file_regex:** `string` 
 *Opcional*. Expresión regular (estilo Perl) para capturar la salida de error de cmd. 
 
-- **selector:** `string`   
+- **selector:** `string`  
 *Opcional*. Se utiliza cuando tenemos **tools | Build System | Automatic** configurado en *true*. Sublime usa este selector de alcance para encontrar automáticamente build apropiado para la vista activa. (**Ej:** `"selector": "source.python"`)  
 
 - **variants:** `array of objects`  
@@ -72,7 +72,8 @@ Sistemas de compilación subsidiarios que heredán las opciones del sistema de c
 
 ---
 
-### <a name="variables"></a>Variables
+<a name="variables"></a>
+### Variables
 
 Las siguientes variables se expandirán dentro de cualquier cadena especificada en las opciones **cmd**, **shell_cmd** o **working_dir**
 
@@ -108,6 +109,19 @@ Para los siguientes ejemplos debemos realizar, los siguientes pasos:
     + **Tools-\>Build System-\>New Build System**
 - Guardar con el nombre de : **Mi_build.sublime-build**
 - Copiar el siguiente código, remplazando los valores por los que tengas en tu sistema.
+
+
+<a name="servor"></a>
+<h3>Servor</h3>
+
+```json
+{
+    "encoding":"utf-8",
+    "shell_cmd": "servor $file_dir --browse --reload",
+    "selector": "source.html",
+    "working_dir": "$file_dir"
+}
+```
 
 <a name="cmd-python"></a>**Configurar un build de Python para CMD**
 
