@@ -54,6 +54,58 @@ El módulo de **morgan** se utiliza como un ***middleware*** de express, y lo po
 import morgan from "morgan";
 app.use(morgan('dev'));
 ```
+<a name="variables-express"></a>
+## Utilzar variables en express
+
+
+```js
+import pkg from "../package.json";
+
+const app = express();
+
+app.set('pkg', pkg);
+
+app.get("/", (req, res) => {
+  res.json({
+    name: app.get('pkg').name,
+    authors: app.get('pkg').author
+  })
+})
+```
+
+<a name="usar-modelo-producto"></a>
+### Usar el modelo
+
+Con el modelo de **`Producto`** vamos a poder consultar la base de datos. Primero lo recomendado es ver que no está enviando el cliente, asi que desde Postman vamos a enviar un **json** con la siguiente información:  
+
+```json
+{
+  "name": "planta 1"
+}
+```
+
+Para luego ir a nuestro controlador e imprimir esa información por consola:  
+
+```js
+export const createProduct = async (req, res) => {
+  console.log(req.body);
+  res.json('Creando producto');
+}
+```
+Si realizamos una nueva petición en Postman y nos detemos a ver la consola en el servidor, veremos lo siguiente:  
+
+***IMAGEN POSTMAN***
+
+Ese error es fácil solucionarlo, ya que debemos usar un *middleware* que permita interpretar **json**, este módulo viene desde express usando el método **`.json()`**, de la siguiente manera en nuestro **app.js**:  
+
+
+```js
+/* app.js */
+app.use(express.json());
+```
+
+
+
 
 Aquí le especificamos el argumento "`dev`", y este módulo hará lo siguiente, cada vez que nosotros visitemos una URL, nos va a mostrar los mensaje con la información como el tipo de petición, el código de respuesta y el tiempo de demora.
 
@@ -64,7 +116,7 @@ Para configurar nuestras rutas, vamos a crear unos archivos en **`src/routes`** 
 
 
 ```js
-// src/productos.routes.js
+// src/products.routes.js
 
 ```
 

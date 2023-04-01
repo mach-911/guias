@@ -13,9 +13,10 @@
 1. [Archivos de opciones](#archivo-de-opciones)
 1. [Crear y editar archivo de opciones](#crear-editar-archivo-de-opciones)
 1. [Inicializar servidor](#inicializar-servidor)
-1. [Primera conexión](#first_connect)
-1. [Establecer contraseña](#change_password)
-1. [Configurar MySQL como un servicio](#install_as_service)
+1. [Primera conexión](#primera-conexion)
+1. [Establecer contraseña](#establecer_password)
+1. [Configurar MySQL como un servicio](#registrar-como-servicio)
+  1. 
 
 ---
 
@@ -130,9 +131,8 @@ mysqld --initialize o --initialize-insecure.
 
 <p align="center">
   <img src="assets/06.png" width="800"><br>
-  <b>Esto puede tardar unos segundos o minutos</b><br>
+  Esto puede tardar unos segundos o minutos<br>
   <img src="assets/07.png" width="800"><br>
-  <b>Ahora corremos el servidor</b>
 </p>
 
 Al permitir el acceso del firewall del sistema, nos debe mostrar el siguiente mensaje al ejecutarse.
@@ -143,13 +143,14 @@ Al permitir el acceso del firewall del sistema, nos debe mostrar el siguiente me
 
 La opción `--console` es para ver el [log](https://es.wikipedia.org/wiki/Log) en la línea de comandos y nos debe indicar que se encuentra listo para recibir conexiones entrantes.
 
-En nuestro caso especificamos el destino para las bases de datos del sistema y el resto en **`C:\data`** si no la encuentra la crea y almacena el contenido. Si desea utilizar un directorio de datos en una ubicación diferente, debe copiar todo el contenido del directorio data en la nueva ubicación. Por ejemplo, si desea utilizarlo **`C:\mydata`** como directorio de datos, se puede hacer de dos formas:
+En nuestro caso especificamos el destino para las bases de datos del sistema y el resto en **`📁 C:\mysql8_data`** si no la encuentra la crea y almacena el contenido. Si desea utilizar un directorio de datos en una ubicación diferente, debe copiar todo el contenido del directorio data en la nueva ubicación. Por ejemplo, si desea utilizarlo **`C:\mydata`** como directorio de datos, se puede hacer de dos formas:
 
-1. Mueva todo el directorio data y todo su contenido desde la ubicación predeterminada. Por ejemplo **`C:\Path\installation\data`** a **`C:\mydata`** y luego detiene el servidor, realiza los cambios en el archivo de opciones y se vuelve a iniciar el servidor.
+1. Mueva todo el directorio data y todo su contenido desde la ubicación predeterminada. Por ejemplo **`📁 C:\mysql_data`** a **`📁 C:\mydata`** y luego debes detener el servidor, **realizar los cambios en el archivo de opciones y se vuelve a iniciar el servidor**.
 
-2. Utilizar la opción `--datadir` para especificar la nueva ubicación del directorio de datos cada vez que inicie el servidor. Ej:
 
-```mysql
+2. Utilizar la opción `--datadir` en la línea de comandos para especificar la nueva ubicación del directorio de datos cada vez que iniciemos el servidor. Ej:
+
+```bash
 mysqld --datadir 'path\your\data'
 ```
 
@@ -157,11 +158,12 @@ mysqld --datadir 'path\your\data'
 	<img src="assets/09.png" width="800">
 </p>
 
-[![](https://img.shields.io/badge/regresar%20a%20contenido%20principal-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#top)
+[![](https://img.shields.io/badge/regresar%20a%20contenido%20principal-%E2%86%A9-%23000?style=for-the-badge)](#top)
 
 ---
 
-### <a name="first_connect"></a>&#9875; PRIMERA CONEXIÓN
+<a name="primera-conexion"></a>
+## PRIMERA CONEXIÓN
 
 Independiente de la configuración que hemos dado para conectarnos al servidor, primero que nada debemos inicializarlo, y luego conectarnos como clientes, dentro de la carpeta **data** se encuentra un archivo llamado con el nombre de tu equipo y la extensión `.err` abrimos ese archivo con el bloc de nota y buscamos el password generado para el usuario root de manera temporal:
 
@@ -180,11 +182,12 @@ Ahora la primera tarea antes de comenzar a manipular bases de datos, será cambi
 </p>
 
 
-[![](https://img.shields.io/badge/regresar%20a%20contenido%20principal-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#top)
+[![](https://img.shields.io/badge/regresar%20a%20contenido%20principal-%E2%86%A9-%23000?style=for-the-badge)](#top)
 
 ---
 
-### <a name="change_password"></a>&#9875; ESTABLECER UNA NUEVA CONTRASEÑA
+<a name="establecer_password"></a>
+## ESTABLECER UNA NUEVA CONTRASEÑA
 
 
 La declaración **`ALTER_USER`** modifica las cuentas de MySQL. Permite modificar las propiedades de autenticación, SSL/TLS, límite de recursos y administración de contraseñas para las cuentas existentes. 
@@ -240,38 +243,42 @@ Cerramos la ventana de comandos y abrimos una nueva.
 
 ---
 
-### <a name="install_as_service"></a>&#9875; CONFIGURAR MYSQL COMO UN SERVICIO
+<a name="registrar-como-servicio"></a>
+## CONFIGURAR MYSQL COMO UN SERVICIO
 
 
 Nos posicionamos dentro del directorio de instalación e ingresamos a la carpeta bin y ejecutamos los siguientes comandos. **Para llevar a cabo estos pasos es necesario abrir la sesión de CMD con privilegios de administrador**.
 
 
-El siguiente comando es para asegurarte de no tener ninguna instancia del servidor corriendo actualmente.  
-```
-mysqladmin.exe -u root shutdown
-```
-
-El siguiente comando registra MySQL como servicio.  
+El siguiente comando es para asegurarte de no tener ninguna instancia del servidor corriendo actualmente:  
 
 ```bat
-:: Se registra con el nombre pasado como argumento.
-:: De lo contrario solo con el nombre MySQL por defecto.
+mysqladmin -u root shutdown
+```
+
+El siguiente comando registra MySQL como servicio:   
+
+```bat
 mysqld --install "MySQL8"
 ```
+>Se registra con el nombre pasado como argumento. De lo contrario solo con el nombre MySQL por defecto.
+
 
 <p align="center">
 	<img src="assets/16.png" width="800">
 </p>
 
-Ahora ya podemos iniciar el servicio o detenerlo desde la línea de comandos, pero para llevar a cabo el proceso tenemos que abrir una nueva ventana como **administrador**.
+Ahora ya podemos iniciar el servicio o detenerlo desde la línea de comandos, pero para llevar a cabo el proceso tenemos que abrir una nueva línea de comando como **administrador**.
 
-**Iniciar el servicio con el comando net**
-```
+**Iniciar el servicio con el comando net**  
+
+```bat
 net start MySQL
 ```
 
-**Detener el servicio con el comando:**
-```
+**Detener el servicio con el comando:**  
+
+```bat
 net stop MySQL
 ```
 
@@ -285,21 +292,12 @@ net stop MySQL
 sc delete "MySQL"
 ```
 
-[![](https://img.shields.io/badge/regresar%20a%20contenido%20principal-%E2%86%A9-%232BAAEC?style=for-the-badge&logo=readthedocs&logoColor=%23FAC173)](#top)
+[![](https://img.shields.io/badge/regresar%20a%20contenido-%E2%86%A9-%23000?style=for-the-badge)](#top)
 
 ---
 
 <p align="center">
-<!-- facebook -->
-<a href="https://www.facebook.com/profile.php?id=100009064421475"><img src="https://raw.githubusercontent.com/EniDev911/assets/main/ico/social-media/facebook_circled.ico" width="40"></a>
-<!-- github -->
-<a href="https://github.com/EniDev911"><img src="https://raw.githubusercontent.com/EniDev911/assets/main/ico/social-media/github_circled.ico" width="40"></a>
-<!-- twitter -->
-<a href="https://twitter.com/MarcoContreraas"><img src="https://raw.githubusercontent.com/EniDev911/assets/main/ico/social-media/twitter_circled.ico" width="40"></a><br>
 <!-- buymecoffe --><br>
 <a href="https://www.buymeacoffee.com/9111592">
 <img src="https://raw.githubusercontent.com/EniDev911/assets/main/png/support/buymeacoffee.png" height="80"></a>
-<!-- home --><br><br><br>
-<a href="../../../../../README.md#mysql">
-<img src="https://img.shields.io/badge/regresar%20a%20inicio-%E2%86%A9-blue?style=for-the-badge&logo=files&logoColor=%23FAC173" height="60"></a>
 </p>
