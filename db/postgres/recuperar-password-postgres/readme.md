@@ -6,9 +6,9 @@
 <a name="top"></a>
 
  
-De una vez te advierto que a pesar de que esta solución es una de las más fáciles que podemos realizar no recomiendo dejar este método como un *bypass* definitivo sino, que más bien una llave de emergencia para que nos permita cambias el password de nuestro superusuario administrador **postgres** y concluido el cambio, volver a dejar la configuración como estaba.
+De una vez te advierto que a pesar de que esta solución es una de las más fáciles que podemos realizar no recomiendo dejar este método como un *bypass* definitivo sino, que más bien una llave de emergencia para que nos permita cambiar el password de nuestro superusuario administrador **postgres** y concluido el cambio, volver a dejar la configuración como estaba.
 
-Lo cierto es que muchas veces olvidamos la contraseña de nuestro usuario administrador por defecto postgres y si estamos en un entorno local o de desarrollo lo podemos hacer sin ningún problema. Aquí asumo que estas usando alguna distribución de Linux pero si usas windows la idea es la misma sólo que cambia la ubicación de los archivos que vamos a trabajar, también asumo que tienes instalada alguna versión actualizada de postgresql, pero este método es muy efectivo desde versiones v12.x o superior, a partir de aquí en los comandos donde vean la “x” van a colocar el número de la versión que corresponde; ya con todo esto aclarado vamos a entrar en materia.
+Lo cierto es que muchas veces olvidamos la contraseña de nuestro usuario administrador por defecto postgres y si estamos en un entorno local o de desarrollo lo podemos hacer sin ningún problema. Aquí asumo que estas usando alguna distribución de Linux pero si usas windows la idea es la misma sólo que cambia la ubicación de los archivos que vamos a trabajar, también asumo que tienes instalada alguna versión actualizada de postgresql, pero este método es efectivo desde versiones v12.x o superior, a partir de aquí en los comandos donde vean la “x” van a colocar el número de la versión que corresponde; ya con todo esto aclarado vamos a entrar en materia.
 
 
 ## ¿Que vamos hacer?
@@ -26,6 +26,11 @@ Ubicación del archivo **`pg_hba.conf`**
 **Windows**
 
 - `C:\Program Files\PostgreSQL\12.x\data`
+
+
+Veamos dos casos de donde encontrar el archivo **`pg_hba.conf`** según tu versión de postgres instalada:
+
+![pg_hba.conf path](./assets/pg_hba_path.png)
 
 
 > Te recomiendo antes de editarlo hacer un respaldo del mismo de la siguiente manera: ***pg_hba.conf*** => ***pg_hba.conf.backup***
