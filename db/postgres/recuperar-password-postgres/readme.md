@@ -49,7 +49,7 @@ Ya ahora lo único que resta es cambiar el valor del algoritmo a **`trust`**:
 ## Cambiando el password
 
 
-Una vez cambiado el password, nos conectamos de la siguiente manera desde **psql**: 
+Una vez cambiado el método de autenticación, nos conectamos de la siguiente manera desde **psql**: 
 
 
 ```bash
@@ -63,8 +63,3 @@ Dentro lo único que debemos hacer usar el metacomando **`\password`** y cambiar
 ```
 
 ![cambio de password aplicado](./assets/cambio-de-password-aplicado.gif)
-
-
-
-
-
