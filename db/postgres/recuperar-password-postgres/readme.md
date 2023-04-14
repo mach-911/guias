@@ -61,7 +61,7 @@ Una vez cambiado el método de autenticación, nos conectamos de la siguiente ma
 psql -U postgres
 ```
 
-Dentro lo único que debemos hacer usar el metacomando **`\password`** y cambiarle el password al usuario administrador conectado:  
+Una vez conectado lo único que debemos hacer, es usar el metacomando **`\password`** y cambiarle el password al usuario administrador conectado *postgres*:  
 
 ```psql
 \password postgres
