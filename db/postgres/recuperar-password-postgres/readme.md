@@ -11,7 +11,7 @@ De una vez te advierto que a pesar de que esta solución es una de las más fác
 Lo cierto es que muchas veces olvidamos la contraseña de nuestro usuario administrador por defecto postgres y si estamos en un entorno local o de desarrollo lo podemos hacer sin ningún problema. Aquí asumo que estas usando alguna distribución de Linux pero si usas windows la idea es la misma sólo que cambia la ubicación de los archivos que vamos a trabajar, también asumo que tienes instalada alguna versión actualizada de postgresql, pero este método es efectivo desde versiones v12.x o superior, a partir de aquí en los comandos donde vean la “x” van a colocar el número de la versión que corresponde; ya con todo esto aclarado vamos a entrar en materia.
 
 
-## ¿Que vamos hacer?
+## ¿Qué vamos hacer?
 
 La idea es permitir el acceso sin necesidad de contraseña al servicio de postgres únicamente para conexiones locales, para eso necesitamos **editar el archivo de configuración de conexiones hacia el servicio de base de datos `pg_hba.conf`**.
 
