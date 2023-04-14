@@ -40,7 +40,7 @@ Una vez identificado el archivo lo abrimos con cualquier editor, bajamos hasta e
 - **`scram-sha-256`**: es el método de autenticación, en este caso basado en el algoritmo que señala, es posible que en vez de este valor, puede que veas  **`md5`** si es que estás en una versión de postgres anterior a la 12.
 
 
-Ya ahora lo único que resta es cambiar el valor del algoritmo a **`trust`**:
+Ya ahora lo único que resta es cambiar el valor del método de autenticación a **`trust`**:
 
 
 ![pg_hba.conf](./assets/pg_hba_trust.png)
