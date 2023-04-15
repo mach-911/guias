@@ -2,8 +2,11 @@ div.highlight {
 	position: relative;
 }
 
-pre,pre>code {
+pre>code {
 	position: relative;
+    display: flex;
+    align-items: center;
+    padding: 8px;
 }
 
 .highlighter-rouge .highlight {
