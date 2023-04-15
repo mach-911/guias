@@ -122,7 +122,7 @@ Generar una lista desordenada `<ul>` con 5 etiquetas `<li>` y a cada una de las 
 <a name="formulario"></a>
 ## formularios
 
-Generar un formulario ya sea con el método 'get' o 'post':  
+Generar un formulario ya sea con el método **get** o **post**:  
 
 **`form:get`** || **`form:post`**
 
@@ -310,7 +310,6 @@ Generar los 6 niveles de cabeceras de las etiquetas `<h>` añadiendole el atribu
 <input type="time" name="" id="">
 ```
 
->Esto no es una guía completa de emmet, solo algunos ejemplos practicos que comprenden los métodos de uso. Para ver una guía más en detalle de todo lo que ofrece emmet puedes ir a su [documentación oficial.](https://docs.emmet.io/) 
 
 ## Otros ejemplos
 
@@ -321,3 +320,6 @@ Para generar una etiqueta `<p>` con un contenido de texto en su interior debemos
 ```html
 <p>Click <a href="">aquí</a> para continuar</p>
 ```
+
+
+>Esto no es una guía completa de emmet, solo algunos ejemplos practicos que comprenden los métodos de uso. Para ver una guía más en detalle de todo lo que ofrece emmet puedes ir a su [documentación oficial.](https://docs.emmet.io/) 
