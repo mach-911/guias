@@ -3,7 +3,7 @@ import { CustomButton } from "../components/CustomButton.js"
 
 customElements.define('enidev-button', CustomButton);
 
-const codeBlocks = document.querySelectorAll("pre>code[class='language-*']");
+const codeBlocks = document.querySelectorAll("pre>code[class*='language']");
 
 const template = document.createElement("template");
 template.innerHTML = /*html*/ `

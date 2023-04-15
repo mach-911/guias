@@ -2,7 +2,7 @@ div.highlight {
 	position: relative;
 }
 
-pre>code[class="language-*"] {
+pre>code[class*="language"] {
 	position: relative;
 }
 
