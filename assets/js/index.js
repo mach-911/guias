@@ -10,6 +10,7 @@ template.innerHTML = /*html*/ `
 <enidev-button></enidev-button>
 `
 
+console.log("Estamos activado")
 // const BtnCopy = document.createElement("enidev-button");
 // const btnCodepen = document.createElement("enidev-button");
 
