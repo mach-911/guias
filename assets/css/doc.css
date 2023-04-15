@@ -1,3 +1,12 @@
+div.highlight {
+	position: relative;
+}
+
+
+.highlighter-rouge .highlight {
+	border-radius: 3px;
+}
+
 h2 {
 	margin-bottom: 25px;
 	text-decoration: underline wavy #ffc83d;
