@@ -6,7 +6,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png" width="30">
   <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png" width="30">
-  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png" width="30">
+  <img alt="Shows an illustrat/ ed sun in light mode and a moon with stars in dark mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png" width="30">
 </picture>
 
 
@@ -15,7 +15,7 @@
 
 - [Dependencias](#dependencias)
 - [Configurar morgan](#configurar-morgan)
-
+- [Crear schemas](#schemas)
 
 
 
@@ -120,3 +120,40 @@ Para configurar nuestras rutas, vamos a crear unos archivos en **`src/routes`** 
 
 ```
 
+<a name="schema"></a>
+## Crear los esquemas - (Schema)
+
+
+- [Esquema usuario](#schema-user)
+
+
+
+
+
+### Esquema de usuario
+
+Los usuarios tendrán la siguiente estructura dentro de una colección en MongoDB:  
+
+```js
+import { Schema, model } from "mongoose";
+
+const userSchema = Schema({
+  username: {
+    type: String,
+    unique: true
+  },
+  email: {
+    type: String,
+    unique: true
+  },
+  password: {
+    type: String,
+    required: true
+  }, 
+  roles: []
+})
+
+export default model('User', userSchema)
+```
+
+Definimos un **Array** en **roles** porque básicamente un usuario se le puede asignar uno o más roles
