@@ -4,4 +4,6 @@ Bajo mi punto de vista, es una de las características básicas y más important
 
 La integridad referencial se define con el uso combinado de claves primarias (*primary key* 🔑) y clave foránea (*foreign key* 🗝️).
 
-Las claves primarias y candidatas están formadas por valores únicos y una clave foránea solamente puede estar asociada a una de estas para garantizar la existencia de un solo valor correcto. Las claves candidatas se pueden definir creando un índice único (`CREATE UNIQUE INDEX ...`)
+Las claves primarias y candidatas están formadas por valores únicos y una clave foránea solamente puede estar asociada a una de estas para garantizar la existencia de un solo valor correcto. Las claves candidatas se pueden definir creando un índice único (`CREATE UNIQUE INDEX ...`) en la columna pertinente.
+
+

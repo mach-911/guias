@@ -2,6 +2,9 @@ div.highlight {
 	position: relative;
 }
 
+pre>code[class="language-*"] {
+	position: relative;
+}
 
 .highlighter-rouge .highlight {
 	border-radius: 3px;
