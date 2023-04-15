@@ -11,9 +11,7 @@ template.innerHTML = /*html*/ `
 `
 
 console.log("Estamos activado")
-// const BtnCopy = document.createElement("enidev-button");
-// const btnCodepen = document.createElement("enidev-button");
 
 codeBlocks.forEach(el => {
-	el.appendChild(template.content.cloneNode(true));
+	el.parentElement.appendChild(template.content.cloneNode(true));
 })

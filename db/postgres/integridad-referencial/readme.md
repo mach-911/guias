@@ -7,3 +7,9 @@ La integridad referencial se define con el uso combinado de claves primarias (*p
 Las claves primarias y candidatas están formadas por valores únicos y una clave foránea solamente puede estar asociada a una de estas para garantizar la existencia de un solo valor correcto. Las claves candidatas se pueden definir creando un índice único (`CREATE UNIQUE INDEX ...`) en la columna pertinente.
 
 
+Para poder usar esta funcionalidad es importante tener nuestra base de datos normalizada para:  
+
+- Evitar la redundancia de los datos.
+- Evitar problemas de actualización de lso datos en las tablas.
+- Proteger la integridad de los datos.
+
