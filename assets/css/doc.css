@@ -2,7 +2,7 @@ div.highlight {
 	position: relative;
 }
 
-pre>code {
+pre {
 	position: relative;
     display: flex;
     align-items: center;
