@@ -40,4 +40,4 @@ Su sintaxis es bastante sencilla:
 SELECT generate_series(comienzo, final, salto);
 ```
 
-Luego con la función **`MOD`** estamos consiguiendo un número entero (el resto de la división),resultado de dividir el primer argumento (*dividendo*) entre el segundo (*divisor*). Y asi podemos recorrer la lista de salario que creamos con **`WITH`**.
+Luego con la función **`MOD`** estamos consiguiendo un número entero (el resto de la división), resultado de dividir el primer argumento (*dividendo*) entre el segundo (*divisor*). Y asi podemos recorrer la lista de salario que creamos con **`WITH`**.
