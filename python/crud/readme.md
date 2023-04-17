@@ -407,10 +407,11 @@ La función `create_customer(customer)` guardará un registro de cliente en la b
 
 def create_customer(customer):
     with connection:
-        cursor.execute("INSERT INTO customer VALUES(:first,:last,:phone, :email, :address, :city)",
+        cursor.execute("INSERT INTO customers VALUES(:first, :last, :phone, :email, :address, :city)",
             {
                 'first': customer.first_name,
                 'last':customer.last_name,
+                'phone':customer.phone,
                 'email':customer.email,
                 'address':customer.address,
                 'city':customer.city
