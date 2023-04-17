@@ -16,7 +16,7 @@
 - [Trabajando con SQLite](#trabajando-con-sqlite)
 - [Insertando datos en la tabla](#insert-table)
 - [Consultar datos en la tabla](#obtener-los-registros)
-- [Utilizando la clase Cliente creada](#using-customer-class)
+- [Utilizando la clase Cliente creada](#utilizando-clase-cliente)
 - [Crear prototipo de las funciones CRUD](#crud-operations)
 
 
@@ -194,7 +194,7 @@ Después de revisar la base de datos, asegúrese de comentar las líneas de cód
 
 
 <a name="obtener-los-registros"></a>
-### Consultar la tabla desde Python
+## Consultar la tabla desde Python
 
 Ahora podemos consultar la tabla sin ningún programa externo. En el método **execute()** usaremos el comando "**SELECT**":  
 
@@ -217,22 +217,23 @@ cursor.execute("""
     """)
 
 
-"""
-cursor.execute("""
-    INSERT INTO customers (first_name, last_name, phone, email, address, city) 
-    VALUES
-    ('marco', 'contreras', '+56984687949', 'marco_contreras@gmail.com', 'av. los mojo-jojos', 'townsville')
-    """)
-"""
+# Comentamos este bloque para no se inserte nuevamente
+# ====================================================
+# cursor.execute("""
+#     INSERT INTO customers (first_name, last_name, phone, email, address, city) 
+#     VALUES
+#     ('marco', 'contreras', '+56984687949', 'marco_contreras@gmail.com', 'av. los mojo-jojos', 'townsville')
+#     """)
 
-cursor.execute("SELECT * FROM customer")
-print(cursor.fetchone())
+
+cursor.execute("SELECT * FROM customers")
+print(cursor.fetchall())
 
 connection.commit()
 connection.close()
 ```
 
-Después del método **execute()**, obtendremos un resultado de consulta para que podamos iterar para encontrar el resultado deseado. hay algunos métodos diferentes para iterar el resultado de la consulta. 
+Después del método **`execute()`**, obtendremos un resultado de consulta para que podamos iterar para encontrar el resultado deseado. hay algunos métodos diferentes para iterar el resultado de la consulta. 
 
 
 |Método|Funcionalidad|
@@ -242,9 +243,13 @@ Después del método **execute()**, obtendremos un resultado de consulta para qu
 |`fetchall()`|devolverá las filas restantes como una lista que queda. Si no hay filas, devolverá una lista vacía.|
 
 
-### <a name="using-customer-class"></a> Utilizando la clase de cliente(customer)
+---
 
-Primero, importamos la clase de cliente al archivo **sqlite_demo.py**. Ahora, tenemos que crear una instancia (objeto) de una clase de cliente. Crearemos dos instancias y las nombraremos como **customer1** y **customer2**:  
+<a name="utilizando-clase-cliente"></a>
+## Utilizando la clase de cliente
+
+
+Primero, importamos la clase de cliente al archivo **Customer.py**. Ahora, tenemos que crear instancias de la clase de cliente. Crearemos dos instancias y las nombraremos como **customer1** y **customer2**:  
 
 
 ```py
@@ -255,19 +260,18 @@ connection = sqlite3.connect('customer.db')
 
 cursor = connection.cursor()
 
-cursor.execute("""CREATE TABLE customer(
-    first_name text,
-    last_name text,
-    age integer,
-    city text,
-    country text
-)""")
+cursor.execute("""
+    CREATE TABLE IF NOT EXISTS customers(
+        first_name VARCHAR(50) NOT NULL,
+        last_name VARCHAR(50) NOT NULL,
+        phone VARCHAR(12) NOT NULL,
+        email VARCHAR(50) NOT NULL,
+        address VARCHAR(100),
+        city VARCHAR(50))
+    """)
 
-customer_1 = Customer('john', 'doe', 30, 'perth', 'Australia')
-customer_2 = Customer('sara', 'migel', 25, 'perth', 'Australia')
-
-connection.commit()
-connection.close()
+customer_1 = Customer('marco', 'contreras', '+569-84687949', 'av suecia 327', 'coquimbo')
+customer_2 = Customer('marcelo', 'riveros', '+569-89587949', 'av dinamarca 387', 'santiago')
 ```
 
 Por ejemplo, digamos que quiero guardar los valores del objeto **customer_1** en la base de datos. Si usamos el fomato de cadena, podemos utilizar las llaves como marcadores de posición. Luego usando el método **`format()`**, completará esos valores en el marcador de posición correspondiente. 
@@ -281,31 +285,37 @@ connection = sqlite3.connect('customer.db')
 
 cursor = connection.cursor()
 
-cursor.execute("""CREATE TABLE customer(
-    first_name text,
-    last_name text,
-    age integer,
-    city text,
-    country text
-)""")
+cursor.execute("""
+    CREATE TABLE IF NOT EXISTS customers(
+        first_name VARCHAR(50) NOT NULL,
+        last_name VARCHAR(50) NOT NULL,
+        phone VARCHAR(12) NOT NULL,
+        email VARCHAR(50) NOT NULL,
+        address VARCHAR(100),
+        city VARCHAR(50))
+    """)
 
-customer_1 = Customer('john', 'doe', 30, 'perth', 'Australia')
-customer_2 = Customer('sara', 'migel', 25, 'perth', 'Australia')
+customer_1 = Customer('marco', 'contreras', '+569-84687949', 'av suecia 327', 'coquimbo')
+customer_2 = Customer('marcelo', 'riveros', '+569-89587949', 'av dinamarca 387', 'santiago')
 
-cursor.execute("INSERT INTO customer VALUES ('{}', '{}', {}, '{}', '{}')".format(
-customer_1.first_name,
-customer_1.last_name,
-customer_1.age,
-customer_1.city,
-customer_1.country))
+cursor.execute("INSERT INTO customers VALUES ('{}', '{}', {}, '{}', '{}', '{}')".format(
+    customer_1.first_name,
+    customer_1.last_name,
+    customer_1.phone,
+    customer1.email, 
+    customer_1.city,
+    customer_1.country))
 
 connection.commit()
-
 connection.close()
 ```
+
+Como podemos observar no fue necesario pasar el **email** al momento de instanciar la clase, ya que este campo podemos obtenerlo desde el método **email** de la clase que creamos y lo podemos usar como una propiedad gracias al decorador **@property**  
+
 >**Nota:** utilizar el formato de cadena no es buena práctica ya que se considera muy propenso a la inyección de SQL.  
 
-**Forma adecuada de agregar un objeto a la base de datos**  
+
+### Forma adecuada de agregar un objeto a la base de datos
 
 Hay dos formas de insertar objetos en una base de datos correctamente. Dado que el enfoque de formato de cadena es propenso a la inyección SQL, es mejor usar cualquiera de los siguientes métodos.  
 
@@ -313,17 +323,22 @@ Hay dos formas de insertar objetos en una base de datos correctamente. Dado que 
 
 
 ```py
-cursor.execute("INSERT INTO customer VALUES (?,?,?,?,?)",
-            (customer_2.first_name, customer_2.last_name,
-             customer_2.age,customer_2.city,
-             customer_2.country))
+customer_1 = Customer('marco', 'contreras', '+569-84687949', 'av suecia 327', 'coquimbo')
+
+cursor.execute("INSERT INTO customers VALUES (?,?,?,?,?,?)",
+            (customer_1.first_name, customer_1.last_name,
+             customer_1.phone, customer_1.email,
+             customer_1.address, customer_1.city))
 connection.commit()
 ```
+
 Una cosa a tener en cuenta aquí, ya no usamos la función **`format()`**. En el método de ejecución, pase el segundo argumento como la tupla de valores de objeto que queremos guardar en la base de datos.  
 
 Veamos otro método para lograr la misma funcionalidad que antes.  
 
-Marcador de posición de DB-API a través de claves y valores de diccionario.  
+---
+
+2. Marcador de posición de DB-API a través de claves y valores de diccionario.  
 
 En lugar de usar los "**`?`**" como marcador de posición, usamos los dos puntos "**`:`**" con un nombre que describe el marcador de posición. En el método de ejecución, tenemos que pasar un diccionario como segundo argumento. Las claves del diccionario serán los nombres de los marcasdores de posición y los valores serán los que pasamos de los atributos del objeto. Ej:  
 
@@ -335,35 +350,45 @@ Usamos corchetes para denotar un diccionario.
 
 
 ```py
-customer_1 = Customer('john', 'doe', 30, 'perth', 'Australia')
+customer_1 = Customer('marco', 'contreras', '+569-84687949', 'av suecia 327', 'coquimbo')
 
-cursor.execute("INSERT INTO customer VALUES (:first, :last, :age, :city, :country)", 
-{'first':customer_1.first_name, 
-'last':customer_1.last_name, 
-'age':customer_1.age,
-'city':customer_1.city, 
-'country':customer_1.country})
+cursor.execute("INSERT INTO customers VALUES (:first, :last, :phone, :email, :city, :country)", 
+{
+    'first':customer_1.first_name, 
+    'last':customer_1.last_name, 
+    'phone':customer_1.phone,
+    'email':customer_1.email,
+    'address': customer_1.address,
+    'city': customer_1.city 
+})
 
 connection.commit()
 connection.close()
 ```
 
-### <a name="crud-operations"></a> Crear un prototipo de las funciones CRUD con la clase Customer
+---
 
-Para demostrar el ejemplo de Python y SQLite para un CRUD, crearé cuatro funciones en el archivo **sqlite_demo.py**.  
+<a name="crud-operations"></a>
+## Crear un prototipo de las funciones CRUD con la clase Customer
 
-1. create_customer(customer)
-2. get_customers(city)
-3. update_city(customer, city)
-4. delete_customer(customer)
+Para demostrar el ejemplo de Python y SQLite para un CRUD, crearé cuatro funciones en el archivo **crud.py**.
+
+
+1. `create_customer(customer)`
+2. `get_customers(city)`
+3. `update_city(customer, city)`
+4. `delete_customer(customer)`
+
 
 Las funciones anteriores son sencillas y hacen lo que han definido.  
 
-**Nota:** A veces es tedioso comprometer nuestras posibilidades cuando hemos realizado las operaciones CRUD en la base de datos. Una forma sencilla de resolver ese problema es utilizar los administradores de contexto de Python. Los administradores de contexto se utilizan para configurar y eliminar recursos automáticamente. Por ejemplo; el objeto de conexión se puede utilizar como administrador de contexto para confirmar y deshacer transacciones automáticamente.  
+>**Nota:** A veces es tedioso comprometer nuestras posibilidades cuando hemos realizado las operaciones CRUD en la base de datos. Una forma sencilla de resolver ese problema es utilizar los administradores de contexto de Python. Los administradores de contexto se utilizan para configurar y eliminar recursos automáticamente. Por ejemplo; el objeto de conexión se puede utilizar como administrador de contexto para confirmar y deshacer transacciones automáticamente.  
 
-La palabra clave **[with](https://realpython.com/python-with-statement/)** se utiliza para definir un administrador de contexto. Los administradores de contexto se pueden escribir usando clases o funciones con la ayuda de decoradores.  
+La palabra clave **[`with`](https://realpython.com/python-with-statement/)** se utiliza para definir un administrador de contexto. Los administradores de contexto se pueden escribir usando clases o funciones con la ayuda de decoradores.  
 
-**create_customer(**customer**)**  
+
+### Función para crear nuevos clientes
+
 
 La función `create_customer(customer)` guardará un registro de cliente en la base de datos.  
 
@@ -374,17 +399,22 @@ La función `create_customer(customer)` guardará un registro de cliente en la b
 
 def create_customer(customer):
     with connection:
-        cursor.execute("INSERT INTO customer VALUES(:first,:last,:age, :city,:country)",
-            {'first':customer.first_name,
-             'last':customer.last_name,
-             'age':customer.age,
-             'city':customer.city,
-             'country':customer.country})
+        cursor.execute("INSERT INTO customer VALUES(:first,:last,:phone, :email, :address, :city)",
+            {
+                'first': customer.first_name,
+                'last':customer.last_name,
+                'email':customer.email,
+                'address':customer.address,
+                'city':customer.city
+            })
 ```
 
-En el código anterior, nuestra función **`execute()`** del cursor se envuelve dentro del bloque **`with`**. para que no necesitemos una declaración **`commit()`** después de eso.  
 
-**get_customers(**city**)**  
+En el código anterior, el método **`execute()`** del cursor se envuelve dentro del bloque **`with`**. para que no necesitemos una declaración **`commit()`** después de eso.  
+
+
+### Función para obtener a los clientes
+
 
 La función `get_customers(city)` aceptará la ciudad del cliente y devolverá un conjunto de resultados.  
 
