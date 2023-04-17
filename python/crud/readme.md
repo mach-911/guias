@@ -422,6 +422,7 @@ def create_customer(customer):
 En el código anterior, el método **`execute()`** del cursor se envuelve dentro del bloque **`with`**. para que no necesitemos una declaración **`commit()`** después de eso.  
 
 
+
 ### Función para obtener a los clientes
 
 
@@ -433,16 +434,17 @@ La función `get_customers(city)` aceptará la ciudad del cliente y devolverá u
 # create database table
 
 def get_customers(city):
-    cursor.execute("SELECT * FROM customer WHERE city=:city", {'city':city})
+    cursor.execute("SELECT * FROM customers WHERE city=:city", {'city':city})
     return cursor.fetchall()
 ```
 
-**Nota:** es posible que se pregunte por qué no hay ningún bloque **`with`** aquí. Bueno, para la consulta **`SELECT`** no necesitamos la función **`commit()`**. Debido a que no necesita estar dentro de un administrador de contexto, pero si en el caso **INSERTAR**, **ACTUALIZAR**, **ELIMINAR**, entonces necesitamos un bloque **`with`**.  
+>**Nota:** es posible que se pregunte por qué no hay ningún bloque **`with`** aquí. Bueno, para la consulta **`SELECT`** no necesitamos la función **`commit()`**. Debido a que no necesita estar dentro de un administrador de contexto, pero si en el caso **INSERTAR**, **ACTUALIZAR**, **ELIMINAR**, entonces necesitamos un bloque **`with`**.  
 
 
-**update_customers(**customer, city**)**  
+### Función para actualizar a un cliente
 
-La ciudad del cliente se actualizará según el nombre y apellido del cliente proporcionado.  
+
+La función **`update_customers(customer, city)`**  actualizará la ciudad del cliente y se realizará según el nombre y apellido del cliente proporcionado.  
 
 ```py
 # import statements
@@ -451,16 +453,19 @@ La ciudad del cliente se actualizará según el nombre y apellido del cliente pr
 
 def update_city(customer, city):
     with connection:
-        cursor.execute("""UPDATE customer SET city=:city
+        cursor.execute("""UPDATE customers SET city=:city
             WHERE first_name=:first AND last_name=:last""",
-            {'first': customer.first_name, 'last': customer.last_name,
-             'city':city})
+            {
+                'first': customer.first_name, 
+                'last': customer.last_name,
+                'city': city
+            })
 ```
 
+### Función para eliminar a un cliente
 
-**delete_customers(**customer**)**  
 
-Si el nombre y apellido del cliente dado coinciden con los registros existentes de la base de datos, todos los registros con ese nombre se eliminarán de la base de datos.  
+La función **`delete_customers(customer)`**  Si el nombre y apellido del cliente dado coinciden con los registros existentes de la base de datos, todos los registros con ese nombre y apellido se eliminarán de la base de datos.
 
 ```py
 # import statements
@@ -469,46 +474,47 @@ Si el nombre y apellido del cliente dado coinciden con los registros existentes 
 
 def delete_city(customer):
     with connection:
-        cursor.execute("""DELETE FROM customer
+        cursor.execute("""DELETE FROM customers
             WHERE first_name=:first AND last_name=:last""",
             {'first': customer.first_name, 'last': customer.last_name})
 ```
 
-Muy bien, hemos implementado toda la funcionalidad CRUD. Ahora ejecutemos nuestro código para ver el resultado.  
+Muy bien, hemos implementado toda la funcionalidad CRUD. Ahora ejecutemos nuestro código para ver el resultado. 
 
 
-Primero que nada, necesitamos crear objetos customer. Crearemos algunos objetos de prueba.  
+Primero que nada, necesitamos crear objetos de la clase Customer. Para ello tenemos 4 objetos de prueba:  
 
-Luego insertar los clientes en la base de datos usando el método **create_customer(customer)**. Invocamos la función dos veces.  
+```py
+# import statements
+# create connection object
+# create database table
+# create crud function
+cliente1 = Customer('marco', 'contreras', '+569-84687949', 'av suecia 327', 'coquimbo')
+cliente2 = Customer('marcelo', 'riveros', '+569-89587949', 'av dinamarca 237', 'coquimbo')
+cliente3 = Customer('pedro', 'pascal', '+569-89087949', 'av japón 387', 'antofagasta')
+cliente4 = Customer('ignacio', 'guerrero', '+569-89089849', 'av china 127', 'antofagasta')
+```  
+
+Luego insertar los clientes en la base de datos usando el método **`create_customer(customer)`** e invocamos la función una vez por cada cliente. 
 
 
 ```py
 # import statements
 # create connection object
 # create database table
-
-def create_customer(customer):
-    with connection:
-        cursor.execute("INSERT INTO customer VALUES (:first, :last, :age, :city, :country)", 
-        {'first':customer.first_name, 'last':customer.last_name,
-         'age':customer.age, 'city':customer.city, 'country':customer.country})
-
-def get_customers(city):
-    cursor.execute("SELECT * FROM customer WHERE city=:city", {'city':city})
-    return cursor.fetchall()
-
-customer_1 = Customer('john', 'doe', 30, 'perth', 'Australia')
-customer_2 = Customer('sara', 'migel', 25, 'perth', 'Australia')
-
-create_customer(customer_1)
-create_customer(customer_2)
-
-customers = get_customers('perth')
-
-print(customers)
-
-connection.close()
+# create crud function
+create_customer(cliente1)
+create_customer(cliente2)
+create_customer(cliente3)
+create_customer(cliente4)
 ```
+
+
+![crear clientes](assets/crear_clientes.gif)
+
+---
+
+
 Ahora veamos cómo actualizar un cliente y eliminarlo. Tienes que usar las funciones *update_city(customer,city)* y *delete_customer(customer)* para eso.  
 
 ```py
