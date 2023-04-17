@@ -323,6 +323,10 @@ Hay dos formas de insertar objetos en una base de datos correctamente. Dado que 
 
 
 ```py
+# import statements
+# create connection object
+# create database table
+
 customer_1 = Customer('marco', 'contreras', '+569-84687949', 'av suecia 327', 'coquimbo')
 
 cursor.execute("INSERT INTO customers VALUES (?,?,?,?,?,?)",
@@ -350,6 +354,10 @@ Usamos corchetes para denotar un diccionario.
 
 
 ```py
+# import statements
+# create connection object
+# create database table
+
 customer_1 = Customer('marco', 'contreras', '+569-84687949', 'av suecia 327', 'coquimbo')
 
 cursor.execute("INSERT INTO customers VALUES (:first, :last, :phone, :email, :city, :country)", 
