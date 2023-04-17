@@ -15,6 +15,8 @@
 |<img height="30" src="../../assets/png/prompt.png" />|[**psql**: cliente de línea de comando](./psql)|
 |--|:-|
 |<img height="30" src="../../assets/png/postgresql.png" />|[**postgres**: recuperar password usuario administrador postgres](./recuperar-password-postgres)|
+|<img height="30" src="../../assets/png/postgresql.png" />|[**postgres**: crear data dummy](./crear-data-dummy)|
+
 
 
 
