@@ -12,7 +12,7 @@ CREATE TABLE public.empleados (
 <a name="generar-datos-ficticios"></a>
 ## Generar datos ficticios
 
-La siguiente sentencia SQL genera 1 millón de registros de empleados:  
+La siguiente sentencia SQL genera 1000 de registros de empleados:  
 
 ```sql
 -- Esta instrucción es para crear una tabla temporal 
