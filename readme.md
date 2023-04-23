@@ -30,7 +30,7 @@
     <!-- TERMINAL -->
     <a href="https://enidev911.notion.site/CMD-550b419ecf664511a0c27922641aa233"><kbd><img src="assets/png/windows_terminal.png" height="70"></kbd></a>
      <!-- BASH -->
-    <a href="devs/tools/cli/bash/index.md"><kbd><img src="assets/png/bash.png" height="70"></kbd></a>
+    <a href="bash/"><kbd><img src="assets/png/bash.png" height="70"></kbd></a>
     <!-- Github -->
     <a href="#github"><kbd><img src="assets/png/github.png" height="70"></kbd></a>
 </p>
