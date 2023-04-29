@@ -53,8 +53,8 @@
 <table>
 	<tr>
 		<th><img height="30" src="../assets/png/python.png" /></th>
-		<th>
+		<td>
 			<a href="./practicas/tkinter/reloj-digital"><b>tkinter:</b> reloj digital</a>
-		</th>
+		</td>
 	</tr>
 </table>
