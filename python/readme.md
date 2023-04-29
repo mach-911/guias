@@ -3,10 +3,11 @@
 # CONTENIDO
 
 <details>
-		<summary>TIPOS DE DATOS</summary>
+		<summary>PAPERS</summary>
 		<ul>
-			<li><a href="papers/data-types/strings/readme.md"><b>Strings</b></a></li>
-		</ul></details>
+			<li><a href="papers/escapar_caracteres"><b>Escapar caracteres</b></a></li>
+		</ul>
+</details>
 
 
 <h3>GUÍAS 📑</h3>
@@ -53,7 +54,7 @@
 <table>
 	<tr>
 		<th><img height="30" src="../assets/png/python.png" /></th>
-		<td>
+		<td align="left">
 			<a href="./practicas/tkinter/reloj-digital"><b>tkinter:</b> reloj digital</a>
 		</td>
 	</tr>
