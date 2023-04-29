@@ -1,9 +1,8 @@
-<h1 align="center">
+<h2 align="center">
+	ESCAPAR CARACTERES
+</h2>
 
-<code>ESCAPAR CARACTERES</code>
-</h1>
-
-<img src="https://badges.aleen42.com/src/python.svg" alt="badge python" height="30">
+<img src="https://badges.aleen42.com/src/python.svg" alt="badge python">
 
 Cuando use un carácter de escape, **Python** lo interpretará. Los caracteres de escape usarán comillas simples o dobles. Antes de que pueda usar un carácter de escape, es importante usar una barra invertida "**`\`**" para que Python sepa lo que esta tratando de hacer.
  

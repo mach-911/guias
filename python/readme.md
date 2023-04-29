@@ -3,9 +3,9 @@
 # CONTENIDO
 
 <details>
-		<summary>PAPERS</summary>
+		<summary><h3>PAPERS</h3></summary>
 		<ul>
-			<li><a href="papers/escapar_caracteres"><b>Escapar caracteres</b></a></li>
+			<li><a href="papers/escapar_caracteres">Escapar caracteres</a></li>
 		</ul>
 </details>
 
