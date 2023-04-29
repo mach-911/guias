@@ -36,6 +36,14 @@
 			</a>
 		</th>
 	</tr>
+	<a href="./pypdf2">
+	<tr>
+		<th><img height="30" src="../assets/png/python.png" /></th>
+		<td>
+			<b>PyPDF2:</b> manipular archivos PDF
+		</td>
+	</tr>
+	</a>
 </table>
 
 
