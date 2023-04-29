@@ -1,6 +1,6 @@
 <h2 align="center">TRANSFORMACIÓN DE STRING</h2>
 
-<img src="https://badges.aleen42.com/src/python.svg" alt="badge python" height="50" align="left">
+<img src="https://badges.aleen42.com/src/python.svg" alt="badge python">
 
 Recordemos que las cadenas son inmutables; por ende, todos los métodos a continuación no actuán sobre el objeto original sino que retorna uno nuevo.  
 
