@@ -5,7 +5,8 @@
 <details>
 		<summary><h3>PAPERS</h3></summary>
 		<ul>
-			<li><a href="papers/escapar_caracteres">Escapar caracteres</a></li>
+			<li><a href="papers/transformacion-de-string">Escapar caracteres</a></li>
+			<li><a href="papers/escapar-caracteres">Escapar caracteres</a></li>
 		</ul>
 </details>
 
