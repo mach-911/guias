@@ -46,10 +46,15 @@
 
 </ul>
 
-<details>
-		<summary>TKINTER</summary>
-		<ul>
-			<li><a href="tkinter_8.x/papers/settings-icon/readme.md"><b>Tkinter</b> establecer un icono para la aplicación</a></li>
-			<li><a href="tkinter_8.x/papers/create-digital-clock/readme.md"><b>Tkinter</b> crear un reloj digital</a></li>
-		</ul></details>
 
+<h3>Practicas</h3>
+
+
+<table>
+	<tr>
+		<th><img height="30" src="../assets/png/python.png" /></th>
+		<th>
+			<a href="./practicas/tkinter/reloj-digital"><b>tkinter:</b> reloj digital</a>
+		</th>
+	</tr>
+</table>
