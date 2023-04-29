@@ -67,11 +67,9 @@ print(txt.encode(encoding(="ascii", errors="ignore")))
 
 ---
 
-<h2 align="center">
-<img height="50" src="https://badges.aleen42.com/src/python.svg"><br>
-Métodos de separación y unión
-</h2> 
+<h2 align="center">Métodos de separación y unión</h2>
 
+<img src="https://badges.aleen42.com/src/python.svg">
 
 **`split()`**
 
