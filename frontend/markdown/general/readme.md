@@ -89,12 +89,12 @@ Los encabezados en markdown se producen colocando un número determinado de almo
 	</thead>
 	<tbody>
 		<tr>
-			<td><pre class="no_mrkdwn"># Esto es un &#60;h1&#62; en html</pre></td>
+			<td><pre class="mrkdwn"># Esto es un &#60;h1&#62; en html</pre></td>
 			<td><h2 style="font-size:30px;">Esto es un &#60;h1&#62; en html</h2></td>
 		</tr>
 		<tr>
 			<td>
-				<pre class="no_mrkdwn">## Esto es un &#60;h2&#62; en html</pre>
+				<pre class="mrkdwn">## Esto es un &#60;h2&#62; en html</pre>
 			</td>
 			<td>
 				<h2>Esto es un &#60;h2&#62; en html</h2>
@@ -102,7 +102,7 @@ Los encabezados en markdown se producen colocando un número determinado de almo
 		</tr>
 		<tr>
 			<td>
-				<pre class="no_mrkdwn">### Esto es un &#60;h3&#62; en html</pre>
+				<pre class="mrkdwn">### Esto es un &#60;h3&#62; en html</pre>
 			</td>
 			<td>
 				<h3>Esto es un &#60;h3&#62; en html</h3>
@@ -110,7 +110,7 @@ Los encabezados en markdown se producen colocando un número determinado de almo
 		</tr>
 		<tr>
 			<td>
-				<pre class="no_mrkdwn">#### Esto es un &#60;h4&#62; en html</pre>
+				<pre class="mrkdwn">#### Esto es un &#60;h4&#62; en html</pre>
 			</td>
 			<td>
 				<h4>Esto es un &#60;h4&#62; en html</h4>
@@ -118,7 +118,7 @@ Los encabezados en markdown se producen colocando un número determinado de almo
 		</tr>
 		<tr>
 			<td>
-				<pre class="no_mrkdwn">##### Esto es un &#60;h5&#62; en html</pre>
+				<pre class="mrkdwn">##### Esto es un &#60;h5&#62; en html</pre>
 			</td>
 			<td>
 				<h5>Esto es un &#60;h5&#62; en html</h5>
@@ -126,7 +126,7 @@ Los encabezados en markdown se producen colocando un número determinado de almo
 		</tr>
 		<tr>
 			<td>
-				<pre class="no_mrkdwn">###### Esto es un &#60;h6&#62; en html</pre>
+				<pre class="mrkdwn">###### Esto es un &#60;h6&#62; en html</pre>
 			</td>
 			<td>
 				<h6>Esto es un &#60;h6&#62; en html</h6>

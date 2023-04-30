@@ -31,4 +31,8 @@ Este modelo es más técnico que el anterior porque está orientado al personal 
 
 Es el resultado de aplicar el modelo lógico a un **SGBD** concreto. Generalmente está expresado en el lenguaje SQL. Es la transición de transformar el modelo relacional al modelo físico mediante sentencias DDL (*Data Definition Language*) de SQL.
 
+---
 
+## Modelo Entidad Relación
+
+El modelo Entidad-Relación es el modelo más utilizado para el diseño conceptual de base de datos. Fue introducido por **Peter Chen** en el año 1976 y se basa en la existencia
