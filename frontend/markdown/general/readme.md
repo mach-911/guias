@@ -222,7 +222,7 @@ Ejemplo enlaces en línea:
 	<tbody>
 		<tr>
 			<td>
-				<pre class="no_mrkdwn">[Con título](https://&#60;url&#62;.com "título")</pre>
+				<pre class="mrkdwn">[Con título](https://&#60;url&#62;.com "título")</pre>
 			</td>
 			<td>
 				<a href="#enlaces" title="título">Con título</a>
@@ -230,7 +230,7 @@ Ejemplo enlaces en línea:
 		</tr>
 		<tr>
 			<td>
-				<pre class="no_mrkdwn">[Sin titulo](https://&#60;url&#62;.com)</pre>
+				<pre class="mrkdwn">[Sin titulo](https://&#60;url&#62;.com)</pre>
 			</td>
 			<td>
 				<a href="#enlaces">Sin título</a>
@@ -255,7 +255,7 @@ Ejemplo enlaces por referencia:
 	<tbody>
 		<tr>
 			<td>
-				<pre class="no_mrkdwn">[Enlace 1][1], [Enlace 2][2],<br>[Enlace 3][3]<br>[1]: http://&#60;url&#62;.com/tips<br>[2]: http://&#60;url&#62;.com/tips "Título"<br>[3]: http://&#60;url&#62;.com/</pre>
+				<pre class="mrkdwn">[Enlace 1][1], [Enlace 2][2],<br>[Enlace 3][3]<br>[1]: http://&#60;url&#62;.com/tips<br>[2]: http://&#60;url&#62;.com/tips "Título"<br>[3]: http://&#60;url&#62;.com/</pre>
 			</td>
 			<td>
 				<a href="#enlaces">Enlace1</a>,
@@ -282,7 +282,7 @@ Podemos embeber una imagén dentro un enlace de la siguiente manera:
 	<tbody>
 		<tr>
 			<td>
-				<pre class="no_mrkdwn">[![Guithub](https://&lt;url_imagen&gt;.png)](https://github.com)</pre>
+				<pre class="mrkdwn">[![Guithub](https://&lt;url_imagen&gt;.png)](https://github.com)</pre>
 			</td>
 			<td>
 				<a href="https://github.com">
@@ -310,7 +310,7 @@ Existe una manera adicional de crear enlaces automáticos para direcciones URL, 
 	</thead>
 	<tbody>
 		<tr>
-			<td><pre class="no_mrkdwn">&#60;http://google.com&#62;</pre></td>
+			<td><pre class="mrkdwn">&#60;http://google.com&#62;</pre></td>
 			<td><a href="http://google.com">http://google.com</a></td>
 		</tr>
 	</tbody>
