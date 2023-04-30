@@ -14,16 +14,17 @@ pre {
 	border-radius: 3px;
 }
 
-h2 {
+h2.underline {
 	margin-bottom: 25px;
 	text-decoration: underline solid #f2a142;
   	text-underline-offset: 4px;
 }
 
-h3 {
+h3.color {
 	color: #f2b142 !important;
 }
 
 .mrkdwn {
-	color: #fcc;
+	color: #fcc !important;
+	font-size: 1rem;
 }
