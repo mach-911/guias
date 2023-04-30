@@ -20,8 +20,9 @@ h2.underline {
   	text-underline-offset: 4px;
 }
 
-h3.color {
+.title_section {
 	color: #f2b142 !important;
+	margin: 10px 0;
 }
 
 .mrkdwn {

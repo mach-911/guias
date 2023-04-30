@@ -72,7 +72,7 @@ Markdown es un lenguaje de marcado ligero parecido al que se emplea en muchas wi
 ---
 
 <a name='cabeceras'></a>
-## Cabeceras
+<h3 class="title_section">Cabeceras</h3>
 
 Los encabezados en markdown se producen colocando un número determinado de almohadillas `#` antes del texto correspondiente al nivel de encabezamiento deseado (HTML ofrece hasta seis niveles). Los encabezamientos posibles se pueden ver en la siguiente tabla:  
 
@@ -152,7 +152,7 @@ Markdown también nos permite encerrar cada encabezado entre almohadillas, pero 
 	<tbody>
 		<tr>
 			<td>
-				<pre class="no_mrkdwn">### Esto es un &#60;h3&#62; en html ###</pre>
+				<pre class="mrkdwn">### Esto es un &#60;h3&#62; en html ###</pre>
 			</td>
 			<td>
 				<h3>Esto es un &#60;h3&#62; en html</h3>
@@ -177,7 +177,7 @@ Para los encabezamientos de los dos primeros niveles existe también otra manera
 	<tbody>
 		<tr>
 			<td>
-				<pre class="no_mrkdwn">Esto es un &#60;h1&#62; en html<br>=======================</pre>
+				<pre class="mrkdwn">Esto es un &#60;h1&#62; en html<br>=======================</pre>
 			</td>
 			<td>
 				<h2 style="font-size:30px;">Esto es un &#60;h1&#62; en html</h2>
@@ -185,7 +185,7 @@ Para los encabezamientos de los dos primeros niveles existe también otra manera
 		</tr>
 			<tr>
 			<td>
-				<pre class="no_mrkdwn">Esto es un h2<br>-------------</pre>
+				<pre class="mrkdwn">Esto es un h2<br>-------------</pre>
 			</td>
 			<td>
 				<h2>Esto es un h2</h2>
