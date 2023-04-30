@@ -1,0 +1,3 @@
+## gets
+
+Los desarrolladores a menudo tenemos la necesidad de interactuar con los usuarios, ya sea para obtener datos o para proporcionar algún tipo de resultado. La mayoría de los programas utilizan cuadros de diálogos como una forma de pedirle al usuario que proporcione algún tipo de entrada. Mientras que **Ruby** nos proporciona una función incorporada para leer desde la entrada estándar del teclado: **`gets`**

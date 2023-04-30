@@ -201,7 +201,7 @@ Es decir para los encabezamientos principales se subraya el texto con el signo i
 ---
 
 <a name="enlaces"></a>
-## Enlaces
+<h3 class="title_section">Enlaces</h3>
 
 Markdown admite dos maneras de crear enlaces en **línea** y por **referencia**.
 
@@ -342,7 +342,7 @@ Para crear párrafos se deja una línea en blanco. De este mondo:
 	<tbody>
 		<tr>
 			<td>
-				<pre class="no_mrkdwn"> Este es el primer párrafo<br><br> Este es el segundo párrado</pre>
+				<pre class="mrkdwn"> Este es el primer párrafo<br><br> Este es el segundo párrado</pre>
 			</td>
 			<td>
 				<p>Este es el primer párrafo</p>
@@ -369,7 +369,7 @@ Para crear un salto de línea dentro de un parráfo, simplemente se dejan dos es
 	<tbody>
 		<tr>
 			<td>
-				<pre class="no_mrkdwn"> Esta es la primera línea  <br>y este es la segunda línea</pre>
+				<pre class="mrkdwn"> Esta es la primera línea  <br>y este es la segunda línea</pre>
 			</td>
 			<td>
 				<p>Esta es la primera línea<br>y este es el salto de línea</p>
@@ -402,7 +402,7 @@ El formato básico del texto, es decir negritas y cursivas, tachado, markdown no
 	<tbody>
 		<tr>
 			<td>
-				<pre class="no_mrkdwn">**Esto es negrita**</pre>
+				<pre class="mrkdwn">**Esto es negrita**</pre>
 			</td>
 			<td>
 				<b>Esto es negrita</b>
@@ -410,7 +410,7 @@ El formato básico del texto, es decir negritas y cursivas, tachado, markdown no
 		</tr>
 		<tr>
 			<td>
-				<pre class="no_mrkdwn">__Esto también es negrita__</pre>
+				<pre class="mrkdwn">__Esto también es negrita__</pre>
 			</td>
 			<td>
 				<b>Esto también es negrita</b>
@@ -418,7 +418,7 @@ El formato básico del texto, es decir negritas y cursivas, tachado, markdown no
 		</tr>
 		<tr>
 			<td>
-				<pre class="no_mrkdwn">*Esto es cursiva*</pre>
+				<pre class="mrkdwn">*Esto es cursiva*</pre>
 			</td>
 			<td>
 				<i>Esto es cursiva</i>
@@ -426,7 +426,7 @@ El formato básico del texto, es decir negritas y cursivas, tachado, markdown no
 		</tr>
 		<tr>
 			<td>
-				<pre class="no_mrkdwn">_Esto también es cursiva_</pre>
+				<pre class="mrkdwn">_Esto también es cursiva_</pre>
 			</td>
 			<td>
 				<i>Esto también es cursiva</i>
@@ -434,7 +434,7 @@ El formato básico del texto, es decir negritas y cursivas, tachado, markdown no
 		</tr>
 		<tr>
 			<td>
-				<pre class="no_mrkdwn">***Esto es negrita y cursiva***</pre>
+				<pre class="mrkdwn">***Esto es negrita y cursiva***</pre>
 			</td>
 			<td>
 				<b><i>Esto es negrita y cursiva</i></b>
@@ -442,7 +442,7 @@ El formato básico del texto, es decir negritas y cursivas, tachado, markdown no
 		</tr>
 		<tr>
 			<td>
-				<pre class="no_mrkdwn">___Esto también es negrita y cursiva___</pre>
+				<pre class="mrkdwn">___Esto también es negrita y cursiva___</pre>
 			</td>
 			<td>
 				<b><i>Esto también es negrita y cursiva</i></b>
@@ -450,7 +450,7 @@ El formato básico del texto, es decir negritas y cursivas, tachado, markdown no
 		</tr>
 		<tr>
 			<td>
-				<pre class="no_mrkdwn">~~Esto es tachado~~</pre>
+				<pre class="mrkdwn">~~Esto es tachado~~</pre>
 			</td>
 			<td>
 				<del>Esto es tachado</del>
