@@ -36,8 +36,8 @@
 </p>
 
 <p align="center">
-    <!-- Java -->
-    <a href="#java"><kbd><img src="assets/png/java.png" height="70"></kbd></a>
+    <!-- Ruby -->
+    <a href="#java"><kbd><img src="assets/png/ruby.png" height="70"></kbd></a>
     <!-- Python -->
     <a href="./python/"><kbd><img src="assets/png/python.png" height="70"></kbd></a>
   <!-- Linux -->
