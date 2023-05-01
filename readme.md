@@ -37,7 +37,7 @@
 
 <p align="center">
     <!-- Ruby -->
-    <a href="#java"><kbd><img src="assets/png/ruby.png" height="70"></kbd></a>
+    <a href="./ruby/"><kbd><img src="assets/png/ruby.png" height="70"></kbd></a>
     <!-- Python -->
     <a href="./python/"><kbd><img src="assets/png/python.png" height="70"></kbd></a>
   <!-- Linux -->
