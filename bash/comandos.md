@@ -1,3 +1,25 @@
+
+### Información del sistema
+
+mostrar la arquitectura
+
+```bash
+arch
+```
+
+mostrar el kernel usado y la arquitectura
+
+```bash
+uname -r
+```
+
+mostrar la fecha del sistema
+
+```bash
+date
+```
+
+
 ### Apagar (reiniciar sistema o cerrar sesión)
 
 
@@ -34,6 +56,7 @@ cerrar sesión
 logout
 ```
 
+---
 
 ### Archivos y directorios
 
@@ -56,8 +79,23 @@ ir al directorio del usuario
 cd ~
 ```
 
+mostrar el camino (*path*) actual
 
+```bash
+pwd
+```
 
+ver los archivos de un directorio
+
+```bash
+ls
+```
+
+ver los archivos incluyendo los ocultos
+
+```bash
+ls -A
+```
 
 
 
