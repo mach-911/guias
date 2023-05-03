@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;700&display=swap');
+
+.wrapper {
+	font-family: 'Encode Sans', sans-serif;
+	font-size: 1rem;
+}
+
 div.highlight {
 	position: relative;
 }
@@ -30,3 +37,4 @@ h2.underline {
 	color: #fcc !important;
 	font-size: 1rem;
 }
+

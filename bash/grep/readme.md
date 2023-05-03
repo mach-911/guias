@@ -10,7 +10,7 @@ EL comando **`grep`** (*Globally Search Regular Expression and Print out*). Es u
 La sintaxis es la siguiente:  
 
 ```bash
-grep `<texto-buscado>`  <achivo/archivos>
+grep "<texto-buscado>"  <achivo/archivos>
 ```
 
 >Tener en cuenta que las comillas simples o dobles son requeridas alrededor del texto si es más de una palabra
@@ -39,7 +39,7 @@ grep todos /path/to/test.txt -n
 
 `-c` o `--count`
 
-Imprimeel número de líneas de coincidencias:
+Imprime el número de líneas de coincidencias:
 
 ```bash
 grep com /path/to/test.txt
@@ -76,7 +76,23 @@ grep ^A /path/to/test_grep.txt -n
 2: A
 ```
 
+`pattern$` - fin de línea
 
+En contraste con el patrón anterior **`$`** especifica patrones que coincidirán si la línea termina con la cadena antes de **`$`**. 
+
+Veamos algunos ejemplos:  
+
+```bash
+grep o$ /path/to/test_grep.txt
+```
+
+
+**Resultado**
+
+```txt
+otro
+cambiar el neumático
+```
 
 buscar palabras que comienzan con **com** en el archivo '**test.txt**' (sólo tomará aquellas que la línea actual comiencen con **com**):
 
