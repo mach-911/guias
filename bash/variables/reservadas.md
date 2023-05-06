@@ -1,6 +1,6 @@
 ## Variables reservadas del shell
 
-En un **script de bash**, hay una serie de variables son accesibles **en modo lectura**. Estas variables se inicializan por parte del shell y ofrecen imnformación de diversa índole.
+En un **script de bash**, hay una serie de variables que son accesibles **en modo lectura**. Estas variables se inicializan por parte del shell y ofrecen imnformación de diversa índole.
 
 
 ### Parámetros posicionales
