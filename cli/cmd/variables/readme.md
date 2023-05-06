@@ -5,7 +5,7 @@
 - [Capturar en variable la entrada estándar](#entrada-estandar)
 - [Anidar variables](#variables-anidada)
 - [Capturar los argumentos posicionales](#variables-posicionales)
-
+- [Variables para DOSKEY](#variables-doskey)
 
 <a name="entrada-estandar"></a>
 ### Capturar los argumentos posicionales
@@ -65,7 +65,6 @@ pause
 - **`%2,..., %9`**:  se guarda el valor del segundo argumento, y así sucesivamente
 - **`%*`**: contiene **la lista** con todos los argumentos introducidos desde línea de comandos.
 
-
 ```cmd
 @echo off
 echo nombre del script: %0
@@ -74,8 +73,25 @@ echo segundo argumento: %2
 echo tercer argumento: %3
 echo todos los argumentos: %*
 
-pause
+pause>nul
 ```
+
+Si quisieramos iterar sobre todo los argumentos, podemos hacerlo de la siguiente manera: 
+
+```cmd
+for %%x in (%*) do @echo %%x
+```
+
+### Variables Doskey
+
+
+Las combinaciones de caracteres que puede incluir son las siguientes: 
+
+|Carácter|Descripción|
+|--------|-----------|
+|`$G` o `$g`|Redirecciona la salida. utilice cualquiera de estos dos caracteres especiales para enviar la salida a un dispositivo o un archivo en lugar de la pantalla. Este carácter es equivalente al símbolo de redirección para salida (`>`).|
+|`$L` o `$l`|Redirecciona la entrada. Utilice cualquiera de estos dos caracteres especiales para leer la entrada desde un dispositivo o un archivo en lugar desde el teclado. Este carácter es equivalente al símbolo de redirección para la entrada (`<`).|
+|`$T` o `$t`|Separa los comandos. Utilice cualquiera de estos caracteres especiales para separar los comandos usando **`doskey`**. Estos caracteres especiales son equivalente a usar el ampersand (`&`) en una línea de comandos.|
 
 
 
