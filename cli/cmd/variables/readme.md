@@ -21,7 +21,7 @@ SET /P variable=[mensaje]
 
 Ejemplo de uso: 
 
-```bat
+```cmd
 @echo off
 set /p nombre=¿Cómo te llamas? 
 echo.
@@ -34,7 +34,7 @@ echo nunca me gustó el nombre de %nombrex%
 Otra cosa es que también podemos recibir el argumento desde una **entrada estándar** introduciendo la información a través de de un **pipe**, o redirigida desde un archivo o dispositivo:  
 
 
-```bat
+```cmd
 :: invocando al programa gresero.bat
 echo Ferreolo Anastasio | grosero.bat
 ```
@@ -45,7 +45,7 @@ echo Ferreolo Anastasio | grosero.bat
 
 Podemos anidar cualquier variable en otras variables. Por ejemplo:
 
-```bat
+```cmd
 @echo off
 
 set POSTGRESROOT=C:\PostgreSQL
@@ -66,7 +66,7 @@ pause
 - **`%*`**: contiene **la lista** con todos los argumentos introducidos desde línea de comandos.
 
 
-```bat
+```cmd
 @echo off
 echo nombre del script: %0
 echo primer argumento: %1 
