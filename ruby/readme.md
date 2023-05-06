@@ -30,9 +30,10 @@
 			<a href="./papers/escapar-caracteres"><b>tip</b>: Escapar caracteres
 			</a>
 		</td>
-		<td>
-			<a href="./papers/alcance-variables"><b>variables</b>: Alcance de variables y visibilidad
-			</a>
+	</tr>
+	<tr>
+		<th><img height="30" src="../assets/png/ruby.png" /></th>
+		<td><a href="./papers/alcance-variables"><b>variables</b>: Alcance de variables y visibilidad</a>
 		</td>
 	</tr>
 </table>
