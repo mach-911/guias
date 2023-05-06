@@ -1,3 +1,5 @@
+## Ejercicios en Bash
+
 
 Ejemplo de como leer la entrada estándar y almacenarlo en una variable y mostrar su contenido:
 
@@ -84,10 +86,7 @@ echo "El resultado de la diferencia es:" `expr $varA - $varB`
 
 > Es importante que cada valor y operador estén separados por un espacio. (la potencia con este método no es posible)
 
-
-
 ### Usando let
-
 
 Sigamos viendo comandos para resolver operaciones matemáticas, otro que es el preferido es el comando **`let`** que ofrece una sintaxis menos restrictiva, podremos almacenar en una variable el resultado de diferentes operaciones aritméticas y luego mostrarla. Por ejemplo:
 
