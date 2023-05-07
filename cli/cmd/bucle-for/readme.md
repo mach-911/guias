@@ -131,3 +131,72 @@ archivo4.txt
 archivo5.txt
 ```
 
+**4)** Con el parámetro `/F` podemos recorrer las siguientes cosas:
+
+- un archivo
+- el resultado de la ejecución de un comando
+- una cadena
+
+Ejemplo en archivo:
+
+```txt
+C:\>type fich.txt
+El corazón y el cerebro, las dos grandes vísceras
+que se llevan la primacía de los sentimientos y de
+la razón, son las que presiden el arranque de las
+coplas de Jorge Manrique a la muerte de su padre.
+
+C:\>for /F %x in (fich.txt) do @echo %x
+El
+que
+la
+coplas
+```
+
+El comando `for` va recorriendo todas las líneas, y cada línea se ha divido en "**tokens**" (por defecto: *`token=palabra`*). La **variable** del **`for`** almacena el primer token de cada línea.
+
+***tokens***
+
+Podemos seleccionar varios **tokens** mediante la cláusula **`tokens=`**, Los distintos tokens se irán guardando en nombres de variable alfabéticamente consecutivas a partir de la variable utilizada en el **for**.
+
+En el siguiente nos quedamos con los tokens (*palabras*) 1, 3 y 5 de cada línea:
+
+```txt
+C:\>for /F "tokens=1,3,5" %i in (fich.txt) do @echo %i - %j - %k
+El - y - cerebro,
+que - llevan - primacía
+la - son - que
+coplas - Jorge - a
+```
+
+Podemos escoger randos, en el siguiente ejemplo nos quedamos con las primeras 3 palabras y la 5:
+
+```txt
+C:\>for /F "tokens=1-3,5" %a in (fich.txt) do @echo %a %b %c - %d
+El corazón y - cerebro,
+que se llevan - primacía
+la razón, son - que
+coplas de Jorge - a
+```
+
+Y si deseamos la línea completa a partir de la 7° palabra:
+
+```txt
+C:\>for /F "tokens=7*" %A in (fich.txt) do @echo %A %B
+dos grandes vísceras
+los sentimientos y de
+el arranque de las
+muerte de su padre.
+```
+
+Y si queremos toda la línea, seleccionaremos todos los **tokens** de cada línea:
+
+```txt
+C:\>for /F "tokens=*" %m in (fich.txt) do @echo [ %m ]
+[ El corazón y el cerebro, las dos grandes vísceras ]
+[ que se llevan la primacía de los sentimientos y de ]
+[ la razón, son las que presiden el arranque de las ]
+[ coplas de Jorge Manrique a la muerte de su padre. ]
+```
+
+
