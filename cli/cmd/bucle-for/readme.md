@@ -6,9 +6,17 @@ Ejecuta el comando para cada uno de los elementos especificados en la lista:
 
 **Sintaxis**
 
-```bat
-FOR %NombreVariable IN (lista) DO comando  # desde línea de comandos
-FOR %%NombreVariable IN (lista) DO comando # dentro de archivos BAT
+
+desde línea de comandos:
+
+```cmd
+FOR %NombreVariable IN (lista) DO comando  
+```
+
+dentro de archivos BAT:  
+
+```cmd
+FOR %%NombreVariable IN (lista) DO comando
 ```
 
 - **NombreVariable**: Un nombre de variable de un *único carácter*, que se utilizará para recorrer los *archivos* de la lista.
@@ -146,7 +154,7 @@ que se llevan la primacía de los sentimientos y de
 la razón, son las que presiden el arranque de las
 coplas de Jorge Manrique a la muerte de su padre.
 
-C:\>for /F %x in (fich.txt) do @echo %x
+C:\>FOR /F %x IN (fich.txt) DO @ECHO %x
 El
 que
 la
@@ -162,7 +170,7 @@ Podemos seleccionar varios **tokens** mediante la cláusula **`tokens=`**, Los d
 En el siguiente nos quedamos con los tokens (*palabras*) 1, 3 y 5 de cada línea:
 
 ```txt
-C:\>for /F "tokens=1,3,5" %i in (fich.txt) do @echo %i - %j - %k
+C:\>FOR /F "tokens=1,3,5" %i IN (fich.txt) DO @ECHO %i - %j - %k
 El - y - cerebro,
 que - llevan - primacía
 la - son - que
@@ -172,7 +180,7 @@ coplas - Jorge - a
 Podemos escoger randos, en el siguiente ejemplo nos quedamos con las primeras 3 palabras y la 5:
 
 ```txt
-C:\>for /F "tokens=1-3,5" %a in (fich.txt) do @echo %a %b %c - %d
+C:\>FOR /F "tokens=1-3,5" %a IN (fich.txt) DO @ECHO %a %b %c - %d
 El corazón y - cerebro,
 que se llevan - primacía
 la razón, son - que
@@ -182,7 +190,7 @@ coplas de Jorge - a
 Y si deseamos la línea completa a partir de la 7° palabra:
 
 ```txt
-C:\>for /F "tokens=7*" %A in (fich.txt) do @echo %A %B
+C:\>FOR /F "tokens=7*" %A IN (fich.txt) DO @ECHO %A %B
 dos grandes vísceras
 los sentimientos y de
 el arranque de las
@@ -192,7 +200,7 @@ muerte de su padre.
 Y si queremos toda la línea, seleccionaremos todos los **tokens** de cada línea:
 
 ```txt
-C:\>for /F "tokens=*" %m in (fich.txt) do @echo [ %m ]
+C:\>FOR /F "tokens=*" %m IN (fich.txt) DO @ECHO [ %m ]
 [ El corazón y el cerebro, las dos grandes vísceras ]
 [ que se llevan la primacía de los sentimientos y de ]
 [ la razón, son las que presiden el arranque de las ]
