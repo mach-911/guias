@@ -207,4 +207,11 @@ C:\>FOR /F "tokens=*" %m IN (fich.txt) DO @ECHO [ %m ]
 [ coplas de Jorge Manrique a la muerte de su padre. ]
 ```
 
+**Delimitadores**
+
+En los ejemplos anteriores los "**tokens**" coincidían con las palabras, para separarlos se han utilizado el espacio en blanco y la tabulación. Podemos modificar los delimitadores con la cláusula **`delims=`**.  
+
+En el siguiente ejemplo anulamos los delimitadores y obtenemos lo mismo de antes:
+
+
 
