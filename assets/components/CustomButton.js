@@ -5,8 +5,8 @@ template.innerHTML = /*html*/`
 button {
     position: absolute;
     right: 10px;
-    height: 28px;
-    width: 28px;
+    height: 20px;
+    width: 20px;
     border: none;
     cursor: pointer;   
     z-index: 2;
