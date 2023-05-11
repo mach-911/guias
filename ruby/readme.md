@@ -1,14 +1,8 @@
 
 # CONTENIDO
 
-
-
-
-<h3>GUÍAS 📑</h3>
-
-
 <table>
-	<caption>Funciones incorporadas</caption>
+	<caption>GUÍAS</caption>
 	<tr>
 		<th><img height="30" src="../assets/png/ruby.png" /></th>
 		<td>
@@ -16,9 +10,14 @@
 			</a>
 		</td>
 	</tr>
+	<tr>
+		<th><img height="30" src="../assets/png/ruby.png" /></th>
+		<td>
+			<a href="./tipos-de-datos/array"><b>Array</b>: métodos
+			</a>
+		</td>
+	</tr>
 </table>
-
-
 
 
 
@@ -33,7 +32,7 @@
 	</tr>
 	<tr>
 		<th><img height="30" src="../assets/png/ruby.png" /></th>
-		<td><a href="./papers/alcance-variables"><b>variables</b>: Alcance de variables y visibilidad</a>
+		<td><a href="./papers/alcance-variables">Alcance de variables y visibilidad</a>
 		</td>
 	</tr>
 </table>
