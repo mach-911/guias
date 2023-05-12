@@ -13,7 +13,7 @@
 	<tr>
 		<th><img height="30" src="../assets/png/ruby.png" /></th>
 		<td>
-			<a href="./tipos-de-datos/array"><b>Array</b>: métodos
+			<a href="./papers/metodos-arrays.md"><b>Array</b>: métodos
 			</a>
 		</td>
 	</tr>
