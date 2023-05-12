@@ -13,6 +13,10 @@
 	<tr>
 		<th><img height="30" src="../assets/png/ruby.png" /></th>
 		<td>
+			<a href="./papers/clase-arrays"><b>Arrays</b>
+		</a>
+		</td>
+		<td>
 			<a href="./papers/metodos-arrays"><b>Array</b>: métodos
 			</a>
 		</td>

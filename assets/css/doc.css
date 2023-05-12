@@ -21,6 +21,11 @@ pre {
 	border-radius: 3px;
 }
 
+.language-plaintext .highlighter-rouge {
+	font-size: 17px;
+	
+}
+
 h2 {
  padding-top: 20px;
  padding-bottom: 15px;
